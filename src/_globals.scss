@@ -1,0 +1,45 @@
+// colors
+$color-background: #1c2421;
+$color-foreground: #b1c8c2;
+$color-space-neg: #2c3531;
+$color-space-pos: #116466;
+$color-contrast-neg: #d9b08c;
+$color-contrast-pos: #ffcb9a;
+$color-highlight: #d1e8e2;
+
+$color-link: #318486;
+$color-link-visited: #2d7f81;
+
+// css
+body {
+    background: $color-background;
+    color: $color-contrast-neg;
+    margin: 16px;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $color-link-visited;
+  }
+  &.router-link-exact-active {
+    color: $color-highlight;
+  }
+}
+
+hr {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: -1em;
+  margin-inline-end: -1em;
+  border-color: $color-foreground;
+}
+
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 0.5em;
+}
