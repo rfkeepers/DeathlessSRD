@@ -1,5 +1,5 @@
 {
-  "name": "deathless_srd",
+  "name": "deathless",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,7 +7,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.6"
+    "vue": "^3.2.6",
+    "vue-router": "^4.0.11"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.6.0",
