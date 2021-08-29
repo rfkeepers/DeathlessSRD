@@ -1,0 +1,179 @@
+// colors
+$color-background: #2c2c2c;
+$color-foreground: #636b46;
+$color-highlight: #9e4036;
+$color-text: #dcd3c7;
+
+//applications of those colors
+$color-background-sink: scale-color($color-background, $lightness: -24%);
+$color-background-pop: scale-color($color-background, $lightness: +24%);
+$color-foreground-sink: scale-color($color-foreground, $lightness: -24%);
+$color-foreground-sunk: scale-color($color-foreground, $lightness: -36%);
+$color-text-pop: scale-color($color-text, $lightness: +15%);
+$color-link: scale-color($color-highlight, $lightness: +15%);
+$color-link-active: scale-color($color-text, $lightness: +25%);
+
+// css
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  background: $color-background;
+  color: $color-text;
+  margin: 0;
+  line-height: 1.5em;
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $color-link;
+  }
+  &.router-link-exact-active {
+    color: $color-link-active;
+    cursor: default;
+  }
+}
+
+hr {
+  border-color: $color-foreground;
+  color: $color-foreground;
+  height: 1px;
+  width: 50%;
+}
+
+h1 {
+  color: $color-text;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  line-height: 1.25em;
+}
+
+h2 {
+  color: $color-text;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  line-height: 1em;
+  font-weight: normal;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.title {
+  position: relative;
+  color: $color-text;
+
+  @media screen and (min-width: 900px) {
+    &:after {
+      content: "";
+      display: block;
+      width: 128px;
+      height: 1px;
+      background: $color-foreground;
+      right: -144px;
+      top: 50%;
+      position: absolute;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 136px;
+      height: 1px;
+      background: $color-foreground;
+      left: -152px;
+      top: 50%;
+      position: absolute;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 85%;
+    text-align: center;
+  }
+}
+
+.subtitle {
+  position: relative;
+  color: $color-text;
+
+  @media screen and (min-width: 900px) {
+    &:after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: $color-foreground;
+      right: -32px;
+      top: 50%;
+      position: absolute;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: $color-foreground;
+      left: -32px;
+      top: 50%;
+      position: absolute;
+    }
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.blurb {
+  text-align: center;
+}
+
+.download {
+  font-size: 1.5em;
+}
+
+.changelog {
+  margin-top: 24px;
+  text-align: left;
+  width: 100%;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: $color-text;
+    position: relative;
+    top: 8px;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: $color-text;
+    position: relative;
+    top: 8px;
+  }
+}
