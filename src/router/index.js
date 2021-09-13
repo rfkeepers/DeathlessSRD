@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import home from '@/views/site/Home.vue'
+import moveExamples from '@/views/site/MoveExamples.vue'
+import exampleExamples from '@/views/site/ExampleExamples.vue'
 import feedback from '@/views/site/Feedback.vue'
 
-const titleMaker = (...t) => t.join(' - ').concat(' - Innumerable Engines');
+const titleMaker = (...t) => t.join(' - ').concat(' - Deathless');
 
 const routes = [
   {
@@ -15,6 +17,34 @@ const routes = [
         {
           name: 'description',
           content: 'Deathless - a pbta about scrutinizing the mechanics of death within a fantasy gaming setting.',
+        },
+      ],
+    },
+  },
+  {
+    path: '/moves',
+    name: 'Move Examples',
+    component: moveExamples,
+    meta: {
+      title: titleMaker('Move Examples'),
+      tags: [
+        {
+          name: 'description',
+          content: 'Showcases of the Move component.',
+        },
+      ],
+    },
+  },
+  {
+    path: '/examples',
+    name: 'Example Examples',
+    component: exampleExamples,
+    meta: {
+      title: titleMaker('Example Examples'),
+      tags: [
+        {
+          name: 'description',
+          content: 'Showcases of the Example component.',
         },
       ],
     },
@@ -33,11 +63,11 @@ const routes = [
       ],
     },
   },
-]
+];
 
 const router = createRouter({
   history: createWebHistory(),
   routes
-})
+});
 
-export default router
+export default router;

@@ -1,15 +1,23 @@
 // colors
 $color-background: #2c2c2c;
-$color-foreground: #636b46;
-$color-highlight: #9e4036;
+$color-foreground: #9e4036;
+$color-highlight: #a28a6a;
 $color-text: #dcd3c7;
 
 //applications of those colors
+$color-background-pop: scale-color($color-background, $lightness: +8%);
 $color-background-sink: scale-color($color-background, $lightness: -24%);
-$color-background-pop: scale-color($color-background, $lightness: +24%);
+$color-background-sunk: scale-color($color-background, $lightness: -36%);
+$color-foreground-pop: scale-color($color-foreground, $lightness: +8%);
 $color-foreground-sink: scale-color($color-foreground, $lightness: -24%);
 $color-foreground-sunk: scale-color($color-foreground, $lightness: -36%);
-$color-text-pop: scale-color($color-text, $lightness: +15%);
+$color-highlight-pop: scale-color($color-highlight, $lightness: +8%);
+$color-highlight-sink: scale-color($color-highlight, $lightness: -24%);
+$color-highlight-sunk: scale-color($color-highlight, $lightness: -36%);
+$color-text-pop: scale-color($color-text, $lightness: +8%);
+$color-text-popped: scale-color($color-text, $lightness: +24%);
+$color-text-sink: scale-color($color-text, $lightness: -36%);
+$color-text-sunk: scale-color($color-text, $lightness: -48%);
 $color-link: scale-color($color-highlight, $lightness: +15%);
 $color-link-active: scale-color($color-text, $lightness: +25%);
 
@@ -18,12 +26,12 @@ $color-link-active: scale-color($color-text, $lightness: +25%);
   box-sizing: border-box;
 }
 
-// --------------- elements
+// ------------------ elements
 body, html {
   background: $color-background;
   color: $color-text;
   margin: 0;
-  line-height: 1.5em;
+  line-height: 1.35em;
   height: 100%;
 }
 
@@ -46,6 +54,13 @@ a {
   }
 }
 
+b {
+  color: #d9d5d0;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 900;
+}
+
 hr {
   border-color: $color-foreground;
   color: $color-foreground;
@@ -58,6 +73,10 @@ h1 {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
   line-height: 1.25em;
+
+  @media screen and (min-width: 900px) {
+    width: max-content;
+  }
 }
 
 h2 {
@@ -68,6 +87,17 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  color: $color-text;
+  text-align: left;
+  margin-left: 8%;
+  width: max-content;
+
+  @media screen and (max-width: 900px) {
+    margin-left: 8%;
+  }
+}
+
 ul {
   margin: 0;
 }
@@ -76,7 +106,7 @@ li {
   list-style-type: none;
 }
 
-// --------------- classes
+// ------------------ classes
 .overlord {
   height: 100%;
   display: flex;
@@ -84,22 +114,36 @@ li {
 }
 
 .pageBody {
-  text-align: justify;
-  margin-top: 1em;
+  padding-top: 1em;
   flex-grow: 1;
 
   @media screen and (max-width: 900px) {
-    margin: 1em 2em 0 2em;
+    padding: 1em 2em 0 2em;
   }
 
   @media screen and (min-width: 900px) {
-    margin-left: 15%;
-    margin-right: 15%;
+    padding-left: 16%;
+    padding-right: 16%;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-left: 20%;
-    margin-right: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+.tail {
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 20vw;
+    height: 1px;
+    background: linear-gradient(90deg, $color-background-sink 50%, $color-highlight);
+    right: calc(100% + 12px);
+    top: 50%;
+    position: absolute;
   }
 }
 
@@ -107,25 +151,45 @@ li {
   position: relative;
   color: $color-text;
 
+  &:before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background: $color-foreground;
+    left: 10px;
+    bottom: -8px;
+    position: absolute;
+  }
+
   @media screen and (min-width: 900px) {
     &:after {
       content: "";
       display: block;
       width: 128px;
+      width: calc(68vw - 100%);
       height: 1px;
       background: $color-foreground;
-      right: -144px;
+      right: calc((68vw - 95%) * -1);
       top: 50%;
       position: absolute;
     }
-
+    
     &:before {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:after {
       content: "";
       display: block;
-      width: 136px;
+      width: 128px;
+      width: calc(60vw - 100%);
       height: 1px;
       background: $color-foreground;
-      left: -152px;
+      right: calc((60vw - 95%) * -1);
       top: 50%;
       position: absolute;
     }
@@ -133,7 +197,7 @@ li {
 
   @media screen and (max-width: 900px) {
     width: 85%;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -141,27 +205,15 @@ li {
   position: relative;
   color: $color-text;
 
-  @media screen and (min-width: 900px) {
-    &:after {
-      content: "";
-      display: block;
-      width: 24px;
-      height: 1px;
-      background: $color-foreground;
-      right: -32px;
-      top: 50%;
-      position: absolute;
-    }
-
-    &:before {
-      content: "";
-      display: block;
-      width: 24px;
-      height: 1px;
-      background: $color-foreground;
-      left: -32px;
-      top: 50%;
-      position: absolute;
+  &--to {
+    @extend .subtitle;
+    @media screen and (min-width: 900px) {
+      &:after {
+        content: "╕";
+        font-size: 1em;
+        margin-left: 16px;
+        color: $color-foreground;
+      }
     }
   }
 }
@@ -173,11 +225,32 @@ li {
 }
 
 .blurb {
-  text-align: center;
+  text-align: justify;
+  margin-left: 8%;
+
+  @media screen and (max-width: 900px) {
+    text-align: left;
+    margin-left: 0%;
+  }
+
+  &--for {
+    @extend .blurb;
+    margin-left: 0;
+    
+    @media screen and (min-width: 900px) {
+      &:before {
+        content: "╘";
+        margin-right: 16px;
+        font-size: 1.5em;
+        color: $color-foreground;
+      }
+    }
+  }
 }
 
 .download {
   font-size: 1.5em;
+  margin-left: 8%;
 }
 
 .changelog {
@@ -204,4 +277,34 @@ li {
     position: relative;
     top: 8px;
   }
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.quote {
+  border-left: 1px solid $color-foreground-sink;
+  // padding-left: 8px;
+  padding: 12px 12px 12px 16px;
+  margin: 8px 0 8px 0;
+  color: $color-text-pop;
+  background-color: $color-background-sunk;
+}
+
+.playExample {
+  padding: 0 6% 0 4%;
+  font-style: oblique;
+  text-align: justify;
+  margin-top: 16px;
+
+  @media screen and (max-width: 900px) {
+    padding: 0;
+  }
+}
+
+.miniBorder {
+  border-radius: 12px;
+  border-top: 1px solid $color-highlight;
+  border-bottom: 1px solid $color-highlight;
 }

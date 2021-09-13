@@ -1,7 +1,7 @@
 <template>
 <div class="overlord">
   <div id="deathless" class="headerBar">
-    <div class="headerBar__title">Deathless</div>
+    <div class="headerBar__title" @click="routeHome">Deathless</div>
   </div>
   <div class="pageBody">
     <router-view></router-view>
@@ -63,12 +63,15 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: auto;
 }
 </style>
 
 <style lang="scss" scoped>
 .headerBar {
   padding: 0.67em 1.5em 1em 1.5em;
+  min-height: 58px;
+  height: 58px;
   background: $color-background-sink;
   display: grid;
   border-bottom: 2px solid $color-foreground-sunk;
