@@ -3,6 +3,7 @@ import home from '@/views/site/Home.vue'
 import moveExamples from '@/views/site/MoveExamples.vue'
 import exampleExamples from '@/views/site/ExampleExamples.vue'
 import feedback from '@/views/site/Feedback.vue'
+import glossary from '@/views/site/Glossary.vue'
 
 const titleMaker = (...t) => t.join(' - ').concat(' - Deathless');
 
@@ -30,7 +31,7 @@ const routes = [
       tags: [
         {
           name: 'description',
-          content: 'Showcases of the Move component.',
+          content: 'Showcases the Move component.',
         },
       ],
     },
@@ -44,7 +45,21 @@ const routes = [
       tags: [
         {
           name: 'description',
-          content: 'Showcases of the Example component.',
+          content: 'Showcases the Example component.',
+        },
+      ],
+    },
+  },
+  {
+    path: '/glossary',
+    name: 'Glossary Page',
+    component: glossary,
+    meta: {
+      title: titleMaker('Glossary'),
+      tags: [
+        {
+          name: 'description',
+          content: 'Showcases the Glossary component.',
         },
       ],
     },

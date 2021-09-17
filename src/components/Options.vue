@@ -14,9 +14,10 @@ const props = defineProps({
         description: "Font size of the custom bullet.",
         default: "1em",
     },
-    bulletStyle: {
-        type: Object,
-        description: "Custom css styling of the bullets.",
+    bulletWidth: {
+        type: String,
+        description: "Width of the bullet spacing, for alignment of text.",
+        default: "auto",
     },
     prefixes: {
         type: Array,
@@ -31,17 +32,17 @@ const props = defineProps({
 const prefixed = props.prefixes && props.prefixes.length > 0;
 const standard = !props.bullet && !prefixed && !props.selectable;
 
-const customStyle = Object.assign({}, {'font-size': props.bulletSize}, props.bulletStyle);
-if (customStyle["font-size"] === "1em" && (props.selectable || standard)) {
-    delete customStyle["font-size"];
-}
+const customStyle = {
+    'font-size': props.bulletSize,
+    'width': props.bulletWidth,
+};
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
 <div class="options">
-    <ul>
-        <li class="optionList">
+    <ul class=options__list>
+        <li class="options__list__item">
             <ul
                 v-for="(opt, idx) in options"
                 :key="opt"
@@ -51,7 +52,7 @@ if (customStyle["font-size"] === "1em" && (props.selectable || standard)) {
                 <span v-if="selectable" class="option__selectable" :style="customStyle">▢</span>
                 <span v-if="bullet" class="option__custom" :style="customStyle">{{bullet}}</span>
                 <span v-if="prefixed" class="option__prefix" :style="customStyle">{{prefixes[idx]}}</span>
-                {{opt}}
+                <span class="option__text">{{opt}}</span>
             </ul>
         </li>
     </ul>
@@ -60,19 +61,19 @@ if (customStyle["font-size"] === "1em" && (props.selectable || standard)) {
 
 <!-- ============================== Style ============================== -->
 <style lang="scss" scoped>
-ul {
-    list-style-type: none;
-    padding-inline-start: 0;
-}
-
-.optionList {
-    margin-top: 16px;
+.options {
+    &__list {
+        &__item {
+            margin-top: 16px;
+        }
+    }
 }
 
 .option {
     display: flex;
-    // align-items: center;
-    padding-bottom: 8px;
+    &:not(:last-child) {
+        padding-bottom: 8px;
+    }
 
     &__standard {
         font-size: 1.25em;
@@ -90,6 +91,10 @@ ul {
 
     &__prefix {
         padding-right: 8px;
+    }
+
+    &__text {
+        // included in case the caller wants to deep change the text styling for reasons like alignment.
     }
 }
 </style>

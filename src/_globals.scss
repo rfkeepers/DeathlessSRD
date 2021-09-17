@@ -5,6 +5,7 @@ $color-highlight: #a28a6a;
 $color-text: #dcd3c7;
 
 //applications of those colors
+$color-background-popped: scale-color($color-background, $lightness: +32%);
 $color-background-pop: scale-color($color-background, $lightness: +8%);
 $color-background-sink: scale-color($color-background, $lightness: -24%);
 $color-background-sunk: scale-color($color-background, $lightness: -36%);
@@ -100,10 +101,29 @@ h3 {
 
 ul {
   margin: 0;
+  list-style-type: none;
+  padding-inline-start: 0;
 }
 
 li {
   list-style-type: none;
+}
+
+input {
+  -webkit-appearance: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+
+  min-height: 2.5em;
+  background-color: $color-background-sunk;
+  color: $color-text;
+  font-size: 1em;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 // ------------------ classes

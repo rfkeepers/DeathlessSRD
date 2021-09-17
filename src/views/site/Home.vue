@@ -10,6 +10,8 @@
 <button @click="$router.push('/moves')">Moves</button>
 <br>
 <button @click="$router.push('/examples')">Examples</button>
+<br>
+<button @click="$router.push('/glossary')">Glossary</button>
 
 </template>
 

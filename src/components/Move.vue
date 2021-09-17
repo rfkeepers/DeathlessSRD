@@ -10,7 +10,15 @@ const props = defineProps({
     bordered: {
         type: Boolean,
         body: "Renders the move within a border.",
-    }
+    },
+    ruled: {
+        type: Boolean,
+        body: "Renders the move with top and bottom horizontal rules.",
+    },
+    shaded: {
+        type: Boolean,
+        body: "Renders the move within a shaded box.",
+    },
 });
 </script>
 
@@ -19,18 +27,20 @@ const props = defineProps({
 <div :class="{
     'move': true,
     'move--bordered': bordered,
+    'move--ruled': ruled,
+    'move--shaded': shaded,
 }">
-    <div class="moveTitle">
-        <div class="moveName"><slot name="name"/></div>
-        <div class="moveExample">
+    <div class="move__title">
+        <div class="move__name"><slot name="name"/></div>
+        <div class="move__example">
             <Example :id="id">
                 <template v-slot:header><slot name="name"/></template>
                 <template v-slot:body><slot name="example"/></template>
             </Example>
         </div>
     </div>
-    <div class="preconditions"><slot name="preconditions"/></div>
-    <div class="body"><slot name="body"/></div>
+    <div class="move__preconditions"><slot name="preconditions"/></div>
+    <div class="move__body"><slot name="body"/></div>
 </div>
 </template>
 
@@ -40,10 +50,10 @@ $indent: 24px;
 $indent--small: 16px; 
 
 .move {
-    margin: 0 6% 12px 4%;
+    padding: 12px 6% 12px 4%;
 
     @media screen and (max-width: 900px) {
-        margin: 0 4% 12px 4%;
+        padding: 12px 4% 12px 4%;
     }
 
     &--bordered {
@@ -51,41 +61,49 @@ $indent--small: 16px;
         border-radius: 8px;
         border: 1px solid white;
     }
-}
 
-.moveTitle {
-    display: flex;
-    justify-content: space-between;
+    &--ruled {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
 
-    .moveName {
+    &--shaded {
+        background-color: gray;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__name {
         font-size: 1.5em;
         font-weight: 900;
-        margin-top: 8px;
-        line-height: 1.25em;
+        line-height: 1.1em;
     }
 
-    .moveExample {
+    &__example {
         margin-top: 8px;
     }
-}
 
-.preconditions {
-    font-style: italic;
-    margin-left: $indent;
-    font-size: 0.8em;
+    &__preconditions {
+        font-style: italic;
+        margin-left: $indent;
+        font-size: 0.8em;
 
-    @media screen and (max-width: 900px) {
-        margin-top: 2px;
+        @media screen and (max-width: 900px) {
+            margin-top: 2px;
+        }
     }
-}
 
-.body {
-    margin-left: $indent;
-    margin-top: 12px;
+    &__body {
+        margin-left: $indent;
+        margin-top: 12px;
 
-    @media screen and (max-width: 900px) {
-        margin-left: 0;
-        margin-top: 8px;
+        @media screen and (max-width: 900px) {
+            margin-left: 0;
+            margin-top: 8px;
+        }
     }
 }
 </style>

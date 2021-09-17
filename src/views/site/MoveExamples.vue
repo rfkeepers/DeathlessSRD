@@ -13,12 +13,6 @@ const customBullet = "⫸";
 const customPrefixRolls = ["10+", "7-9", "6-"];
 const customPrefixSymbols = ["≽", "⌱", "⋟"];
 const customPrefixHPM = ["H:", "P:", "M:"];
-const bulletStyle = {
-    "font-size": "1.5em",
-    "color": "#9e4036",
-    "line-height": "32px",
-    "width": "32px",
-};
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -26,7 +20,7 @@ const bulletStyle = {
 <div class="moveExamples">
 <div class="hint">-- With preconditions</div>
 <Move id="w_preconditions">
-    <template v-slot:name>Example Move With preconditions</template>
+    <template v-slot:name>Example Move With Preconditions</template>
     <template v-slot:preconditions>Requires: preconditions</template>
     <template v-slot:body>
         This describes the move in all of its glory...
@@ -37,7 +31,7 @@ const bulletStyle = {
 
 <div class="hint">-- Without preconditions</div>
 <Move id="wo_preconditions">
-    <template v-slot:name>Example Move Without preconditions</template>
+    <template v-slot:name>Example Move Without Preconditions</template>
     <template v-slot:body>
         This describes the move in all of its glory.  Glorious glory.  My oh my look at the text.
     </template>
@@ -67,6 +61,15 @@ const bulletStyle = {
 </Move>
 <br>
 
+<div class="hint">-- With horizontal rules</div>
+<Move ruled id="ruled">
+    <template v-slot:name>Example Move With Horizontal Rules</template>
+    <template v-slot:preconditions>Requires: preconditions</template>
+    <template v-slot:body>This one needs lots of text so that we can show the nice big fancy border around it that borders the text and all the fanciness my oh my what wonders we shall produce with enough text that there's substantial space for a border to look impressive yes oh yes oh my oh me oh yes.</template>
+    <template v-slot:example>Example Text...</template>
+</Move>
+<br>
+
 <div class="hint">-- A move with options</div>
 <Move id="w_options">
     <template v-slot:name>Example Move With Options</template>
@@ -83,7 +86,7 @@ const bulletStyle = {
     <template v-slot:name>Example Move With Selectable Options</template>
     <template v-slot:body>
         When you <b>do a thing</b>, roll +something, then consider your options:
-        <Options :options="moveOptions" selectable/>
+        <Options :options="moveOptions" selectable bulletSize="1.25em"/>
     </template>
     <template v-slot:example>Example Text...</template>
 </Move>
@@ -105,7 +108,7 @@ const bulletStyle = {
     <template v-slot:name>Example Move With Outcome Ranges</template>
     <template v-slot:body>
         When you <b>do a thing</b>, roll +something, then consider your options:
-        <Options :options="moveOptions" :prefixes="customPrefixRolls" :bulletStyle="{'width': '40px'}"/>
+        <Options :options="moveOptions" :prefixes="customPrefixRolls" bulletWidth="40px"/>
     </template>
     <template v-slot:example>Example Text...</template>
 </Move>
@@ -122,12 +125,34 @@ const bulletStyle = {
 </Move>
 <br>
 
-<div class="hint">-- A move with styled custom bullets</div>
-<Move id="styled_bullets">
-    <template v-slot:name>Example Move With Styled Bullets</template>
+<div class="hint">-- A move with a shaded backdrop</div>
+<Move id="shaded" shaded>
+    <template v-slot:name>Example Move With Shaded Background</template>
     <template v-slot:body>
         When you <b>do a thing</b>, roll +something, then consider your options:
-        <Options :options="moveOptions" :prefixes="customPrefixHPM" :bulletStyle="bulletStyle"/>
+        <Options :options="moveOptions" :prefixes="customPrefixHPM"/>
+    </template>
+    <template v-slot:example>Example Text...</template>
+</Move>
+<br>
+
+<div class="hint">-- A move with a shaded and bordered backdrop</div>
+<Move id="shaded_bordered" shaded bordered>
+    <template v-slot:name>Example Move With Shaded and Bordered Style</template>
+    <template v-slot:body>
+        When you <b>do a thing</b>, roll +something, then consider your options:
+        <Options :options="moveOptions" :prefixes="customPrefixHPM"/>
+    </template>
+    <template v-slot:example>Example Text...</template>
+</Move>
+<br>
+
+<div class="hint">-- A move with a shaded and ruled backdrop</div>
+<Move id="shaded_ruled" shaded ruled>
+    <template v-slot:name>Example Move With Shaded and Ruled Style</template>
+    <template v-slot:body>
+        When you <b>do a thing</b>, roll +something, then consider your options:
+        <Options :options="moveOptions" :prefixes="customPrefixHPM"/>
     </template>
     <template v-slot:example>Example Text...</template>
 </Move>
@@ -148,5 +173,13 @@ const bulletStyle = {
 
 :deep(.example .body) {
     background-color: $color-background-pop;
+}
+
+:deep(.move--shaded) {
+    background-color: $color-background-pop;
+}
+
+:deep(.move--ruled) {
+    border-color: $color-highlight;
 }
 </style>

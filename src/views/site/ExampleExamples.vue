@@ -9,8 +9,7 @@ const moveOpts = ['You catch a faint whiff of cologne, the smell of a person who
 <template>
 <div class="exampleExamples">
     <div>Suppose you're reading along with the text and I'm explaining all manner of goodness about how the game and the rules and the conversation works out for all of the players involved.  Suddenly, a wild move appears!  "Egads", you say, "what do I do with it?"  Just click on the blue question marks to find out...</div>
-    <hr>
-    <Move id="take_in_the_scenery">
+    <Move id="take_in_the_scenery" shaded>
         <template v-slot:name>Take In The Scenery</template>
         <template v-slot:body>
             When you pause for a moment and <b>take a moment to enjoy your surroundings</b>, roll +happiness.  On a 10+, the MC will describe what whispers of sweet nothings the world gives you.  On a 7-9, pick one from below.  On a miss, well, prepare for the worst, which probably means a slight chance of rain.
@@ -37,7 +36,6 @@ const moveOpts = ['You catch a faint whiff of cologne, the smell of a person who
             </div>
         </template>
     </Move>
-    <hr>
 </div>
 </template>
 
