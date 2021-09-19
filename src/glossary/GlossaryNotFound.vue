@@ -4,17 +4,15 @@
 
 <!-- ============================== Template ============================== -->
 <template>
-<div>Deathless Is Still Under Construction</div>
-<br>
-
-<button @click="$router.push('/moves')">Moves</button>
-<br>
-<button @click="$router.push('/examples')">Examples</button>
-<br>
-<button @click="$router.push('/glossary/landing')">Glossary</button>
-
+<div class="glossaryNotFound">
+    Whatever that is, it's not a part of this game.  Maybe you had a typo?
+</div>
 </template>
 
 <!-- ============================== Style ============================== -->
 <style lang="scss" scoped>
+.glossaryNotFound {
+    width: 100%;
+    height: 100%;
+}
 </style>

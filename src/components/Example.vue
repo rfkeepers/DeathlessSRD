@@ -78,7 +78,7 @@ onUnmounted(() => {
 <!-- ============================== Template ============================== -->
 <template>
 <div
-    class="icon"
+    class="example__icon"
     @click.stop="show"
 >¿？</div>
 <div :class="{
@@ -135,7 +135,7 @@ onUnmounted(() => {
         position: absolute;
         right: 64px;
         font-size: 1.6em;
-        color: $color-text-sunk;
+        color: var(--example-color-icon, white);
     }
 
     .header {
@@ -149,17 +149,17 @@ onUnmounted(() => {
         padding: 16px 80px 64px 24px;
         min-height: 100%;
         height: max-content;
-        background-color: white;
-        border-left: 2px solid white;
+        background-color: var(--example-color-background, black);
+        border-left: 2px solid var(--example-color-border, white);;
 
         @media screen and (max-width: 900px) {
             padding: 16px calc(10vh + 12px) 64px 40px;
         }
     }
-}
 
-.icon {
-    color: #2b72c2;
-    cursor: pointer;
+    &__icon {
+        color: var(--example-color-icon, #2b72c2);
+        cursor: pointer;
+    }
 }
 </style>

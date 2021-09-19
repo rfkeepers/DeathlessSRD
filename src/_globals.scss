@@ -3,6 +3,7 @@ $color-background: #2c2c2c;
 $color-foreground: #9e4036;
 $color-highlight: #a28a6a;
 $color-text: #dcd3c7;
+$color-z: #6b6e70;
 
 //applications of those colors
 $color-background-popped: scale-color($color-background, $lightness: +32%);
@@ -22,9 +23,29 @@ $color-text-sunk: scale-color($color-text, $lightness: -48%);
 $color-link: scale-color($color-highlight, $lightness: +15%);
 $color-link-active: scale-color($color-text, $lightness: +25%);
 
-// css
+$color-z-sunk: scale-color($color-z, $lightness: -32%);
+
+// css and variable overwrites
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --move-color-border: #{$color-text-sink};
+  --move-color-shaded: #{$color-background-pop};
+
+  --example-color-icon: #{$color-highlight};
+  --example-color-background: #{$color-background-sink};
+  --example-color-border: #{$color-background-pop};
+
+  --glossary-color-list-background: #{color-background-pop};
+  --glossary-color-list-border: #{$color-background-popped};
+  --glossary-color-search-background: #{$color-background-sunk};
+  --glossary-color-search-border: #{$color-foreground-sunk};
+  --glossary-color-entry-highlight: #{$color-foreground-sunk};
+  --glossary-color-entry-type: #{$color-z-sunk};
+
+  --stat-color: #{$color-highlight};
 }
 
 // ------------------ elements
@@ -152,7 +173,7 @@ input {
   }
 }
 
-.tail {
+.lineTo {
   position: relative;
 
   &:before {
@@ -266,6 +287,10 @@ input {
       }
     }
   }
+}
+
+.hint {
+  color: $color-text-sink;
 }
 
 .download {

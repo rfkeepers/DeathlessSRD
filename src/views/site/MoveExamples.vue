@@ -163,23 +163,4 @@ const customPrefixHPM = ["H:", "P:", "M:"];
 
 <!-- ============================== Style ============================== -->
 <style lang="scss" scoped>
-.hint {
-    color: $color-text-sink;
-}
-
-:deep(.move--bordered) {
-    border-color: $color-text-sink;
-}
-
-:deep(.example .body) {
-    background-color: $color-background-pop;
-}
-
-:deep(.move--shaded) {
-    background-color: $color-background-pop;
-}
-
-:deep(.move--ruled) {
-    border-color: $color-highlight;
-}
 </style>

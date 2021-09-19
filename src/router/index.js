@@ -4,6 +4,9 @@ import moveExamples from '@/views/site/MoveExamples.vue'
 import exampleExamples from '@/views/site/ExampleExamples.vue'
 import feedback from '@/views/site/Feedback.vue'
 import glossary from '@/views/site/Glossary.vue'
+import glossaryHome from '@/glossary/GlossaryHome.vue'
+import glossaryNotFound from '@/glossary/GlossaryNotFound.vue'
+import glossaryRoutes from '@/glossary/routes.js'
 
 const titleMaker = (...t) => t.join(' - ').concat(' - Deathless');
 
@@ -52,7 +55,7 @@ const routes = [
   },
   {
     path: '/glossary',
-    name: 'Glossary Page',
+    name: 'Glossary',
     component: glossary,
     meta: {
       title: titleMaker('Glossary'),
@@ -63,6 +66,21 @@ const routes = [
         },
       ],
     },
+    children: [
+      {
+        path: 'landing',
+        name: 'Glossary Landing',
+        component: glossaryHome,
+      },
+      ...glossaryRoutes,
+      {
+        path: ':pathMatch(.*)*',
+        component: glossaryNotFound,
+        meta: {
+          title: 'Glossary - Not Found',
+        },
+      },
+    ],
   },
   {
     path: '/feedback',

@@ -1,6 +1,6 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import { entries, types } from '@/consts/glossaryEntries.js'
+import { entries, types } from '@/glossary/consts.js'
 import { ref, watch, onMounted, onUnmounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router'
 const route = useRoute();
@@ -51,7 +51,7 @@ watch(
     () => selected.value = route.query.selected,
 );
 
-// ---------- searching glossary entries
+// ---------- glossary entries
 const searchTerm = ref('');
 const formattedEntries = [];
 entries.forEach(ge => {
@@ -78,6 +78,10 @@ const searchGlossary = (ev) => {
             s => s.includes(term)
         )
     );
+};
+const selectEntry = (ent) => {
+    router.push({ path: `/glossary${ent.path}` });
+    hide();
 };
 
 // ---------- lifecycle and navigation hooks
@@ -112,11 +116,15 @@ onUnmounted(() => {
         />
     </div>
     <div class="glossaryList__entries">
-        <ul @click.stop="() => hide()">
+        <ul>
             <li
                 v-for="fg in filteredGlossary"
                 :key="fg"
-                class="entry"
+                :class="{
+                    entry: true,
+                    'entry--selected': $route.path.includes(fg.path),
+                }"
+                @click.stop="selectEntry(fg)"
             >
                 <div>{{fg.name}}</div>
                 <div class="entry__type">{{fg.type}}</div>
@@ -129,7 +137,7 @@ onUnmounted(() => {
     ref="page"
     @click.stop="() => show()"
 >
-    Welcome to the glossary.  Here you can search quick references to any move, background, awakening, or other thingy in the game!
+    <router-view></router-view>
 </div>
 </template>
 
@@ -143,7 +151,7 @@ onUnmounted(() => {
     position: fixed;
 
     @media screen and (max-width: 900px) {
-        width: 100vw;
+        width: 100%;
         left: 0;
         padding: 0;
         position: inherit;
@@ -162,8 +170,8 @@ onUnmounted(() => {
     width: 360px;
     top: 58px;
 
-    background-color: $color-background-pop;
-    border-right: 1px solid $color-background-popped;
+    background-color: var(--glossary-color-list-background, black);
+    border-right: 1px solid var(--glossary-color-list-border, white);
 
     display: flex;
     flex-direction: column;
@@ -188,8 +196,8 @@ onUnmounted(() => {
     &__search {
         padding: 0 16px;
         width: 100%;
-        background-color: $color-background-sunk;
-        border-bottom: 2px solid $color-foreground-sunk;
+        background-color: var(--glossary-color-search-background, black);
+        border-bottom: 2px solid var(--glossary-color-search-border, white);
 
         &__input {
             width: 100%;
@@ -209,16 +217,20 @@ onUnmounted(() => {
             padding: 8px 24px;
             min-height: 40px;
             cursor: pointer;
+
+            &--selected {
+                background: var(--glossary-color-entry-highlight, rgba(56, 48, 109, 0.596));
+            }
             
             &:hover {
-                background: rgba(56, 48, 109, 0.596);
+                background: var(--glossary-color-entry-highlight, rgba(56, 48, 109, 0.596));
             }
 
             &__type {
                 font-size: 0.8em;
                 padding: 2px 8px;
-                border-radius: 4px;
-                background: darkslategray;
+                border-radius: 3px;
+                background: var(--glossary-color-entry-type, darkslategray);
             }
         }
     }

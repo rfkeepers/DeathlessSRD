@@ -57,18 +57,17 @@ $indent--small: 16px;
     }
 
     &--bordered {
-        padding: 8px 12px 16px 12px;
         border-radius: 8px;
-        border: 1px solid white;
+        border: 1px solid var(--move-color-border, white);;
     }
 
     &--ruled {
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
+        border-top: 1px solid var(--move-color-border, white);
+        border-bottom: 1px solid var(--move-color-border, white);
     }
 
     &--shaded {
-        background-color: gray;
+        background-color: var(--move-color-shaded, darkslategrey);
     }
 
     &__title {

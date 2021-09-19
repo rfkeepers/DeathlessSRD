@@ -103,6 +103,5 @@ export default {
       align-self: end;
     }
   }
-
 }
 </style>

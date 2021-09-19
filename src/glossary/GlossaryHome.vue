@@ -4,17 +4,15 @@
 
 <!-- ============================== Template ============================== -->
 <template>
-<div>Deathless Is Still Under Construction</div>
-<br>
-
-<button @click="$router.push('/moves')">Moves</button>
-<br>
-<button @click="$router.push('/examples')">Examples</button>
-<br>
-<button @click="$router.push('/glossary/landing')">Glossary</button>
-
+<div class="glossaryHome">
+    Welcome to the glossary.  Here you can search quick references to any move, background, awakening, or other thingy in the game!
+</div>
 </template>
 
 <!-- ============================== Style ============================== -->
 <style lang="scss" scoped>
+.glossaryHome {
+    width: 100%;
+    height: 100%;
+}
 </style>

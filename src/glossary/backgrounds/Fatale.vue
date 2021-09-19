@@ -1,18 +1,19 @@
 <!-- ============================== Script ============================== -->
 <script setup>
+import Seduce from '@/glossary/moves/Seduce.vue';
+
+const moveOpts = [
+    'opt 1',
+    'opt 2',
+    'opt 3',
+];
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<div>Deathless Is Still Under Construction</div>
-<br>
-
-<button @click="$router.push('/moves')">Moves</button>
-<br>
-<button @click="$router.push('/examples')">Examples</button>
-<br>
-<button @click="$router.push('/glossary/landing')">Glossary</button>
-
+<div>I am the fatale background.</div>
+<br><br>
+<Seduce bordered/>
 </template>
 
 <!-- ============================== Style ============================== -->
