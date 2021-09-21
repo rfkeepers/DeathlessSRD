@@ -21,8 +21,7 @@ const componentFinder = e => {
         type = Components.Backgrounds;
         break;
     };
-    const k = Object.keys(type).find(k => k === e.name);
-    console.log('n', e.name, 'k', k);
+    const k = Object.keys(type).find(k => k === e.name.replaceAll(' ', ''));
     return type[k];
 };
 

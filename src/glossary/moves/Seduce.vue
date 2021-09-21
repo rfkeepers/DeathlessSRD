@@ -1,33 +1,29 @@
 <!-- ============================== Script ============================== -->
 <script setup>
+import { ref } from 'vue';
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
-import S from "@/components/S.vue";
+import Roll from "@/components/Roll.vue";
 
-const moveOpts = [
-    'The time and place.',
-    'They come alone, with others, or send people on their behalf.',
-    'You can bring people with you.',
-];
+const name = 'Sedudce';
+const stat = 'GLAMOUR';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template">
-    <template v-slot:name>Seduce</template>
+<Move id="template" leftLined>
+    <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>entice someone</b> to turn their attention away from all else and come find you, roll <S>GLAMOUR</S>.  S: They'll come to you on your terms (where, when, with whom).  P: They'll meet with you, but you only control one:
-        <Options :options="moveOpts"/>
+        When you <b>entice someone</b> to turn their attention away from all else and come find you, <Roll>{{stat}}</Roll>.  S: They'll come to you on your terms (where, when, with whom).  P: They'll meet with you, but you only control one:
+        <Options bullet="⇀" :options="[
+            'The time and place.',
+            'They come alone, with others, or send people on their behalf.',
+            'You can bring people with you.',
+        ]" />
     </template>
     <template v-slot:example>
         
-        <h3 class="lineTo">Outcomes</h3>
-        <div class="quote"><i>{{moveOpts[0]}}</i></div>
-        Describe opt 1
-        <div class="quote"><i>{{moveOpts[1]}}</i></div>
-        Describe opt 2
-        <div class="quote"><i>{{moveOpts[2]}}</i></div>
-        Describe opt 3
+        <h3 class="lineTo">Design Thoughts</h3>
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>someone says something.</p>

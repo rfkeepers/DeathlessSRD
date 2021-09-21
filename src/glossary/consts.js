@@ -16,6 +16,30 @@ const types = {
 const entries = [
    // --------- moves
    {
+      name: 'Find An Opening',
+      type: types.move,
+      tags: [tags.basicMove, tags.insight],
+      routeContent: 'A basic move using the Insight stat.',
+   },
+   {
+      name: 'Find Respite',
+      type: types.move,
+      tags: [tags.basicMove],
+      routeContent: 'The basic move for sharing a moment with someone.',
+   },
+   {
+      name: 'Gaze Into The Abyss',
+      type: types.move,
+      tags: [tags.basicMove, tags.abyss],
+      routeContent: 'The basic move using the Abyss stat.',
+   },
+   {
+      name: 'Intervene',
+      type: types.move,
+      tags: [tags.basicMove, tags.resolve],
+      routeContent: 'The basic move using the Resolve stat.',
+   },
+   {
       name: 'template',
       type: types.move,
       tags: [],
@@ -28,52 +52,28 @@ const entries = [
       routeContent: 'The basic move using the Force stat.',
    },
    {
-      name: 'snipe',
-      type: types.move,
-      tags: [tags.basicMove, tags.skill],
-      routeContent: 'The basic move using the Skill stat.',
-   },
-   {
-      name: 'understand someone',
-      type: types.move,
-      tags: [tags.basicMove, tags.insight],
-      routeContent: 'A basic move using the Insight stat.',
-   },
-   {
-      name: 'find an opportunity',
-      type: types.move,
-      tags: [tags.basicMove, tags.insight],
-      routeContent: 'A basic move using the Insight stat.',
-   },
-   {
-      name: 'stare into the abyss',
-      type: types.move,
-      tags: [tags.basicMove, tags.abyss],
-      routeContent: 'The basic move using the Abyss stat.',
-   },
-   {
-      name: 'persuade',
+      name: 'Persuade',
       type: types.move,
       tags: [tags.basicMove, tags.glamour],
       routeContent: 'The basic move using the Glamour stat.',
-   },
-   {
-      name: 'intervene',
-      type: types.move,
-      tags: [tags.basicMove, tags.resolve],
-      routeContent: 'The basic move using the Resolve stat.',
-   },
-   {
-      name: 'have a moment',
-      type: types.move,
-      tags: [tags.basicMove],
-      routeContent: 'The basic move for sharing a moment with someone.',
    },
    {
       name: 'Seduce',
       type: types.move,
       tags: ['Fatale'],
       routeContent: 'A move granted by the Fatale Background.',
+   },
+   {
+      name: 'Snipe',
+      type: types.move,
+      tags: [tags.basicMove, tags.skill],
+      routeContent: 'The basic move using the Skill stat.',
+   },
+   {
+      name: 'Understand Someone',
+      type: types.move,
+      tags: [tags.basicMove, tags.insight],
+      routeContent: 'A basic move using the Insight stat.',
    },
    // --------- backgrounds
    {

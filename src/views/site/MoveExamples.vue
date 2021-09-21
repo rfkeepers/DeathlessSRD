@@ -157,6 +157,28 @@ const customPrefixHPM = ["H:", "P:", "M:"];
     <template v-slot:example>Example Text...</template>
 </Move>
 <br>
+
+<div class="hint">-- A move with a leftlined body</div>
+<Move id="leftLined" leftLined>
+    <template v-slot:name>Example Move With LeftLined Style</template>
+    <template v-slot:body>
+        When you <b>do a thing</b>, roll +something, then consider your options:
+        <Options :options="moveOptions" :prefixes="customPrefixHPM"/>
+    </template>
+    <template v-slot:example>Example Text...</template>
+</Move>
+<br>
+
+<div class="hint">-- A move with a shaded and leftLined body</div>
+<Move id="shaded_leftLined" shaded leftLined>
+    <template v-slot:name>Example Move With Shaded and LeftLined Style</template>
+    <template v-slot:body>
+        When you <b>do a thing</b>, roll +something, then consider your options:
+        <Options :options="moveOptions" :prefixes="customPrefixHPM"/>
+    </template>
+    <template v-slot:example>Example Text...</template>
+</Move>
+<br>
 <br>
 </div>
 </template>

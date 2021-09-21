@@ -4,12 +4,20 @@
 
 <!-- ============================== Template ============================== -->
 <template>
-<span class="stat"><slot /></span>
+<div class="notFound">
+    <div>That url isn't part of Deathless.</div>
+    <div>Go <router-link to="/">home.</router-link></div>
+</div>
 </template>
 
 <!-- ============================== Style ============================== -->
 <style lang="scss" scoped>
-.stat {
-    color: var(--stat-color);
+.notFound {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 </style>

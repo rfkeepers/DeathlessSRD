@@ -1,5 +1,5 @@
 // colors
-$color-background: #2c2c2c;
+$color-background: #262626;
 $color-foreground: #9e4036;
 $color-highlight: #a28a6a;
 $color-text: #dcd3c7;
@@ -22,7 +22,7 @@ $color-text-sink: scale-color($color-text, $lightness: -36%);
 $color-text-sunk: scale-color($color-text, $lightness: -48%);
 $color-link: scale-color($color-highlight, $lightness: +15%);
 $color-link-active: scale-color($color-text, $lightness: +25%);
-
+$color-z-pop: scale-color($color-z, $lightness: +8%);
 $color-z-sunk: scale-color($color-z, $lightness: -32%);
 
 // css and variable overwrites
@@ -38,14 +38,14 @@ $color-z-sunk: scale-color($color-z, $lightness: -32%);
   --example-color-background: #{$color-background-sink};
   --example-color-border: #{$color-background-pop};
 
-  --glossary-color-list-background: #{color-background-pop};
+  --glossary-color-list-background: #{$color-background-pop};
   --glossary-color-list-border: #{$color-background-popped};
   --glossary-color-search-background: #{$color-background-sunk};
   --glossary-color-search-border: #{$color-foreground-sunk};
   --glossary-color-entry-highlight: #{$color-foreground-sunk};
   --glossary-color-entry-type: #{$color-z-sunk};
 
-  --stat-color: #{$color-highlight};
+  --stat-color: #{$color-foreground-pop};
 }
 
 // ------------------ elements
@@ -55,6 +55,10 @@ body, html {
   margin: 0;
   line-height: 1.35em;
   height: 100%;
+
+  @media screen and (max-width: 900px) {
+    line-height: 1.25em;
+  }
 }
 
 #app {
@@ -77,10 +81,17 @@ a {
 }
 
 b {
-  color: #d9d5d0;
-  font-size: 1em;
+  color: $color-foreground;
+  font-size: 1.1em;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
+}
+
+em {
+  color: $color-z-pop;
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 500;
 }
 
 hr {

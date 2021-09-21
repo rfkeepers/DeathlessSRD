@@ -1,21 +1,17 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import Seduce from '@/glossary/moves/Seduce.vue';
-
-const moveOpts = [
-    'opt 1',
-    'opt 2',
-    'opt 3',
-];
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<div>I am the fatale background.</div>
-<br><br>
-<Seduce bordered :leftLined="false"/>
+<router-link to="/rolling">
+    <span class="roll">roll <slot /></span>
+</router-link>
 </template>
 
 <!-- ============================== Style ============================== -->
 <style lang="scss" scoped>
+.roll {
+    color: var(--stat-color, #6b6e70);
+}
 </style>

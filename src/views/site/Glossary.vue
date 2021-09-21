@@ -11,20 +11,19 @@ let touchX = 0;
 let touchY = 0;
 let touchT = 0;
 const handleTouchStart = (ev) => {
-    if (matchMedia("screen and (min-width: 900px)")) return;
+    if (!matchMedia("screen and (max-width: 900px)")) return;
     touchX = ev.targetTouches[0].screenX;
     touchY = ev.targetTouches[0].screenY;
     touchT = ev.timeStamp;
 };
 const handleTouchEnd = (ev) => {
-    if (matchMedia("screen and (min-width: 900px)")) return;
+    if (!matchMedia("screen and (max-width: 900px)")) return;
     const diffX = ev.changedTouches[0].screenX - touchX;
     const diffY = ev.changedTouches[0].screenY - touchY;
     const diffT = ev.timeStamp - touchT;
     touchX = 0;
     touchY = 0;
     touchT = 0;
-    console.log('touch end', diffX, diffY);
     if (diffX > 100 && -50 < diffY && diffY < 50 && diffT < 1000) hide();
     if (diffX > 100 && -50 < diffY && diffY < 50 && diffT < 1000) show();
 };
@@ -33,7 +32,6 @@ const handleTouchEnd = (ev) => {
 const page = ref(null);
 const searchInput = ref(null);
 let isVisible = ref(true);
-let selected = ref('');
 const show = () => {
     isVisible.value = true;
     searchInput.value.focus();
@@ -46,10 +44,6 @@ const hideIfShown = () => {
     if (!isVisible.value) return;
     hide();
 };
-watch(
-    () => route.query.selected,
-    () => selected.value = route.query.selected,
-);
 
 // ---------- glossary entries
 const searchTerm = ref('');
@@ -86,7 +80,9 @@ const selectEntry = (ent) => {
 
 // ---------- lifecycle and navigation hooks
 onMounted(() => {
-    selected.value = route.query.selected,
+    if (formattedEntries.some(fe => route.path.includes(fe.path))) {
+        isVisible.value = false;
+    }
     page.value.addEventListener('touchstart', handleTouchStart, false);
     page.value.addEventListener('touchend', handleTouchEnd, false);
 });
@@ -135,7 +131,6 @@ onUnmounted(() => {
 <div
     class="glossary"
     ref="page"
-    @click.stop="() => show()"
 >
     <router-view></router-view>
 </div>

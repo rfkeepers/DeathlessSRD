@@ -7,6 +7,7 @@ import glossary from '@/views/site/Glossary.vue'
 import glossaryHome from '@/glossary/GlossaryHome.vue'
 import glossaryNotFound from '@/glossary/GlossaryNotFound.vue'
 import glossaryRoutes from '@/glossary/routes.js'
+import notFound from '@/views/site/NotFound.vue'
 
 const titleMaker = (...t) => t.join(' - ').concat(' - Deathless');
 
@@ -67,12 +68,12 @@ const routes = [
       ],
     },
     children: [
+      ...glossaryRoutes,
       {
         path: 'landing',
         name: 'Glossary Landing',
         component: glossaryHome,
       },
-      ...glossaryRoutes,
       {
         path: ':pathMatch(.*)*',
         component: glossaryNotFound,
@@ -94,6 +95,13 @@ const routes = [
           content: 'Give some feedback about the game!',
         },
       ],
+    },
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    component: notFound,
+    meta: {
+      title: 'Not Found',
     },
   },
 ];

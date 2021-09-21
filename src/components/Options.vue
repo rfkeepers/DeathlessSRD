@@ -17,7 +17,6 @@ const props = defineProps({
     bulletWidth: {
         type: String,
         description: "Width of the bullet spacing, for alignment of text.",
-        default: "auto",
     },
     prefixes: {
         type: Array,
@@ -52,7 +51,10 @@ const customStyle = {
                 <span v-if="selectable" class="option__selectable" :style="customStyle">▢</span>
                 <span v-if="bullet" class="option__custom" :style="customStyle">{{bullet}}</span>
                 <span v-if="prefixed" class="option__prefix" :style="customStyle">{{prefixes[idx]}}</span>
-                <span class="option__text">{{opt}}</span>
+                <div class="option__text">
+                    {{opt}}
+                    <slot :name="`subslot-${idx}`" />
+                </div>
             </ul>
         </li>
     </ul>
@@ -64,33 +66,35 @@ const customStyle = {
 .options {
     &__list {
         &__item {
-            margin-top: 16px;
+            margin-top: 8px;
         }
     }
 }
 
 .option {
     display: flex;
-    &:not(:last-child) {
-        padding-bottom: 8px;
-    }
+    padding-bottom: 4px;
 
     &__standard {
         font-size: 1.25em;
         padding-right: 8px;
+        min-width: 32px;
     }
 
     &__selectable {
         font-size: 1.75em;
         padding-right: 8px;
+        min-width: 32px;
     }
 
     &__custom {
         padding-right: 8px;
+        min-width: 32px;
     }
 
     &__prefix {
         padding-right: 8px;
+        min-width: 32px;
     }
 
     &__text {

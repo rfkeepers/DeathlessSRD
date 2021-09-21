@@ -58,6 +58,11 @@ const hideIfShown = () => {
     if (!isVisible.value) return;
     hide();
 };
+const ifEscHideIfShown = (e) => {
+    if (!isVisible.value) return;
+    if (e.key !== 'Escape') return;
+    hide();
+};
 watch(
     () => route.query.showExample,
     () => isVisible.value = route.query.showExample === props.id,
@@ -67,11 +72,13 @@ watch(
 onMounted(() => {
     isVisible.value = route.query.showExample === props.id,
     document.addEventListener('click', hideIfShown);
+    document.addEventListener('keyup', ifEscHideIfShown);
     slideout.value.addEventListener('touchstart', handleTouchStart, false);
     slideout.value.addEventListener('touchend', handleTouchEnd, false);
 });
 onUnmounted(() => {
     document.removeEventListener('click', hideIfShown);
+    document.removeEventListener('keyup', ifEscHideIfShown);
 });
 </script>
 
@@ -85,7 +92,6 @@ onUnmounted(() => {
         'example': true,
         'example--shown': isVisible,
     }"
-    @keyup.esc="hide"
     @click.stop="() => {}"
     ref="slideout"
     tabindex="-1"

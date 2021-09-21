@@ -1,32 +1,46 @@
 <!-- ============================== Script ============================== -->
 <script setup>
+import { ref } from 'vue';
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
+import Roll from "@/components/Roll.vue";
+import SHPM from "@/components/SHPM.vue";
 
-const moveOpts = [
-    'opt 1',
-    'opt 2',
-    'opt 3',
-];
+const name = 'Template';
+const stat = 'STAT';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template">
-    <template v-slot:name>Template</template>
+<Move id="template" leftLined>
+    <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        I will state the move here
-        <Options :options="moveOpts"/>
+        When you <b>do the move</b> and need to learn the consequences, <Roll>{{stat}}</Roll>.
+        <SHPM :options="[
+            's move option.',
+            'p move option.',
+        ]">
+            <template v-slot:subslot-1>
+                <Options bullet="⇀" :options="[
+                    'partial success option 1.',
+                    'partial success option 2.',
+                ]" />
+            </template>
+        </SHPM>
+        <br>
+        When you do it to another PC, <Roll>{{stat}}</Roll>.  
+        <SHPM use="spm" :options="[
+            's pvp option.',
+            'p pvp option.',
+            'm pvp option.',
+        ]" />
     </template>
     <template v-slot:example>
-        
         <h3 class="lineTo">Outcomes</h3>
-        <div class="quote"><i>{{moveOpts[0]}}</i></div>
-        Describe opt 1
-        <div class="quote"><i>{{moveOpts[1]}}</i></div>
-        Describe opt 2
-        <div class="quote"><i>{{moveOpts[2]}}</i></div>
-        Describe opt 3
+        <div class="quote"><i>s move option.</i></div>
+        Describe s opt
+        <div class="quote"><i>p move option.</i></div>
+        Describe p opt
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>someone says something.</p>

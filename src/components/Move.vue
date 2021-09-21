@@ -19,6 +19,10 @@ const props = defineProps({
         type: Boolean,
         body: "Renders the move within a shaded box.",
     },
+    leftLined: {
+        type: Boolean,
+        body: "Renders the move body with a vertical border on the left side."
+    },
 });
 </script>
 
@@ -40,16 +44,21 @@ const props = defineProps({
         </div>
     </div>
     <div class="move__preconditions"><slot name="preconditions"/></div>
-    <div class="move__body"><slot name="body"/></div>
+    <div :class="{
+        'move__body': true,
+        'move__body--leftLined': leftLined,
+    }">
+        <slot name="body"/>
+    </div>
 </div>
 </template>
 
 <!-- ============================== Style ============================== -->
 <style lang="scss" scoped>
-$indent: 24px;
-$indent--small: 16px; 
-
 .move {
+    --indent--small: 16px; 
+    --indent: 24px;
+
     padding: 12px 6% 12px 4%;
 
     @media screen and (max-width: 900px) {
@@ -73,10 +82,11 @@ $indent--small: 16px;
     &__title {
         display: flex;
         justify-content: space-between;
+        align-items: end;
     }
 
     &__name {
-        font-size: 1.5em;
+        font-size: 1.75em;
         font-weight: 900;
         line-height: 1.1em;
     }
@@ -87,7 +97,7 @@ $indent--small: 16px;
 
     &__preconditions {
         font-style: italic;
-        margin-left: $indent;
+        margin-left: var(--indent);
         font-size: 0.8em;
 
         @media screen and (max-width: 900px) {
@@ -96,12 +106,21 @@ $indent--small: 16px;
     }
 
     &__body {
-        margin-left: $indent;
+        padding-left: var(--indent);
         margin-top: 12px;
 
+        &--leftLined {
+            border-left: 1px solid var(--move-color-border, white);
+            margin-left: 4px;
+        }
+
         @media screen and (max-width: 900px) {
-            margin-left: 0;
+            padding-left: 12px;
             margin-top: 8px;
+
+            &--leftLined {
+                border-left: 1px solid var(--move-color-border, white);
+            }
         }
     }
 }
