@@ -22,7 +22,6 @@ const stat = 'GLAMOUR';
         ]" />
     </template>
     <template v-slot:example>
-        
         <h3 class="lineTo">Design Thoughts</h3>
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">

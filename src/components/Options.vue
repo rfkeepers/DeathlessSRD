@@ -18,6 +18,10 @@ const props = defineProps({
         type: String,
         description: "Width of the bullet spacing, for alignment of text.",
     },
+    numbered: {
+        type: Boolean,
+        description: "Prefixes the options with increasing numbers (ex: 1. 2. ... N.).",
+    },
     prefixes: {
         type: Array,
         description: "Array of string prefixes for option values.",
@@ -29,7 +33,7 @@ const props = defineProps({
 });
 
 const prefixed = props.prefixes && props.prefixes.length > 0;
-const standard = !props.bullet && !prefixed && !props.selectable;
+const standard = !props.bullet && !prefixed && !props.selectable && !props.numbered;
 
 const customStyle = {
     'font-size': props.bulletSize,
@@ -47,10 +51,11 @@ const customStyle = {
                 :key="opt"
                 class="option"
             >
-                <span v-if="standard" class="option__standard" :style="customStyle">●</span>
-                <span v-if="selectable" class="option__selectable" :style="customStyle">▢</span>
                 <span v-if="bullet" class="option__custom" :style="customStyle">{{bullet}}</span>
+                <span v-if="numbered" class="option__numbered" :style="customStyle">{{idx+1}}.&nbsp;</span>
                 <span v-if="prefixed" class="option__prefix" :style="customStyle">{{prefixes[idx]}}</span>
+                <span v-if="selectable" class="option__selectable" :style="customStyle">▢</span>
+                <span v-if="standard" class="option__standard" :style="customStyle">●</span>
                 <div class="option__text">
                     {{opt}}
                     <slot :name="`subslot-${idx}`" />

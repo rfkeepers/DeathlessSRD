@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { glossaryRoutes } from '@/glossary/glossary.js';
 import home from '@/views/site/Home.vue'
 import moveExamples from '@/views/site/MoveExamples.vue'
 import exampleExamples from '@/views/site/ExampleExamples.vue'
@@ -6,10 +7,16 @@ import feedback from '@/views/site/Feedback.vue'
 import glossary from '@/views/site/Glossary.vue'
 import glossaryHome from '@/glossary/GlossaryHome.vue'
 import glossaryNotFound from '@/glossary/GlossaryNotFound.vue'
-import glossaryRoutes from '@/glossary/routes.js'
+// import glossaryRoutes from '@/glossary/routes.js'
 import notFound from '@/views/site/NotFound.vue'
 
 const titleMaker = (...t) => t.join(' - ').concat(' - Deathless');
+
+const formattedRoutes = glossaryRoutes.map(gr => {
+  const route = Object.assign({}, gr);
+  gr.meta.title = titleMaker(gr.meta.title);
+  gr.path = gr.path.substring(1);
+});
 
 const routes = [
   {
@@ -73,6 +80,9 @@ const routes = [
         path: 'landing',
         name: 'Glossary Landing',
         component: glossaryHome,
+        meta: {
+          title: 'Glossary',
+        },
       },
       {
         path: ':pathMatch(.*)*',

@@ -1,8 +1,9 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import { entries, types } from '@/glossary/consts.js'
+import { types } from '@/glossary/consts.js';
+import { glossary } from '@/glossary/glossary.js';
 import { ref, watch, onMounted, onUnmounted } from 'vue';
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router';
 const route = useRoute();
 const router = useRouter();
 
@@ -47,27 +48,27 @@ const hideIfShown = () => {
 
 // ---------- glossary entries
 const searchTerm = ref('');
-const formattedEntries = [];
-entries.forEach(ge => {
+const formattedGlossary = [];
+glossary.forEach(ge => {
     const fe = Object.assign({}, ge);
-    fe.searchable = [fe.name, fe.type, ...fe.tags];
-    formattedEntries.push(fe);
+    fe.searchable = [fe.name, fe.type, ...fe.tags].map(s => s.toLowerCase());
+    formattedGlossary.push(fe);
 });
 const typeOrder = [types.move, types.background];
-formattedEntries.sort((a, b) => {
+formattedGlossary.sort((a, b) => {
     const iat = typeOrder.indexOf(a.type);
     const ibt = typeOrder.indexOf(b.type);
     const typeCompare = iat - ibt;
     return typeCompare ? typeCompare : a.name.localeCompare(b.name);
 });
-const filteredGlossary = ref(Object.assign({}, formattedEntries));
+const filteredGlossary = ref(Object.assign({}, formattedGlossary));
 const searchGlossary = (ev) => {
     let term = ev.target.value ? ev.target.value.toLowerCase().trim() : '';
     if (!term) {
-        filteredGlossary.value = Object.assign({}, formattedEntries);
+        filteredGlossary.value = Object.assign({}, formattedGlossary);
         return;
     }
-    filteredGlossary.value = formattedEntries.filter(
+    filteredGlossary.value = formattedGlossary.filter(
         fe => fe.searchable.some(
             s => s.includes(term)
         )
@@ -80,7 +81,7 @@ const selectEntry = (ent) => {
 
 // ---------- lifecycle and navigation hooks
 onMounted(() => {
-    if (formattedEntries.some(fe => route.path.includes(fe.path))) {
+    if (formattedGlossary.some(fe => route.path.includes(fe.path))) {
         isVisible.value = false;
     }
     page.value.addEventListener('touchstart', handleTouchStart, false);

@@ -1,6 +1,5 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import { ref } from 'vue';
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
