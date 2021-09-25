@@ -4,8 +4,8 @@ import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
 
-const name = 'Sedudce';
-const stat = 'GLAMOUR';
+const name = 'Tendons';
+const stat = 'SKILL';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -13,15 +13,16 @@ const stat = 'GLAMOUR';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>entice someone</b> to turn their attention away from all else and come find you, <Roll>{{stat}}</Roll>.  <em>S:</em> They'll come to you, on your terms (where, when, with whom).  <em>P:</em> They'll meet with you, but you only control one:
+        When you <b>cut at a muscle</b> or tendon: <Roll>{{stat}}</Roll>.  <em>S:</em> Pick two.  <em>P:</em> Pick one.
         <Options bullet="⇀" :options="[
-            'The time and place.',
-            'They come alone, with others, or send people on their behalf.',
-            'They let you bring people with you.',
+            'Your target loses all use of that muscle or limb.',
+            'You are not Harmed in the act.',
+            'Your target is not harmed any more than necessary.',
         ]" />
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
+        This move originated back when the game had a fair bit of crunch around its combat.  The Butcher background as a whole, actually, was one of the first written to that design.  I feel like you can still feel the combat focus here, and I think that's okay; it's not like players aren't allowed to invest into that.  At the same time, I sometimes feel weird re-reading the move, because I think so much about its combat history, and that makes it feel distinct from the other backgrounds.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

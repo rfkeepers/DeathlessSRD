@@ -3,10 +3,9 @@
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
-const name = 'Template';
-const stat = 'STAT';
+const name = 'Shield Charge';
+const stat = 'FORCE';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -14,29 +13,16 @@ const stat = 'STAT';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>do the move</b> and need to learn the consequences, <Roll>{{stat}}</Roll>.
-        <SHPM :options="[
-            's move option.',
-            'p move option.',
-        ]">
-            <template v-slot:subslot-1>
-                <Options bullet="⇀" :options="[
-                    'partial success option 1.',
-                    'partial success option 2.',
-                ]" />
-            </template>
-        </SHPM>
-        <br>
-        When you do it to another PC, <Roll>{{stat}}</Roll>.  
-        <SHPM use="spm" :options="[
-            's pvp option.',
-            'p pvp option.',
-            'm pvp option.',
+        When you raise your shield and <b>charge through obstacles</b> in your way, <Roll>{{stat}}</Roll>.  <em>S:</em> Whatever is in your way gets knocked back, knocked over, or busted to pieces and takes Harm as established.  <em>P:</em> You break through, but it’s messy.  Pick one:
+        <Options bullet="⇀" :options="[
+            'You get Harmed in the process.',
+            'You end up in a bad position.',
+            'Something of yours gets broken or damaged in the process.',
         ]" />
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
-
+        Does anything scream 'brutishness' like the classic fantasy shield charge?
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

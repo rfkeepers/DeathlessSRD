@@ -1,10 +1,9 @@
 <!-- ============================== Script ============================== -->
 <script setup>
 import Move from "@/components/Move.vue";
-import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
 
-const name = 'Sedudce';
+const name = 'Hearts and Minds';
 const stat = 'GLAMOUR';
 </script>
 
@@ -13,18 +12,14 @@ const stat = 'GLAMOUR';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>entice someone</b> to turn their attention away from all else and come find you, <Roll>{{stat}}</Roll>.  <em>S:</em> They'll come to you, on your terms (where, when, with whom).  <em>P:</em> They'll meet with you, but you only control one:
-        <Options bullet="⇀" :options="[
-            'The time and place.',
-            'They come alone, with others, or send people on their behalf.',
-            'They let you bring people with you.',
-        ]" />
+        When you <b>perform for an audience</b> with the intent to rouse or soothe, <Roll>{{stat}}</Roll>.  <em>H:</em> Tell the MC how they react. <em>P:</em> The MC will tell you whether the effect is short-lived, goes too far, or gets an additional and unwanted result.
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
+        Not much to say about this.  It's a pretty standard performer-themed move.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
-        <p>Skipping play examples for now.</p>
+        <p>skipping play examples for now.</p>
         </div>
     </template>
 </Move>

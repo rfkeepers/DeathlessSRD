@@ -1,11 +1,8 @@
 <!-- ============================== Script ============================== -->
 <script setup>
 import Move from "@/components/Move.vue";
-import Options from "@/components/Options.vue";
-import Roll from "@/components/Roll.vue";
 
-const name = 'Sedudce';
-const stat = 'GLAMOUR';
+const name = 'Show \'em';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -13,15 +10,11 @@ const stat = 'GLAMOUR';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>entice someone</b> to turn their attention away from all else and come find you, <Roll>{{stat}}</Roll>.  <em>S:</em> They'll come to you, on your terms (where, when, with whom).  <em>P:</em> They'll meet with you, but you only control one:
-        <Options bullet="⇀" :options="[
-            'The time and place.',
-            'They come alone, with others, or send people on their behalf.',
-            'They let you bring people with you.',
-        ]" />
+        When you reveal the full extent of your situation to someone, strengths and weaknesses and all, they reveal theirs to you in turn.
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
+        I like the theme of having two players show each other all the details about their position that they've kept hidden up to this point.  To have them reveal what they have or haven't bluffed.  I'm not sure that this move is doing it any real justice.  But if nothing else it's a placeholder that I can improve upon.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

@@ -54,13 +54,7 @@ glossary.forEach(ge => {
     fe.searchable = [fe.name, fe.type, ...fe.tags].map(s => s.toLowerCase());
     formattedGlossary.push(fe);
 });
-const typeOrder = [types.move, types.background];
-formattedGlossary.sort((a, b) => {
-    const iat = typeOrder.indexOf(a.type);
-    const ibt = typeOrder.indexOf(b.type);
-    const typeCompare = iat - ibt;
-    return typeCompare ? typeCompare : a.name.localeCompare(b.name);
-});
+formattedGlossary.sort((a, b) => a.name.localeCompare(b.name));
 const filteredGlossary = ref(Object.assign({}, formattedGlossary));
 const searchGlossary = (ev) => {
     let term = ev.target.value ? ev.target.value.toLowerCase().trim() : '';
@@ -201,7 +195,6 @@ onUnmounted(() => {
     }
 
     &__entries {
-        // padding: 1em 24px 0 24px;
         padding-top: 1em;
         height: 100%;
         overflow-y: auto;
@@ -213,12 +206,16 @@ onUnmounted(() => {
             padding: 8px 24px;
             min-height: 40px;
             cursor: pointer;
+            
+            &:last-child {
+                margin-bottom: 6em;
+            }
 
-            &--selected {
+            &:hover {
                 background: var(--glossary-color-entry-highlight, rgba(56, 48, 109, 0.596));
             }
-            
-            &:hover {
+
+            &--selected {
                 background: var(--glossary-color-entry-highlight, rgba(56, 48, 109, 0.596));
             }
 

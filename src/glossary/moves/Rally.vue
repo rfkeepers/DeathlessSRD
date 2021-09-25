@@ -1,12 +1,11 @@
 <!-- ============================== Script ============================== -->
 <script setup>
 import Move from "@/components/Move.vue";
-import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
-const name = 'Template';
-const stat = 'STAT';
+const name = 'Rally';
+const stat = 'FORCE';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -14,29 +13,16 @@ const stat = 'STAT';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>do the move</b> and need to learn the consequences, <Roll>{{stat}}</Roll>.
-        <SHPM :options="[
-            's move option.',
-            'p move option.',
-        ]">
-            <template v-slot:subslot-1>
-                <Options bullet="⇀" :options="[
-                    'partial success option 1.',
-                    'partial success option 2.',
-                ]" />
-            </template>
-        </SHPM>
-        <br>
-        When you do it to another PC, <Roll>{{stat}}</Roll>.  
-        <SHPM use="spm" :options="[
-            's pvp option.',
-            'p pvp option.',
-            'm pvp option.',
+        When you <b>organize allies</b> during a tense or chaotic situation, <Roll>{{stat}}</Roll>.
+        <SHPM use="hsp" :options="[
+            'They follow your orders.',
+            'Name one of the characters and, if remotely possible, no Harm will befall them.',
+            'Name one of the characters, that person is guaranteed to encounter danger or Harm.',
         ]" />
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
-
+        The move is fine, but I'm not sure it belongs to the correct background.  It's more of a Tactician feel than a Marshal.  I might shift that around, later.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
