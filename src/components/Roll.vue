@@ -1,11 +1,54 @@
 <!-- ============================== Script ============================== -->
 <script setup>
+const props = defineProps({
+    abyss: {
+        type: Boolean,
+        details: "Roll details for the abyss stat.",
+    },
+    dice: {
+        type: Boolean,
+        details: 'Roll details for a specific number of dice',
+    },
+    n: {
+        type: Number,
+        details: 'quanity of dice to roll',
+        default: 0,
+    },
+    glamour: {
+        type: Boolean,
+        details: "Roll details for the glamour stat.",
+    },
+    force: {
+        type: Boolean,
+        details: "Roll details for the force stat.",
+    },
+    insight: {
+        type: Boolean,
+        details: "Roll details for the insight stat.",
+    },
+    resolve: {
+        type: Boolean,
+        details: "Roll details for the resolve stat.",
+    },
+    skill: {
+        type: Boolean,
+        details: "Roll details for the skill stat.",
+    },
+});
+const quant = props.abyss ? '2d6 against your ABYSS'
+    : props.dice ? `${props.n} DICE`
+    : props.glamour ? 'GLAMOUR'
+    : props.force ? 'FORCE'
+    : props.insight ? 'INSIGHT'
+    : props.resolve ? 'RESOLVE'
+    : props.skill ? 'SKILL'
+    : '????';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
 <router-link to="/rolling">
-    <span class="roll">roll <slot /></span>
+    <span class="roll">roll {{quant}}</span>
 </router-link>
 </template>
 

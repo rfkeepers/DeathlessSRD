@@ -5,7 +5,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Rally';
-const stat = 'FORCE';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -13,7 +12,7 @@ const stat = 'FORCE';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>organize allies</b> during a tense or chaotic situation, <Roll>{{stat}}</Roll>.
+        When you <b>organize allies</b> during a tense or chaotic situation, <Roll force/>.
         <SHPM use="hsp" :options="[
             'They follow your orders.',
             'Name one of the characters and, if remotely possible, no Harm will befall them.',

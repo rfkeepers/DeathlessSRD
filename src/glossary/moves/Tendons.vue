@@ -5,7 +5,6 @@ import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
 
 const name = 'Tendons';
-const stat = 'SKILL';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -13,7 +12,7 @@ const stat = 'SKILL';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>cut at a muscle</b> or tendon: <Roll>{{stat}}</Roll>.  <em>S:</em> Pick two.  <em>P:</em> Pick one.
+        When you <b>cut at a muscle</b> or tendon: <Roll skill/>.  <em>S:</em> Pick two.  <em>P:</em> Pick one.
         <Options bullet="⇀" :options="[
             'Your target loses all use of that muscle or limb.',
             'You are not Harmed in the act.',

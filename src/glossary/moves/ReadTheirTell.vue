@@ -6,7 +6,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Read Their Tell';
-const stat = 'SKILL';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -14,7 +13,7 @@ const stat = 'SKILL';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>try to figure someone out</b> during a moment of intimacy or instensity, <Roll>{{stat}}</Roll>.  <em>S:</em> Pick two.  <em>P:</em> Pick one.
+        When you <b>try to figure someone out</b> during a moment of intimacy or instensity, <Roll skill/>.  <em>S:</em> Pick two.  <em>P:</em> Pick one.
         <Options bullet="⇀" :options="[
             'The MC will tell you some useful detail they\'re keeping secret.',
             'Ask the MC a question about that character\'s situation or plans, and they\'ll answer honestly.',

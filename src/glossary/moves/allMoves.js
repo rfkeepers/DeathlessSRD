@@ -2,22 +2,34 @@ import { tags, types } from '@/glossary/consts.js';
 
 import AllArePrey from '@/glossary/moves/AllArePrey.vue';
 import AndForMyNextTrick from '@/glossary/moves/AndForMyNextTrick.vue';
+import Bail from '@/glossary/moves/Bail.vue';
+import BlackMarket from '@/glossary/moves/BlackMarket.vue';
+import Caches from '@/glossary/moves/Caches.vue';
 import CaseAJoint from '@/glossary/moves/CaseAJoint.vue';
+import Combobulate from '@/glossary/moves/Combobulate.vue';
 import Command from '@/glossary/moves/Command.vue';
 import Compel from '@/glossary/moves/Compel.vue';
 import Confession from '@/glossary/moves/Confession.vue';
+import Connections from '@/glossary/moves/Connections.vue';
+import ContestOfStrength from '@/glossary/moves/ContestOfStrength.vue';
 import Cook from '@/glossary/moves/Cook.vue';
 import CovertDemolitionist from '@/glossary/moves/CovertDemolitionist.vue';
 import DayJob from '@/glossary/moves/DayJob.vue';
 import Dismantle from '@/glossary/moves/Dismantle.vue';
 import DrownInTheAbyss from '@/glossary/moves/DrownInTheAbyss.vue';
+import EasyPrey from '@/glossary/moves/EasyPrey.vue';
+import Estate from '@/glossary/moves/Estate.vue';
+import ExpertGuide from '@/glossary/moves/ExpertGuide.vue';
 import FindAnOpening from '@/glossary/moves/FindAnOpening.vue';
 import FindRespite from '@/glossary/moves/FindRespite.vue';
+import ForgeSlag from '@/glossary/moves/ForgeSlag.vue';
 import GazeIntoTheAbyss from '@/glossary/moves/GazeIntoTheAbyss.vue';
 import HeartsAndMinds from '@/glossary/moves/HeartsAndMinds.vue';
 import HelpAndHindrance from '@/glossary/moves/HelpAndHindrance.vue';
+import Hobnob from '@/glossary/moves/Hobnob.vue';
 import Intervene from '@/glossary/moves/Intervene.vue';
 import JuryRig from '@/glossary/moves/JuryRig.vue';
+import KnowYourEnemy from '@/glossary/moves/KnowYourEnemy.vue';
 import LongCon from '@/glossary/moves/LongCon.vue';
 import Overwhelm from '@/glossary/moves/Overwhelm.vue';
 import Persuade from '@/glossary/moves/Persuade.vue';
@@ -26,6 +38,7 @@ import Rally from '@/glossary/moves/Rally.vue';
 import ReadTheirTell from '@/glossary/moves/ReadTheirTell.vue';
 import RespectMyAuthority from '@/glossary/moves/RespectMyAuthority.vue';
 import ReturnToLife from '@/glossary/moves/ReturnToLife.vue';
+import SacredRites from '@/glossary/moves/SacredRites.vue';
 import SacrificesMustBeMade from '@/glossary/moves/SacrificesMustBeMade.vue';
 import Seduce from '@/glossary/moves/Seduce.vue';
 import SeekingSolace from '@/glossary/moves/SeekingSolace.vue';
@@ -33,11 +46,16 @@ import ShieldCharge from '@/glossary/moves/ShieldCharge.vue';
 import ShowEm from '@/glossary/moves/ShowEm.vue';
 import Snipe from '@/glossary/moves/Snipe.vue';
 import SomethingWrongOfficer from '@/glossary/moves/SomethingWrongOfficer.vue';
+import StrikingTheAnvil from '@/glossary/moves/StrikingTheAnvil.vue';
 import Synthesis from '@/glossary/moves/Synthesis.vue';
-import Template from '@/glossary/moves/Template.vue';
+import TakesOneToKnowOne from '@/glossary/moves/TakesOneToKnowOne.vue';
+import Taunt from '@/glossary/moves/Taunt.vue';
 import Tendons from '@/glossary/moves/Tendons.vue';
 import Testudo from '@/glossary/moves/Testudo.vue';
+import ThePlan from '@/glossary/moves/ThePlan.vue';
+import ThievesCant from '@/glossary/moves/ThievesCant.vue';
 import Track from '@/glossary/moves/Track.vue';
+import Trap from '@/glossary/moves/Trap.vue';
 import UnderstandSomeone from '@/glossary/moves/UnderstandSomeone.vue';
 import Yarn from '@/glossary/moves/Yarn.vue';
 
@@ -57,11 +75,39 @@ const moves = [
       component: AndForMyNextTrick,
    },
    {
+      name: 'Bail!',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Smuggler background moves.',
+      component: Bail,
+   },
+   {
+      name: 'Black Market',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Smuggler background moves.',
+      component: BlackMarket,
+   },
+   {
+      name: 'Caches',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Trapper background moves.',
+      component: Caches,
+   },
+   {
       name: 'Case A Joint',
       type: types.move,
       tags: [],
       routeContent: 'One of the Grifter background moves.',
       component: CaseAJoint,
+   },
+   {
+      name: 'Combobulate',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Scholar background moves.',
+      component: Combobulate,
    },
    {
       name: 'Command',
@@ -83,6 +129,20 @@ const moves = [
       tags: [],
       routeContent: 'One of the Minister background moves.',
       component: Confession,
+   },
+   {
+      name: 'Connections',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Thief background moves.',
+      component: Connections,
+   },
+   {
+      name: 'Contest of Strength',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Wrestler background moves.',
+      component: ContestOfStrength,
    },
    {
       name: 'Cook',
@@ -120,6 +180,27 @@ const moves = [
       component: DrownInTheAbyss,
    },
    {
+      name: 'Easy Prey',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Thief background moves.',
+      component: EasyPrey,
+   },
+   {
+      name: 'Estate',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Wealthy Elite background moves.',
+      component: Estate,
+   },
+   {
+      name: 'Expert Guide',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Trapper background moves.',
+      component: ExpertGuide,
+   },
+   {
       name: 'Find An Opening',
       type: types.move,
       tags: [tags.basicMove, tags.insight],
@@ -132,6 +213,13 @@ const moves = [
       tags: [tags.basicMove],
       routeContent: 'The basic move for sharing a moment with someone.',
       component: FindRespite
+   },
+   {
+      name: 'Forge Slag',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Smithy background moves.',
+      component: ForgeSlag,
    },
    {
       name: 'Gaze Into The Abyss',
@@ -155,6 +243,13 @@ const moves = [
       component: HelpAndHindrance,
    },
    {
+      name: 'Hobnob',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Wealthy Elite background moves.',
+      component: Hobnob,
+   },
+   {
       name: 'Intervene',
       type: types.move,
       tags: [tags.basicMove, tags.resolve],
@@ -167,6 +262,13 @@ const moves = [
       tags: [],
       routeContent: 'One of the Machinist background moves.',
       component: JuryRig,
+   },
+   {
+      name: 'Know Your Enemy',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Tactician background moves.',
+      component: KnowYourEnemy,
    },
    {
       name: 'Long Con',
@@ -225,6 +327,13 @@ const moves = [
       component: ReturnToLife,
    },
    {
+      name: 'Sacred Rites',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Ritualist background moves.',
+      component: SacredRites,
+   },
+   {
       name: 'Sacrifices Must Be Made',
       type: types.move,
       tags: [tags.basicMove],
@@ -274,6 +383,13 @@ const moves = [
       component: SomethingWrongOfficer,
    },
    {
+      name: 'Striking The Anvil',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Smithy background moves.',
+      component: StrikingTheAnvil,
+   },
+   {
       name: 'Synthesis',
       type: types.move,
       tags: [],
@@ -281,11 +397,18 @@ const moves = [
       component: Synthesis,
    },
    {
-      name: 'Template',
+      name: 'Takes One To Know One',
       type: types.move,
       tags: [],
-      routeContent: 'a template example of a move',
-      component: Template,
+      routeContent: 'One of the Smuggler background moves.',
+      component: TakesOneToKnowOne,
+   },
+   {
+      name: 'Taunt',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Wrestler background moves.',
+      component: Taunt,
    },
    {
       name: 'Tendons',
@@ -302,11 +425,32 @@ const moves = [
       component: Testudo,
    },
    {
+      name: 'The Plan',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Tactician background moves.',
+      component: ThePlan,
+   },
+   {
+      name: 'Thieves Cant',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Thief background moves.',
+      component: ThievesCant,
+   },
+   {
       name: 'Track',
       type: types.move,
       tags: [],
       routeContent: 'One of the Hunter background moves.',
       component: Track,
+   },
+   {
+      name: 'Trap',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Trapper background moves.',
+      component: Trap,
    },
    {
       name: 'Understand Someone',

@@ -5,7 +5,7 @@ import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
-const name = 'Long Con';
+const name = 'Trap';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -13,23 +13,23 @@ const name = 'Long Con';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you put on a costume and <b>bluff your way through</b> a role or position, <Roll insight/>.
+        When you <b>set a trap</b> for someone or something, <Roll insight/>.
         <SHPM :options="[
-            'You do it, and everyone believes you\'re authentic.',
-            'You get in, but pick one:',
+            'Whatever you catch in the trap is unable to break free, cannot put up a fight when you get close, and does or does not receive an Injury (your choice).',
+            'Pick one.  Whatever you caught...',
         ]">
             <template v-slot:subslot-1>
                 <Options bullet="⇀" :options="[
-                    'Something will give you away later.',
-                    'You forgot to bring something important.',
-                    'The MC gets to raise the stakes.',
+                    'is unable to break free of the trap.',
+                    'cannot put up a fight when you get close.',
+                    'did not get Harmed.',
                 ]" />
             </template>
         </SHPM>
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
-        I have trouble writing moves whose effects stretch out across longer periods of time.  Or perhaps that's an inherently difficult format for pbta moves.  Whatever the case, while I like this move in general, I'm not 100% certain it's working exactly the way I want to.  Or, alternatively, that I want it to be a long-form move at all.  Fun to write, but perhaps not as fun to play out. 
+        Similar to Expert Guide's question about what, exactly, can qualify as a trap for one to walk into, this move also has some wiggle room about what constitutes a trap that can be laid.  I imagine that most players will view it like I had when writing the move: a physical trap with physical containment.  But I suppose I wouldn't be bothered if a table managed to use it in a less specific format.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

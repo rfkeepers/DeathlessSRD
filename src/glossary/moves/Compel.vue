@@ -5,7 +5,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Compel';
-const stat = '3 DICE';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -13,7 +12,7 @@ const stat = '3 DICE';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        Once per scene you may <b>compel another PC into action</b> by invoking one of their tags, moves, entanglements, or flags.  If that player agrees to your proposal, and the MC approves the result, you both gain 1 Resilience.  If they wish to resist, they can either pay 1 Resilience to ignore you, or make you roll for it.  If you roll, then <Roll>{{stat}}</Roll>.
+        Once per scene you may <b>compel another PC into action</b> by invoking one of their tags, moves, entanglements, or flags.  If that player agrees to your proposal, and the MC approves the result, you both gain 1 Resilience.  If they wish to resist, they can either pay 1 Resilience to ignore you, or make you roll for it.  If you roll, then <Roll n=3 dice/>.
         <SHPM use="spm" :options="[
             'They are compelled to the behavior.',
             'You are both compelled to bad behavior.  The MC will tell you your compulsion.',

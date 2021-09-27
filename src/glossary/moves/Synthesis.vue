@@ -6,7 +6,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Synthesis';
-const stat = '????';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -14,7 +13,7 @@ const stat = '????';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you combine rare ingredients to <b>concoct a potent something or other</b>, describe the effects of its consumption, then <Roll>{{stat}}</Roll>?  Or maybe just ask the MC what the deal is, Ritual style?  Roll but also accept a condition imposed by the MC, in addition to the outcome?
+        When you combine rare ingredients to <b>concoct a potent something or other</b>, describe the effects of its consumption, then <Roll skill/>?  Or maybe just ask the MC what the deal is, Ritual style?  Roll but also accept a condition imposed by the MC, in addition to the outcome?
         <Options bullet="⇀" :options="[
             'it has a drawback/withdrawl',
             'the immediate effects, or lasting effects, differ from the primary effect.',

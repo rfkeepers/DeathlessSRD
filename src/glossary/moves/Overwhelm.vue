@@ -7,7 +7,6 @@ import Options from "@/components/Options.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Overwhelm';
-const stat = 'FORCE';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -15,7 +14,7 @@ const stat = 'FORCE';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>seize or break something</b> which a character won’t give to you willingly (an item, a belief, their position, their authority, etc), <Roll>{{stat}}</Roll>.
+        When you <b>seize or break something</b> which a character won’t give to you willingly (an item, a belief, their position, their authority, etc), <Roll force/>.
         <SHPM :options="[
             'You take it from them or destroy it entirely.',
             'You or the MC choose one:',
@@ -28,7 +27,7 @@ const stat = 'FORCE';
             </template>
         </SHPM>
         <br>
-        When you Overwhelm another PC, <Roll>{{stat}}</Roll>.  
+        When you Overwhelm another PC, <Roll force/>.  
         <SHPM use="spm" :options="[
             'They must spend 1 Resilience or let you get what you wanted.',
             'They choose one of the partial success options above.',

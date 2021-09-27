@@ -7,7 +7,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Find An Opening';
-const stat = 'INSIGHT';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -15,7 +14,7 @@ const stat = 'INSIGHT';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>search around for an opportunity</b> in a moment of need, <Roll>{{stat}}</Roll> and choose one from below.  If remotely possible, the MC will show you what you need, and also...  <em>S:</em> Put few barriers in your way, if any.  <em>P:</em> Put something defiant or costly in your way.  <em>M:</em> Make it as difficult as they want for you to get to it.
+        When you <b>search around for an opportunity</b> in a moment of need, <Roll insight/> and choose one from below.  If remotely possible, the MC will show you what you need, and also...  <em>S:</em> Put few barriers in your way, if any.  <em>P:</em> Put something defiant or costly in your way.  <em>M:</em> Make it as difficult as they want for you to get to it.
         <Options bullet="⇀" :options="[
             'I need a way in / out / around / through.',
             'I need to know what poses the biggest threat.',
@@ -23,7 +22,7 @@ const stat = 'INSIGHT';
             'I need to know who is in control.',
         ]" />
         <br>
-        When you try to Find An Opening against another PC, <Roll>{{stat}}</Roll> and ask the following question.  The other PC must answer truthfully.
+        When you try to Find An Opening against another PC, <Roll insight/> and ask the following question.  The other PC must answer truthfully.
         <SHPM use="spm" :options="[
             'How could I get you to ___________________?',
             'Would ___________________ get past your defenses?',

@@ -6,7 +6,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Jury-Rig';
-const stat = 'SKILL';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -14,7 +13,7 @@ const stat = 'SKILL';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>fix up a damaged or broken thing</b>, <Roll>{{stat}}</Roll>.  <em>S:</em> choose one. <em>P:</em> choose two.
+        When you <b>fix up a damaged or broken thing</b>, <Roll skill/>.  <em>S:</em> choose one. <em>P:</em> choose two.
         <Options bullet="⇀" :options="[
             'It can’t be trusted to keep working much longer.',
             'Fixing it costs you some resources.',

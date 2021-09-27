@@ -13,7 +13,7 @@ const stat = 'GLAMOUR';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>hide an object with a quick gesture or flair</b>, it disappears from your hand and is somewhere else on you or on another character within arms reach, say where and then <Roll>{{stat}}</Roll>.
+        When you <b>hide an object with a quick gesture or flair</b>, it disappears from your hand and is somewhere else on you or on another character within arms reach, say where and then <Roll glamour/>.
         <SHPM use="hsp" :options="[
             'The object is hidden and none are the wiser to where you put it.',
             'Those you hid it from think it’s somewhere that it isn’t, say where.',

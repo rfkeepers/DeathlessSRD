@@ -6,7 +6,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Confession';
-const stat = 'RESOLVE';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -22,7 +21,7 @@ const stat = 'RESOLVE';
             'Is someone else about to be hurt, someone who can be saved?',
         ]" />
         <br>
-        ...then <Roll>{{stat}}</Roll>.  Based on their answers it is your choice to chastise or absolve them for their behavior.  Finally you must suggest an act of redemption.
+        ...then <Roll resolve/>.  Based on their answers it is your choice to chastise or absolve them for their behavior.  Finally you must suggest an act of redemption.
         <SHPM use="spm" :options="[
             'Your words ring clear and true and they follow your advice.',
             'They leave feeling unfulfilled, and will only make a misunderstood attempt to follow your suggestion.',

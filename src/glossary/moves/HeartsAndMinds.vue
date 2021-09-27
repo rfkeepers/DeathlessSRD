@@ -4,7 +4,6 @@ import Move from "@/components/Move.vue";
 import Roll from "@/components/Roll.vue";
 
 const name = 'Hearts and Minds';
-const stat = 'GLAMOUR';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -12,7 +11,7 @@ const stat = 'GLAMOUR';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>perform for an audience</b> with the intent to rouse or soothe, <Roll>{{stat}}</Roll>.  <em>H:</em> Tell the MC how they react. <em>P:</em> The MC will tell you whether the effect is short-lived, goes too far, or gets an additional and unwanted result.
+        When you <b>perform for an audience</b> with the intent to rouse or soothe, <Roll glamour/>.  <em>H:</em> Tell the MC how they react. <em>P:</em> The MC will tell you whether the effect is short-lived, goes too far, or gets an additional and unwanted result.
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>

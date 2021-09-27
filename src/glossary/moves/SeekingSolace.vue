@@ -6,7 +6,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Seeking Solace';
-const stat = 'GLAMOUR';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -14,7 +13,7 @@ const stat = 'GLAMOUR';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you meet another minister and <b>ask them for hospitality</b>, <Roll>{{stat}}</Roll>.  <em>S:</em> pick three.  <em>P:</em> pick two.
+        When you meet another minister and <b>ask them for hospitality</b>, <Roll glamour/>.  <em>S:</em> pick three.  <em>P:</em> pick two.
         <Options bullet="⇀" :options="[
             'They\'ll provide you shelter for a couple days.',
             'They\'ll supply you with resources.',

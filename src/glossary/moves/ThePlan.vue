@@ -4,24 +4,25 @@ import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
 
-const name = 'Shield Charge';
+const name = 'The Plan';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="template" leftLined shaded>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you raise your shield and <b>charge through obstacles</b> in your way, <Roll force/>.  <em>S:</em> Whatever is in your way gets knocked back, knocked over, or busted to pieces and takes Harm as established.  <em>P:</em> You break through, but it’s messy.  Pick one:
+        When you take time with others to <b>prepare and strategize</b>, <Roll insight/>.  <em>S:</em> Hold 3.  <em>P:</em> Hold 2.  <em>M:</em> Hold 1, but when you spend that hold the MC gets to cause some additional disaster.  While your preparations are still relevant you may spend your hold, 1:1 to:
         <Options bullet="⇀" :options="[
-            'You get Harmed in the process.',
-            'You end up in a bad position.',
-            'Something of yours gets broken or damaged in the process.',
+            'Give to another player to (immediately) spend in place of Resilience.',
+            'less mechanic more fiction: get someone out of a spot?',
+            'give someone crucial information/equipment?',
+            'ask the gm for crucial information?',
         ]" />
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
-        Does anything scream 'brutishness' like the classic fantasy shield charge?
+        This move is still a work in progress.  Good ideas for options haven't been entirely forthcoming for my brain.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

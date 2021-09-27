@@ -5,7 +5,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Respect My Authority';
-const stat = 'RESOLVE';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -13,7 +12,7 @@ const stat = 'RESOLVE';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>put on the airs of a figure of authority</b>, there to enforce law and order, <Roll>{{stat}}</Roll>.  No matter the result, everyone around you who is up to no good will have a tell that gives away their intentions.
+        When you <b>put on the airs of a figure of authority</b>, there to enforce law and order, <Roll resolve/>.  No matter the result, everyone around you who is up to no good will have a tell that gives away their intentions.
         <SHPM use="hs" :options="[
             'If confronted directly, they will act compliant, evasive, or aggressive toward you.',
             'Take +1 Resilience the first time you confront one of them.',

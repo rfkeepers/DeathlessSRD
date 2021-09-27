@@ -5,7 +5,6 @@ import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
 
 const name = 'Dismantle';
-const stat = 'SKILL';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -13,7 +12,7 @@ const stat = 'SKILL';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>pick a lock or disarm a trap</b>, the MC picks one from the Requirements list.  If you meet or agree to those terms, <Roll>{{stat}}</Roll>.  <em>S:</em> Choose one outcome.  <em>P:</em> Choose two outcomes.
+        When you <b>pick a lock or disarm a trap</b>, the MC picks one from the Requirements list.  If you meet or agree to those terms, <Roll skill/>.  <em>S:</em> Choose one outcome.  <em>P:</em> Choose two outcomes.
         <br><br>
         Requirements:
         <Options bullet="⇀" :options="[

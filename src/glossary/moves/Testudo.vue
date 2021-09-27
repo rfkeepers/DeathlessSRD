@@ -6,7 +6,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Testudo';
-const stat = 'RESOLVE';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -14,7 +13,7 @@ const stat = 'RESOLVE';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you stand beside someone and <b>protect them from danger</b>, <Roll>{{stat}}</Roll>.  So long as you both maintain position, whenever something attempts to Harm your ward you can intervene and take the Harm in their place.
+        When you stand beside someone and <b>protect them from danger</b>, <Roll resolve/>.  So long as you both maintain position, whenever something attempts to Harm your ward you can intervene and take the Harm in their place.
         <SHPM use="sm" :options="[
             'Together you stand strong, the next incoming Harm is ignored.',
             'You fumble your defense.  When you break position, any foe capable of dealing Harm immediately does so.',

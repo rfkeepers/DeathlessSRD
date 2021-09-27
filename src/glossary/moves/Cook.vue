@@ -5,7 +5,6 @@ import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
 
 const name = 'Cook';
-const stat = 'SKILL';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -13,7 +12,7 @@ const stat = 'SKILL';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>prepare and serve a meal</b> for a group, wait until everyone is finished eating and then <Roll>{{stat}}</Roll>.
+        When you <b>prepare and serve a meal</b> for a group, wait until everyone is finished eating and then <Roll skill/>.
         <br><br>
         To gain the benefits from the meal a character must:
         <Options numbered :options="[

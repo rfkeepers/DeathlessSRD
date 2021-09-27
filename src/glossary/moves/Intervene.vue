@@ -7,7 +7,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Intervene';
-const stat = 'RESOLVE';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -15,7 +14,7 @@ const stat = 'RESOLVE';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>get in the way of incoming Harm or danger</b> to protect someone or something, <Roll>{{stat}}</Roll>. <em>S:</em> Choose 2.  <em>P:</em> Choose 1.
+        When you <b>get in the way of incoming Harm or danger</b> to protect someone or something, <Roll resolve/>. <em>S:</em> Choose 2.  <em>P:</em> Choose 1.
         <Options bullet="⇀" :options="[
             'You don’t take any Harm.',
             'You protect your ward from Harm or danger.',
@@ -23,7 +22,7 @@ const stat = 'RESOLVE';
             'You put the aggressors or danger at a disadvantage.',
         ]" />
         <br>
-        When you Intervene on the actions of another PC, and that PC is resolving a move, <Roll>{{stat}}</Roll> and use the following options.  Otherwise, roll the move as normal.  
+        When you Intervene on the actions of another PC, and that PC is resolving a move, <Roll resolve/> and use the following options.  Otherwise, roll the move as normal.  
         <SHPM use="spm" :options="[
             'You take the full results of the move in place of your ward.',
             'You and your ward are both affected by the move, but the effect is split between you, the other Player will tell you how.',

@@ -6,7 +6,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'All Are Prey';
-const stat = 'INSIGHT';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -14,7 +13,7 @@ const stat = 'INSIGHT';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>stalk a character</b> through known or unknown territory, <Roll>{{stat}}</Roll>.  <em>S:</em> Hold 3.  <em>P:</em> Hold 2.  If you are in well-known territory, add +1 Hold, even on a <em>Miss</em>.  If you confront your prey, or if they confront you, lose all remaining Hold.
+        When you <b>stalk a character</b> through known or unknown territory, <Roll insight/>.  <em>S:</em> Hold 3.  <em>P:</em> Hold 2.  If you are in well-known territory, add +1 Hold, even on a <em>Miss</em>.  If you confront your prey, or if they confront you, lose all remaining Hold.
         <Options bullet="⇀" :options="[
             'Deal Harm.',
             'Direct them toward a certain path.',

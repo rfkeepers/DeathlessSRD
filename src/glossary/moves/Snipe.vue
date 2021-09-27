@@ -7,7 +7,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Snipe';
-const stat = 'SKILL';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -15,7 +14,7 @@ const stat = 'SKILL';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When your action requires <b>precision, subtlety, or precise execution</b> lest it all go wrong, <Roll>{{stat}}</Roll>.
+        When your action requires <b>precision, subtlety, or precise execution</b> lest it all go wrong, <Roll skill/>.
         <SHPM :options="[
             'You accomplish what you set out to do.',
             'The MC picks one of the following:',
@@ -30,7 +29,7 @@ const stat = 'SKILL';
             </template>
         </SHPM>
         <br>
-        When you do it to another PC, <Roll>{{stat}}</Roll>.  
+        When you take similar action against another PC, <Roll skill/>.  
         <SHPM use="spm" :options="[
             'You accomplish what you intended.',
             'The other player picks one of the following.',

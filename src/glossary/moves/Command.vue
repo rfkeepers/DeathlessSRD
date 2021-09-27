@@ -5,7 +5,6 @@ import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
 const name = 'Command';
-const stat = 'FORCE';
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -13,7 +12,7 @@ const stat = 'FORCE';
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you have the upper hand on a foe and you <b>demand that they turn themselves in</b> or hand over what they have, <Roll>{{stat}}</Roll>.
+        When you have the upper hand on a foe and you <b>demand that they turn themselves in</b> or hand over what they have, <Roll force/>.
         <SHPM :options="[
             'They do it, though they may ask for evidence that you\'ll guarantee their safety before they do.',
             'They make a counter-offer: you give them what they want, and they’ll give you what you want.',

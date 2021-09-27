@@ -4,7 +4,6 @@ import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 
 const name = 'Yarn';
-const bullets = ['≻', '⊁'];
 </script>
 
 <!-- ============================== Template ============================== -->
