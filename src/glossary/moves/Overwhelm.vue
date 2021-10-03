@@ -1,6 +1,5 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import { ref } from 'vue';
 import Move from "@/components/Move.vue";
 import Roll from "@/components/Roll.vue";
 import Options from "@/components/Options.vue";
@@ -11,7 +10,7 @@ const name = 'Overwhelm';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="overwhelm" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>seize or break something</b> which a character won’t give to you willingly (an item, a belief, their position, their authority, etc), <Roll force/>.

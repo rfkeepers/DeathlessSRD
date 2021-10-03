@@ -9,7 +9,7 @@ const name = 'Dismantle';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="dismantle" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>pick a lock or disarm a trap</b>, the MC picks one from the Requirements list.  If you meet or agree to those terms, <Roll skill/>.  <em>S:</em> Choose one outcome.  <em>P:</em> Choose two outcomes.

@@ -5,7 +5,6 @@ import Move from "@/components/Move.vue";
 const name = 'Lay On Hands';
 </script>
 
-
 <!-- ============================== Template ============================== -->
 <template>
 <Move id="lay_on_hands" leftLined>

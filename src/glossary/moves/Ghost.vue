@@ -7,7 +7,7 @@ const name = 'Ghost';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="ghost" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>( Occupied )</template>
     <template v-slot:body>

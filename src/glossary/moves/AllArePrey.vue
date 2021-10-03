@@ -3,14 +3,13 @@
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
 const name = 'All Are Prey';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="all_are_prey" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>stalk a character</b> through known or unknown territory, <Roll insight/>.  <em>S:</em> Hold 3.  <em>P:</em> Hold 2.  If you are in well-known territory, add +1 Hold, even on a <em>Miss</em>.  If you confront your prey, or if they confront you, lose all remaining Hold.

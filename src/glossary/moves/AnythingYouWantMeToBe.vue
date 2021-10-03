@@ -7,7 +7,7 @@ const name = 'Anything You Want Me To Be';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="anything_you_want_me_to_be" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>( Occupied )</template>
     <template v-slot:body>

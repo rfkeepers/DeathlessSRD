@@ -9,7 +9,7 @@ const name = 'Easy Prey';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="easy_prey" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>eye someone down</b> in hopes of quick and ill-gotten gain, <Roll skill/> then tell the MC what you're after (info, coin, an item, etc).  The MC will tell you what they have, and…

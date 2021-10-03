@@ -3,14 +3,13 @@
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
 const name = 'Taunt';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="taunt" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>issue a challenge</b> against someone's honor, capabilities, or emotional state, <Roll force/>. Your target does one of the following:

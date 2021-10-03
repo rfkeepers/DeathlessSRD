@@ -9,7 +9,7 @@ const name = 'Command';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="command" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you have the upper hand on a foe and you <b>demand that they turn themselves in</b> or hand over what they have, <Roll force/>.

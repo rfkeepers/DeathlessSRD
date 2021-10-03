@@ -7,7 +7,7 @@ const name = 'Cloak of Shadows';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="cloak_of_shadows" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>Cost: 1 Abyss / 2 Resilience</template>
     <template v-slot:body>

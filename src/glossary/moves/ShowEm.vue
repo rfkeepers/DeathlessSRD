@@ -7,7 +7,7 @@ const name = 'Show \'em';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="show_em" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you reveal the full extent of your situation to someone, strengths and weaknesses and all, they reveal theirs to you in turn.

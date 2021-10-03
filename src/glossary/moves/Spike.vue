@@ -9,7 +9,7 @@ const name = 'Spike';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="spike" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>Cost: 2 Abyss / 2 Resilience</template>
     <template v-slot:body>

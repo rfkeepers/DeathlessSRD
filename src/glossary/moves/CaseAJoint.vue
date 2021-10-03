@@ -8,7 +8,7 @@ const name = 'Case A Joint';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="case_a_joint" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>take time to study a room or space</b>, ask a question from the list below.  After that you may continue to ask more questions from the list, but the MC gets to make a move for each one.

@@ -7,7 +7,7 @@ const name = 'Presence';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="presence" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>( Occupied )</template>
     <template v-slot:body>

@@ -7,7 +7,7 @@ const name = 'Unified Consciousness';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="unified_consciousness" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>( Occupied )</template>
     <template v-slot:body>

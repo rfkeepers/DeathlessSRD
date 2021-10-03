@@ -9,7 +9,7 @@ const name = 'Black Market';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="black_market" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>drop a hint</b> about your ability to procure or deliver illicit goods or services, <Roll glamour/>.

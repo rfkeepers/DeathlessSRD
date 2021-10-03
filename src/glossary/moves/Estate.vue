@@ -8,7 +8,7 @@ const name = 'Estate';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="estate" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         Before your death, you were wealthy and well known in the upper eschelons of society; a landowner with one, perhaps even several, estates.  One of these estates could be repossessed, if you're willing to do the work to win it back.  Tell the MC about the estate- its location, design, and qualities- and then from the options below select the current status of the land.

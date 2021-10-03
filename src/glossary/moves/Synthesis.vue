@@ -3,14 +3,13 @@
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
 const name = 'Synthesis';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="synthesis" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you combine rare ingredients to <b>concoct a potent something or other</b>, describe the effects of its consumption, then <Roll skill/>?  Or maybe just ask the MC what the deal is, Ritual style?  Roll but also accept a condition imposed by the MC, in addition to the outcome?

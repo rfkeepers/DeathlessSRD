@@ -7,7 +7,7 @@ const name = 'Fireball';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="fireball" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>Cost: 1 Abyss / 3 Resilience; ( Interruptable )</template>
     <template v-slot:body>

@@ -9,7 +9,7 @@ const name = 'Shield Charge';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="shield_charge" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you raise your shield and <b>charge through obstacles</b> in your way, <Roll force/>.  <em>S:</em> Whatever is in your way gets knocked back, knocked over, or busted to pieces and takes Harm as established.  <em>P:</em> You break through, but it’s messy.  Pick one:

@@ -9,7 +9,7 @@ const name = 'Contest of Strength';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="contest_of_strength" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>enter into competition with someone</b> in a way that pits your physical strength against theirs, either directly or indirectly, name your goal (such as: make them look bad, prevent them from moving, get them away from you, Harm them, etc) and <Roll force/>.

@@ -10,7 +10,7 @@ const name = 'Seeking Solace';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="seeking_solace" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you meet another minister and <b>ask them for hospitality</b>, <Roll glamour/>.  <em>S:</em> pick three.  <em>P:</em> pick two.

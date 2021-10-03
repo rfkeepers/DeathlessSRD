@@ -9,7 +9,7 @@ const name = 'Rally';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="rally" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>organize allies</b> during a tense or chaotic situation, <Roll force/>.

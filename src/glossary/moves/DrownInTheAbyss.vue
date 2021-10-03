@@ -8,7 +8,7 @@ const name = 'Drown In The Abyss';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="drown_in_the_abyss" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>add the final mark of Abyss</b> on your character sheet, the nothing beneath all things reaches out to consume you, choose one:

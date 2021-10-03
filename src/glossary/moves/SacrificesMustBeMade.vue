@@ -7,7 +7,7 @@ const name = 'Sacrifices Must Be Made';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="sacrifices_must_be_made" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>make a last ditch effort to save yourself</b> from imminent Harm, say what you intend to do and ask the MC what it takes to keep you safe.  They will offer a trade which requires you to pay a cost, introduce danger, or transfer the Harm to someone or something else.  If you agree to their bargain, you do it and receive no Harm.  If you think the MC's offer is too severe then apparently the Harm is preferable.

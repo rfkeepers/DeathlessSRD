@@ -9,7 +9,7 @@ const name = 'Cook';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="cook" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>prepare and serve a meal</b> for a group, wait until everyone is finished eating and then <Roll skill/>.

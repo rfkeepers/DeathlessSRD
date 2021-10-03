@@ -7,7 +7,7 @@ const name = 'Forge Slag';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="forge_slag" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         Your time working around furnaces and molten metals acclimated you to physical pain.  When you would <b>take a Pain tag</b>, you may spend a Resilience to ignore it instead.

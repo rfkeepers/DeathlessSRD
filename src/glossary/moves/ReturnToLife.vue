@@ -8,7 +8,7 @@ const name = 'Return To Life';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="return_to_life" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>die</b>, awaken deep within the Abyss, then surge back to your body, you always:

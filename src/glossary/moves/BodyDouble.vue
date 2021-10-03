@@ -7,7 +7,7 @@ const name = 'Body Double';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="body_double" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>Cost: 3 Abyss / 3 Resilience</template>
     <template v-slot:body>

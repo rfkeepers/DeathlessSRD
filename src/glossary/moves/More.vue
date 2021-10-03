@@ -2,12 +2,12 @@
 <script setup>
 import Move from "@/components/Move.vue";
 
-const name = 'Life Is Pain';
+const name = 'More';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="life_is_pain" leftLined>
+<Move id="more" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>( Occupied )</template>
     <template v-slot:body>

@@ -3,14 +3,13 @@
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
 const name = 'Track';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="track" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>follow the tracks</b> of beasts or man, <Roll insight/>.  <em>S:</em> Ask 2 questions from the list.  <em>P:</em> Ask 1.

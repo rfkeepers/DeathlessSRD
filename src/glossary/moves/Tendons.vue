@@ -9,7 +9,7 @@ const name = 'Tendons';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="tendons" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>cut at a muscle</b> or tendon: <Roll skill/>.  <em>S:</em> Pick two.  <em>P:</em> Pick one.

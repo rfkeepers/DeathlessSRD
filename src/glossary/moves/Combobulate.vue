@@ -3,14 +3,13 @@
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
 const name = 'Combobulate';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="combobulate" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you first gain this move, choose your area of extensive knowledge and research:

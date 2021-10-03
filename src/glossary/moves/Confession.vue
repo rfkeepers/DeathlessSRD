@@ -10,7 +10,7 @@ const name = 'Confession';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="confession" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When someone <b>confesses their sins to you</b>, ask two questions from the list... 

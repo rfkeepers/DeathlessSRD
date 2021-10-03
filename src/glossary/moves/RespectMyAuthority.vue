@@ -9,7 +9,7 @@ const name = 'Respect My Authority';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="respect_my_authority" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>put on the airs of a figure of authority</b>, there to enforce law and order, <Roll resolve/>.  No matter the result, everyone around you who is up to no good will have a tell that gives away their intentions.

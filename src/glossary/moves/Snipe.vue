@@ -1,6 +1,5 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import { ref } from 'vue';
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
@@ -11,7 +10,7 @@ const name = 'Snipe';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="snipe" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When your action requires <b>precision, subtlety, or precise execution</b> lest it all go wrong, <Roll skill/>.

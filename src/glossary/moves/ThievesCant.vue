@@ -7,7 +7,7 @@ const name = 'Thieves Cant';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="thieves_cant" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         You understand the coded language of hobos, thieves, vagabonds, and the underworld.  Additionally, when you ask the MC if someone is associated with the underworld, they must answer truthfully, though they do not need to provide much detail.

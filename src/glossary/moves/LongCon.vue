@@ -10,7 +10,7 @@ const name = 'Long Con';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="long_con" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you put on a costume and <b>bluff your way through</b> a role or position, <Roll insight/>.

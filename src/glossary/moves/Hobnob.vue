@@ -9,7 +9,7 @@ const name = 'Hobnob';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="hobnob" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         No one can hide a party from you.  When you <b>suspect there's a gathering happening</b> that you weren't invited to, ask the MC about it.  They must tell you honestly if you're missing out or not, but they don't have to tell you what you're missing out on.  When you <b>let yourself in</b> to an event, <Roll force/>.

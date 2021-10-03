@@ -2,12 +2,12 @@
 <script setup>
 import Move from "@/components/Move.vue";
 
-const name = 'Template';
+const name = 'Caches';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="caches" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         Caches: <b>〚&nbsp;〛〚&nbsp;〛〚&nbsp;〛〚&nbsp;〛</b> You have four caches hidden throughout the wilds.  When you unearth one of your caches, check off one box and tell the MC what you had hidden inside.

@@ -8,7 +8,7 @@ const name = 'Day Job';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="day_job" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>cut into a corpse</b> to gain information or resources, pick two.

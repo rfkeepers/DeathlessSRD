@@ -10,7 +10,7 @@ const stat = 'GLAMOUR';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="and_for_my_next_trick" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>hide an object with a quick gesture or flair</b>, it disappears from your hand and is somewhere else on you or on another character within arms reach, say where and then <Roll glamour/>.

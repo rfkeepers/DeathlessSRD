@@ -7,7 +7,7 @@ const name = 'Skin Walker';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="skin_walker" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>Cost: 3 Abyss / 3 Resilience</template>
     <template v-slot:body>

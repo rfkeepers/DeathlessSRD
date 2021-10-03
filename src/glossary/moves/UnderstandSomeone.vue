@@ -1,6 +1,5 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import { ref } from 'vue';
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
@@ -10,7 +9,7 @@ const name = 'Understand Someone';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="understand_someone" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>take a moment to closely study someone</b>, <Roll insight/>.  Choose one question from below and the MC will answer truthfully.  <em>S:</em> Ask another question; it can come from the list, or you may also ask any question that follows on the previous answer.  <em>P:</em> Ask a second question if you want, but your prying makes the other person uncomfortable, flighty, or cautious.  <em>M:</em> After you ask your question the MC makes a move as hard as they want.

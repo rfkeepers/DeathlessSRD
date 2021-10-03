@@ -8,7 +8,7 @@ const name = 'Hearts and Minds';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="hearts_and_minds" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>perform for an audience</b> with the intent to rouse or soothe, <Roll glamour/>.  <em>H:</em> Tell the MC how they react. <em>P:</em> The MC will tell you whether the effect is short-lived, goes too far, or gets an additional and unwanted result.

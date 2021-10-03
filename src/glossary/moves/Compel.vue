@@ -9,7 +9,7 @@ const name = 'Compel';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="compel" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         Once per scene you may <b>compel another PC into action</b> by invoking one of their tags, moves, entanglements, or flags.  If that player agrees to your proposal, and the MC approves the result, you both gain 1 Resilience.  If they wish to resist, they can either pay 1 Resilience to ignore you, or make you roll for it.  If you roll, then <Roll n=3 dice/>.

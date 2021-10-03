@@ -10,7 +10,7 @@ const name = 'Trap';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="trap" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>set a trap</b> for someone or something, <Roll insight/>.

@@ -9,7 +9,7 @@ const name = 'Something Wrong, Officer?';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="something_wrong_officer" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>dissuade a person of law or authority</b> from getting involved, <Roll resolve/>.

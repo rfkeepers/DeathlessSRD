@@ -10,7 +10,7 @@ const name = 'Rabbit In the Hat';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="rabbit_in_the_hat" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you reach into something like a hat or sack and <b>pull out an item</b> no one expected you to have, tell the MC how you acquired and concealed it (this may have occurred in the past) and <Roll glamour/>.

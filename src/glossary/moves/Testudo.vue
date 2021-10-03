@@ -1,7 +1,6 @@
 <!-- ============================== Script ============================== -->
 <script setup>
 import Move from "@/components/Move.vue";
-import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
@@ -10,7 +9,7 @@ const name = 'Testudo';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="testudo" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you stand beside someone and <b>protect them from danger</b>, <Roll resolve/>.  So long as you both maintain position, whenever something attempts to Harm your ward you can intervene and take the Harm in their place.

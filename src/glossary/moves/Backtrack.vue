@@ -9,7 +9,7 @@ const name = 'Backtrack';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="backtrack" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>Cost: 1 Abyss / 2 Resilience; ( Interruptable )</template>
     <template v-slot:body>

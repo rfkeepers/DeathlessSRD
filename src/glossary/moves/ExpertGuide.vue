@@ -7,7 +7,7 @@ const name = 'Expert Guide';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="expert_guide" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         Whenver you're <b>at the lead of a group</b>, the MC will warn you of traps before you walk into them.

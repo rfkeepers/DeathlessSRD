@@ -8,7 +8,7 @@ const name = 'Substances';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="substances" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>Cost: 1 Abyss / 2 Resilience</template>
     <template v-slot:body>

@@ -3,14 +3,13 @@
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
 const name = 'Simulation';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="simulation" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>Cost: 3 Abyss / 3 Resilience</template>
     <template v-slot:body>

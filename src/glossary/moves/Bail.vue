@@ -3,14 +3,13 @@
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
 const name = 'Bail!';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="bail" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>scurry out of a bad situation</b> to save your own ass, <Roll resolve/>.  <em>S:</em> If it makes sense in the fiction, you're gone.  <em>P:</em> You can go, but pick one from below.  Ask or tell the MC about the details.

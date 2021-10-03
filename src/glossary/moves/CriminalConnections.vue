@@ -9,7 +9,7 @@ const name = 'Criminal Connections';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="criminal_connections" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>slip a request for secrets, favors, or goods</b> to someone connected with the underworld, <Roll glamour/>.

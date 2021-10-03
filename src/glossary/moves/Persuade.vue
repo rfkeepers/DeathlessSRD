@@ -1,6 +1,5 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import { ref } from 'vue';
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
@@ -10,7 +9,7 @@ const name = 'Persuade';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="persuade" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>press an NPC for something</b> they wouldn't easily agree to, <Roll glamour/>.  <em>S:</em> They will tell you the most effective way to compel them- if there is a way- otherwise they'll decline your request peacefully.  <em>P:</em> They need extra convincing- if they can be convinced; either the MC will pick an option from the list or they will reject your request in a noisy, aggressive, destructive, or alarming manner.

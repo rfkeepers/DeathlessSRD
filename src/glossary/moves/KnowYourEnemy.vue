@@ -9,7 +9,7 @@ const name = 'Know Your Enemy';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="know_your_enemy" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>scrutinize someone's behavior</b> during combat or conversation, ask one question from the list below and <Roll insight/>.  <em>S:</em> Ask a second question from the list, or a question that follows on the first answer.  <em>P:</em>  You may ask a second question from the list, but your opponent will realize you're onto them and begin to correct their approach accordingly.

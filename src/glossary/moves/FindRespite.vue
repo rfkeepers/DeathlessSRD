@@ -1,17 +1,14 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import { ref } from 'vue';
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
-import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
 const name = 'Find Respite';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="find_respite" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you and another character <b>share an intimate moment</b> like: opening up about your fears and vulnerabilities, fucking each others' brains out, or allowing one to selflessly care for the other's pain- you both choose one option.  If the other character is an NPC, you get to ask a question from Understand Someone in addition to your other choice.

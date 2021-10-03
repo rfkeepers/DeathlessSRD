@@ -10,7 +10,7 @@ const name = 'Striking the Anvil';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="striking_the_anvil" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>spend some time with access to tools and a workspace</b>, you can physically modify an object in your possession by adding, removing, or exchanging one of its tags.  The MC will give you one of the following requirement to complete your work:

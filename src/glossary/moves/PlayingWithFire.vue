@@ -9,7 +9,7 @@ const name = 'Playing With Fire';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="playing_with_fire" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>Cost: 1 Abyss / 1 Resilience</template>
     <template v-slot:body>

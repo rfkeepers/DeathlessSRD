@@ -10,7 +10,7 @@ const name = 'Covert Demolitionist';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="covert_demolitionist" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>break and enter</b>, <Roll resolve/>. <em>S:</em> Pick two.  <em>P:</em> Pick one.

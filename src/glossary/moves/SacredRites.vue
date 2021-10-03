@@ -10,7 +10,7 @@ const name = 'Sacred Rites';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="sacred_rites" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>perform a ritual or offering</b> in according to your own doctrine or someone else's, <Roll abyss/>.  <em>S:</em> Pick two.  <em>P:</em> pick one.

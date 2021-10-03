@@ -1,6 +1,5 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import { ref } from 'vue';
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
@@ -11,7 +10,7 @@ const name = 'Find An Opening';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="find_an_opening" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>search around for an opportunity</b> in a moment of need, <Roll insight/> and choose one from below.  If remotely possible, the MC will show you what you need, and also...  <em>S:</em> Put few barriers in your way, if any.  <em>P:</em> Put something defiant or costly in your way.  <em>M:</em> Make it as difficult as they want for you to get to it.

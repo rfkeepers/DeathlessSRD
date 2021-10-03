@@ -1,6 +1,5 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import { ref, watch, onMounted, onUnmounted } from 'vue';
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
@@ -11,7 +10,7 @@ const name = 'Intervene';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="intervene" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>get in the way of incoming Harm or danger</b> to protect someone or something, <Roll resolve/>. <em>S:</em> Choose 2.  <em>P:</em> Choose 1.

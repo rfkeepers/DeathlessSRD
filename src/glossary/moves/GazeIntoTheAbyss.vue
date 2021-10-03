@@ -1,6 +1,5 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import { ref } from 'vue';
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
@@ -11,7 +10,7 @@ const name = 'Gaze Into The Abyss';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="gaze_int_the_abyss" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>go looking for answers in the endless sea underneath all things</b>, you gaze into the infinite depths and find truths, however difficult to grasp they may be.  Choose 1 from below, and <Roll abyss/>.

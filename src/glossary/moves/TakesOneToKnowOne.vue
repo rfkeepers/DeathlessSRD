@@ -7,7 +7,7 @@ const name = 'Takes One To Know One';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="takes_one_to_know_one" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         Anytime you ask a question from <b>Understand Someone</b>, you may also ask, "what illegal activities are you involved in?".

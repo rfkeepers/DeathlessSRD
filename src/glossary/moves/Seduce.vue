@@ -9,7 +9,7 @@ const name = 'Sedudce';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="seduce" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
         When you <b>entice someone</b> to turn their attention away from all else and come find you, <Roll glamour/>.  <em>S:</em> They'll come to you, on your terms (where, when, with whom).  <em>P:</em> They'll meet with you, but you only control one:

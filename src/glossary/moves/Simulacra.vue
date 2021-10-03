@@ -5,11 +5,9 @@ import Move from "@/components/Move.vue";
 const name = 'Simulacra';
 </script>
 
-Cost: 1 Abyss / 2 Resilience
-
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="simulacra" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>Cost: 1 Abyss / 2 Resilience</template>
     <template v-slot:body>
