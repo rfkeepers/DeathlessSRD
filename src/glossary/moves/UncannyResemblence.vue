@@ -1,32 +1,21 @@
 <!-- ============================== Script ============================== -->
 <script setup>
 import Move from "@/components/Move.vue";
-import Options from "@/components/Options.vue";
-import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
-const name = 'Template';
+const name = 'Uncanny Resemblence';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>Cost: Abyss / Resilience</template>
+    <template v-slot:preconditions>( Occupied )</template>
     <template v-slot:body>
-        When you <b>do the move</b> and need to learn the consequences, <Roll dice/>.
-        <SHPM :options="[
-            's move option.',
-            'p move option.',
-        ]" />
-        <Options bullet="⇀" :options="[
-            'Option 1.',
-            'Option 2.',
-        ]" />
+        You can be compelled to have an NPC <b>identify you or mistake you for someone else</b>.
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
-
+        One of the few compel moves that directs itself inward from the world to the character, instead of exposing a character's bad behavior.  My hope is that this plays to identity anxieties.  In my experience, so much identity anxiety is bound up in how the world sees you as much as (or more so) than what you present to the world.  And in that way it feels fitting that the identity focused awakening has a move where the danger is the way in which the world identifies that character.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

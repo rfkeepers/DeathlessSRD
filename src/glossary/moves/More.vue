@@ -1,32 +1,21 @@
 <!-- ============================== Script ============================== -->
 <script setup>
 import Move from "@/components/Move.vue";
-import Options from "@/components/Options.vue";
-import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
-const name = 'Template';
+const name = 'Life Is Pain';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="life_is_pain" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>Cost: Abyss / Resilience</template>
+    <template v-slot:preconditions>( Occupied )</template>
     <template v-slot:body>
-        When you <b>do the move</b> and need to learn the consequences, <Roll dice/>.
-        <SHPM :options="[
-            's move option.',
-            'p move option.',
-        ]" />
-        <Options bullet="⇀" :options="[
-            'Option 1.',
-            'Option 2.',
-        ]" />
+        When you <b>drop your guard and let someone freely Harm you</b>, encouraging them to do it more, and worse this time, clear a Condition or gain 2 Resilience.
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
-
+        This is actually kind of a classic character moment.  I'm sure there's a tvTrope for it (though I'm terrible with tvTropes, and am not about to go down that rabbit hole just to find the relationship).  "The protagonist is having a bad day and they could totally beat this mook, but they <i>want</i> to get punched around a bit, because of the bad mood and all".
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

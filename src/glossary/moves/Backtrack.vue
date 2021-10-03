@@ -1,27 +1,23 @@
 <!-- ============================== Script ============================== -->
 <script setup>
 import Move from "@/components/Move.vue";
-import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
-const name = 'Template';
+const name = 'Backtrack';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>Cost: Abyss / Resilience</template>
+    <template v-slot:preconditions>Cost: 1 Abyss / 2 Resilience; ( Interruptable )</template>
     <template v-slot:body>
-        When you <b>do the move</b> and need to learn the consequences, <Roll dice/>.
-        <SHPM :options="[
-            's move option.',
-            'p move option.',
-        ]" />
-        <Options bullet="⇀" :options="[
-            'Option 1.',
-            'Option 2.',
+        When you have time to <b>intimately study someone or something</b>, you can experience a past event as it was experienced by your study.  Ask the MC about something it experienced and <Roll insight/>.
+        <SHPM use="spm" :options="[
+            'You experience that event with clarity and awareness.',
+            'The details are indistinct and difficult to follow.',
+            'Parts of the memory are missing, indecipherable, or incorrect.',
         ]" />
     </template>
     <template v-slot:example>

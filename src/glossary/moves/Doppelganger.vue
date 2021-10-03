@@ -1,26 +1,21 @@
 <!-- ============================== Script ============================== -->
 <script setup>
 import Move from "@/components/Move.vue";
-import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
-const name = 'Connections';
+const name = 'Doppelganger';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
+    <template v-slot:preconditions>( Occupied )</template>
     <template v-slot:body>
-        When you <b>slip a request for secrets, favors, or goods</b> to someone connected with the underworld, <Roll glamour/>.
-        <SHPM :options="[
-            'They\'ll set you up to meet with someone who is willing to trade or help you out.',
-            'Before they are willing to meet, they need proof that you\'re reliable.  The MC will tell you what they require.',
-        ]" />
+        When you convince a character you're someone whom you aren't, then <b>dangerously overindulge in that recognition</b>, clear a Condition or gain 2 Resilience.
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
-        Honestly, I don't have many thoughts on this one.
+        In many of these compel and condition removal moves I find I start working with a generic, almost weak seed, and then finding a way to impose a constraint that forces the behavior into certain badness or danger.  This is a great example of that.  Convincing a character you're someone who you aren't isn't all that difficult or meaningful, especially as a condition removal.  But overindulgence in that falsehood makes for much more interesting scenes.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

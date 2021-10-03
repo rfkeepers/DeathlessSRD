@@ -2,31 +2,26 @@
 <script setup>
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
-import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
-const name = 'Template';
+const name = 'Kneel';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>Cost: Abyss / Resilience</template>
+    <template v-slot:preconditions>Cost: 3 Abyss / 3 Resilience</template>
     <template v-slot:body>
-        When you <b>do the move</b> and need to learn the consequences, <Roll dice/>.
-        <SHPM :options="[
-            's move option.',
-            'p move option.',
-        ]" />
+        When you <b>issue a clear and simple command</b> that cannot be ignored, the character you ordered must do one of the following:
         <Options bullet="⇀" :options="[
-            'Option 1.',
-            'Option 2.',
+            'Give in and do as you said.',
+            'Retaliate violently.',
+            'Inflict self-Harm to resist.',
         ]" />
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
-
+        It's not just "I am the Law" again.  I promise.  I'm not just rewriting all of Dungeon World's moves.  Please believe me.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

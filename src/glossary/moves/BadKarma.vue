@@ -1,32 +1,21 @@
 <!-- ============================== Script ============================== -->
 <script setup>
 import Move from "@/components/Move.vue";
-import Options from "@/components/Options.vue";
-import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
-const name = 'Template';
+const name = 'Bad Karma';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="template" leftLined>
+<Move id="bad_karma" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>Cost: Abyss / Resilience</template>
+    <template v-slot:preconditions>( Occupied )</template>
     <template v-slot:body>
-        When you <b>do the move</b> and need to learn the consequences, <Roll dice/>.
-        <SHPM :options="[
-            's move option.',
-            'p move option.',
-        ]" />
-        <Options bullet="⇀" :options="[
-            'Option 1.',
-            'Option 2.',
-        ]" />
+        When you <b>Harm someone without provocation</b>, who has never harmed you before, erase one Condition or take 2 resilience.
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
-
+        As with most of the Witch awakening's smaller moves, naming them is the most difficult part.  I sincerely don't like the name of this move.  But still haven't thought of a better one.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

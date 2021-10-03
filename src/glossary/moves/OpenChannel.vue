@@ -1,32 +1,21 @@
 <!-- ============================== Script ============================== -->
 <script setup>
 import Move from "@/components/Move.vue";
-import Options from "@/components/Options.vue";
-import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
-const name = 'Template';
+const name = 'Open Channel';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
 <Move id="template" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>Cost: Abyss / Resilience</template>
+    <template v-slot:preconditions>( Occupied )</template>
     <template v-slot:body>
-        When you <b>do the move</b> and need to learn the consequences, <Roll dice/>.
-        <SHPM :options="[
-            's move option.',
-            'p move option.',
-        ]" />
-        <Options bullet="⇀" :options="[
-            'Option 1.',
-            'Option 2.',
-        ]" />
+        Whenever you <b>betray yourself</b> by exposing a hidden truth or weakness you needed to keep secret, clear a Condition or gain 2 Resilience.
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
-
+        I have a fondness for this move, and I'm not entirely certain why.  Perhaps because it works as a condition removal without centering itself on terrible behavior, but still maintaining a good level of doing damage to yourself in the process.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

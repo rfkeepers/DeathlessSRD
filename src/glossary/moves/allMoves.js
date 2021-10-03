@@ -1,62 +1,113 @@
 import { tags, types } from '@/glossary/consts.js';
 
 import AllArePrey from '@/glossary/moves/AllArePrey.vue';
+import AllAsFated from '@/glossary/moves/AllAsFated.vue';
 import AndForMyNextTrick from '@/glossary/moves/AndForMyNextTrick.vue';
+import AnythingYouWantMeToBe from '@/glossary/moves/AnythingYouWantMeToBe.vue';
+import Backtrack from '@/glossary/moves/Backtrack.vue';
+import BadFaith from '@/glossary/moves/BadFaith.vue';
+import BadKarma from '@/glossary/moves/BadKarma.vue';
 import Bail from '@/glossary/moves/Bail.vue';
 import BlackMarket from '@/glossary/moves/BlackMarket.vue';
+import BodyDouble from '@/glossary/moves/BodyDouble.vue';
+import BreathOfLife from '@/glossary/moves/BreathOfLife.vue';
 import Caches from '@/glossary/moves/Caches.vue';
 import CaseAJoint from '@/glossary/moves/CaseAJoint.vue';
+import CloakOfShadows from '@/glossary/moves/CloakOfShadows.vue';
 import Combobulate from '@/glossary/moves/Combobulate.vue';
 import Command from '@/glossary/moves/Command.vue';
 import Compel from '@/glossary/moves/Compel.vue';
 import Confession from '@/glossary/moves/Confession.vue';
-import Connections from '@/glossary/moves/Connections.vue';
+import Connection from '@/glossary/moves/Connection.vue';
 import ContestOfStrength from '@/glossary/moves/ContestOfStrength.vue';
 import Cook from '@/glossary/moves/Cook.vue';
 import CovertDemolitionist from '@/glossary/moves/CovertDemolitionist.vue';
+import Cower from '@/glossary/moves/Cower.vue';
+import CriminalConnections from '@/glossary/moves/CriminalConnections.vue';
+import Curiosity from '@/glossary/moves/Curiosity.vue';
 import DayJob from '@/glossary/moves/DayJob.vue';
+import Determination from '@/glossary/moves/Determination.vue';
 import Dismantle from '@/glossary/moves/Dismantle.vue';
+import Doppelganger from '@/glossary/moves/Doppelganger.vue';
+import Dreamlike from '@/glossary/moves/Dreamlike.vue';
 import DrownInTheAbyss from '@/glossary/moves/DrownInTheAbyss.vue';
 import EasyPrey from '@/glossary/moves/EasyPrey.vue';
+import Effigy from '@/glossary/moves/Effigy.vue';
 import Estate from '@/glossary/moves/Estate.vue';
 import ExpertGuide from '@/glossary/moves/ExpertGuide.vue';
+import FanTheFlames from '@/glossary/moves/FanTheFlames.vue';
 import FindAnOpening from '@/glossary/moves/FindAnOpening.vue';
 import FindRespite from '@/glossary/moves/FindRespite.vue';
+import Fireball from '@/glossary/moves/Fireball.vue';
 import ForgeSlag from '@/glossary/moves/ForgeSlag.vue';
 import GazeIntoTheAbyss from '@/glossary/moves/GazeIntoTheAbyss.vue';
+import Ghost from '@/glossary/moves/Ghost.vue';
 import HeartsAndMinds from '@/glossary/moves/HeartsAndMinds.vue';
 import HelpAndHindrance from '@/glossary/moves/HelpAndHindrance.vue';
 import Hobnob from '@/glossary/moves/Hobnob.vue';
+import Hex from '@/glossary/moves/Hex.vue';
+import Immolate from '@/glossary/moves/Immolate.vue';
 import Intervene from '@/glossary/moves/Intervene.vue';
 import JuryRig from '@/glossary/moves/JuryRig.vue';
+import KeepThemFromHarm from '@/glossary/moves/KeepThemFromHarm.vue';
+import Kneel from '@/glossary/moves/Kneel.vue';
+import KnowledgeIsPower from '@/glossary/moves/KnowledgeIsPower.vue';
 import KnowYourEnemy from '@/glossary/moves/KnowYourEnemy.vue';
+import LayOnHands from '@/glossary/moves/LayOnHands.vue';
+import LifeIsPain from '@/glossary/moves/LifeIsPain.vue';
 import LongCon from '@/glossary/moves/LongCon.vue';
+import More from '@/glossary/moves/More.vue';
+import NobleCalling from '@/glossary/moves/NobleCalling.vue';
+import Omniscience from '@/glossary/moves/Omniscience.vue';
+import OpenChannel from '@/glossary/moves/OpenChannel.vue';
 import Overwhelm from '@/glossary/moves/Overwhelm.vue';
 import Persuade from '@/glossary/moves/Persuade.vue';
+import Philanthropist from '@/glossary/moves/Philanthropist.vue';
+import PlayingWithFire from '@/glossary/moves/PlayingWithFire.vue';
+import Presence from '@/glossary/moves/Presence.vue';
+import Puppets from '@/glossary/moves/Puppets.vue';
+import Putty from '@/glossary/moves/Putty.vue';
 import RabbitInTheHat from '@/glossary/moves/RabbitInTheHat.vue';
 import Rally from '@/glossary/moves/Rally.vue';
 import ReadTheirTell from '@/glossary/moves/ReadTheirTell.vue';
+import Resonance from '@/glossary/moves/Resonance.vue';
 import RespectMyAuthority from '@/glossary/moves/RespectMyAuthority.vue';
+import Retribution from '@/glossary/moves/Retribution.vue';
 import ReturnToLife from '@/glossary/moves/ReturnToLife.vue';
 import SacredRites from '@/glossary/moves/SacredRites.vue';
 import SacrificesMustBeMade from '@/glossary/moves/SacrificesMustBeMade.vue';
 import Seduce from '@/glossary/moves/Seduce.vue';
 import SeekingSolace from '@/glossary/moves/SeekingSolace.vue';
+import SelfPreservation from '@/glossary/moves/SelfPreservation.vue';
 import ShieldCharge from '@/glossary/moves/ShieldCharge.vue';
 import ShowEm from '@/glossary/moves/ShowEm.vue';
+import SilverTongued from '@/glossary/moves/SilverTongued.vue';
+import Simulacra from '@/glossary/moves/Simulacra.vue';
+import Simulation from '@/glossary/moves/Simulation.vue';
+import SkinWalker from '@/glossary/moves/SkinWalker.vue';
+import SneakThief from '@/glossary/moves/SneakThief.vue';
 import Snipe from '@/glossary/moves/Snipe.vue';
 import SomethingWrongOfficer from '@/glossary/moves/SomethingWrongOfficer.vue';
+import Spike from '@/glossary/moves/Spike.vue';
+import StraddleTheBorder from '@/glossary/moves/StraddleTheBorder.vue';
 import StrikingTheAnvil from '@/glossary/moves/StrikingTheAnvil.vue';
+import Substances from '@/glossary/moves/Substances.vue';
 import Synthesis from '@/glossary/moves/Synthesis.vue';
 import TakesOneToKnowOne from '@/glossary/moves/TakesOneToKnowOne.vue';
 import Taunt from '@/glossary/moves/Taunt.vue';
+import Temptations from '@/glossary/moves/Temptations.vue';
 import Tendons from '@/glossary/moves/Tendons.vue';
 import Testudo from '@/glossary/moves/Testudo.vue';
+import TheBoss from '@/glossary/moves/TheBoss.vue';
 import ThePlan from '@/glossary/moves/ThePlan.vue';
 import ThievesCant from '@/glossary/moves/ThievesCant.vue';
 import Track from '@/glossary/moves/Track.vue';
 import Trap from '@/glossary/moves/Trap.vue';
+import TwistedFirestarter from '@/glossary/moves/TwistedFirestarter.vue';
+import UncannyResemblence from '@/glossary/moves/UncannyResemblence.vue';
 import UnderstandSomeone from '@/glossary/moves/UnderstandSomeone.vue';
+import UnifiedConsciousness from '@/glossary/moves/UnifiedConsciousness.vue';
+import WordsAndStonesCanBothBreakBones from '@/glossary/moves/WordsAndStonesCanBothBreakBones.vue';
 import Yarn from '@/glossary/moves/Yarn.vue';
 
 const moves = [
@@ -68,11 +119,46 @@ const moves = [
       component: AllArePrey,
    },
    {
+      name: 'All As Fated',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Sightseer awakening moves.',
+      component: AllAsFated,
+   },
+   {
       name: 'And For My Next Trick',
       type: types.move,
       tags: [],
       routeContent: 'One of the Magician background moves.',
       component: AndForMyNextTrick,
+   },
+   {
+      name: 'Anything You Want Me To Be',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Chameleon awakening moves.',
+      component: AnythingYouWantMeToBe,
+   },
+   {
+      name: 'Backtrack',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Sightseer awakening moves.',
+      component: Backtrack,
+   },
+   {
+      name: 'Bad Faith',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Illusionist awakening moves.',
+      component: BadFaith,
+   },
+   {
+      name: 'Bad Karma',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Witch awakening moves.',
+      component: BadKarma,
    },
    {
       name: 'Bail!',
@@ -89,6 +175,20 @@ const moves = [
       component: BlackMarket,
    },
    {
+      name: 'Body Double',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Shadewalker awakening moves.',
+      component: BodyDouble,
+   },
+   {
+      name: 'Breath Of Life',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Martyr awakening moves.',
+      component: BreathOfLife,
+   },
+   {
       name: 'Caches',
       type: types.move,
       tags: [],
@@ -101,6 +201,13 @@ const moves = [
       tags: [],
       routeContent: 'One of the Grifter background moves.',
       component: CaseAJoint,
+   },
+   {
+      name: 'Cloak of Shadows',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Shadewalker awakening moves.',
+      component: CloakOfShadows,
    },
    {
       name: 'Combobulate',
@@ -131,11 +238,11 @@ const moves = [
       component: Confession,
    },
    {
-      name: 'Connections',
+      name: 'Connection',
       type: types.move,
       tags: [],
-      routeContent: 'One of the Thief background moves.',
-      component: Connections,
+      routeContent: 'One of the Empath awakening moves.',
+      component: Connection,
    },
    {
       name: 'Contest of Strength',
@@ -159,6 +266,27 @@ const moves = [
       component: CovertDemolitionist,
    },
    {
+      name: 'Cower',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Dominion awakening moves.',
+      component: Cower,
+   },
+   {
+      name: 'Criminal Connections',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Thief background moves.',
+      component: CriminalConnections,
+   },
+   {
+      name: 'Curiosity',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Sightseer awakening moves.',
+      component: Curiosity,
+   },
+   {
       name: 'Day Job',
       type: types.move,
       tags: [],
@@ -166,11 +294,32 @@ const moves = [
       component: DayJob,
    },
    {
+      name: 'Determination',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Glutton awakening moves.',
+      component: Determination,
+   },
+   {
       name: 'Dismantle',
       type: types.move,
       tags: [],
       routeContent: 'One of the Machinist background moves.',
       component: Dismantle,
+   },
+   {
+      name: 'Doppelganger',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Chameleon awakening moves.',
+      component: Doppelganger,
+   },
+   {
+      name: 'Dreamlike',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Illusionist awakening moves.',
+      component: Dreamlike,
    },
    {
       name: 'Drown In The Abyss',
@@ -187,6 +336,13 @@ const moves = [
       component: EasyPrey,
    },
    {
+      name: 'Effigy',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Witch awakening moves.',
+      component: Effigy,
+   },
+   {
       name: 'Estate',
       type: types.move,
       tags: [],
@@ -199,6 +355,13 @@ const moves = [
       tags: [],
       routeContent: 'One of the Trapper background moves.',
       component: ExpertGuide,
+   },
+   {
+      name: 'Fan The Flames',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Pyro awakening moves.',
+      component: FanTheFlames,
    },
    {
       name: 'Find An Opening',
@@ -215,6 +378,13 @@ const moves = [
       component: FindRespite
    },
    {
+      name: 'Fireball',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Pyro awakening moves.',
+      component: Fireball,
+   },
+   {
       name: 'Forge Slag',
       type: types.move,
       tags: [],
@@ -227,6 +397,13 @@ const moves = [
       tags: [tags.basicMove, tags.abyss],
       routeContent: 'The basic move using the Abyss stat.',
       component: GazeIntoTheAbyss,
+   },
+   {
+      name: 'Ghost',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Shadewalker awakening moves.',
+      component: Ghost,
    },
    {
       name: 'Hearts and Minds',
@@ -250,6 +427,20 @@ const moves = [
       component: Hobnob,
    },
    {
+      name: 'Hex',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Witch awakening moves.',
+      component: Hex,
+   },
+   {
+      name: 'Immolate',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Pyro awakening moves.',
+      component: Immolate,
+   },
+   {
       name: 'Intervene',
       type: types.move,
       tags: [tags.basicMove, tags.resolve],
@@ -264,6 +455,27 @@ const moves = [
       component: JuryRig,
    },
    {
+      name: 'Keep Them From Harm',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Martyr awakening moves.',
+      component: KeepThemFromHarm,
+   },
+   {
+      name: 'Kneel',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Dominion awakening moves.',
+      component: Kneel,
+   },
+   {
+      name: 'Knowledge Is Power',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Sightseer awakening moves.',
+      component: KnowledgeIsPower,
+   },
+   {
       name: 'Know Your Enemy',
       type: types.move,
       tags: [],
@@ -271,11 +483,53 @@ const moves = [
       component: KnowYourEnemy,
    },
    {
+      name: 'Lay On Hands',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Martyr awakening moves.',
+      component: LayOnHands,
+   },
+   {
+      name: 'Life Is Pain',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Glutton awakening moves.',
+      component: LifeIsPain,
+   },
+   {
       name: 'Long Con',
       type: types.move,
       tags: [],
       routeContent: 'One of the Grifter background moves.',
       component: LongCon,
+   },
+   {
+      name: 'More',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Glutton awakening moves.',
+      component: More,
+   },
+   {
+      name: 'Noble Calling',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Martyr awakening moves.',
+      component: NobleCalling,
+   },
+   {
+      name: 'Omniscience',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Sightseer awakening moves.',
+      component: Omniscience,
+   },
+   {
+      name: 'Open Channel',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Empath awakening moves.',
+      component: OpenChannel,
    },
    {
       name: 'Overwhelm',
@@ -290,6 +544,41 @@ const moves = [
       tags: [tags.basicMove, tags.glamour],
       routeContent: 'The basic move using the Glamour stat.',
       component: Persuade,
+   },
+   {
+      name: 'Philanthropist',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Martyr awakening moves.',
+      component: Philanthropist,
+   },
+   {
+      name: 'Playing With Fire',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Pyro awakening moves.',
+      component: PlayingWithFire,
+   },
+   {
+      name: 'Presence',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Dominion awakening moves.',
+      component: Presence,
+   },
+   {
+      name: 'Puppets',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Dominion awakening moves.',
+      component: Puppets,
+   },
+   {
+      name: 'Putty',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Chameleon awakening moves.',
+      component: Putty,
    },
    {
       name: 'Rabbit In The Hat',
@@ -313,11 +602,25 @@ const moves = [
       component: ReadTheirTell,
    },
    {
+      name: 'Resonance',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Empath awakening moves.',
+      component: Resonance,
+   },
+   {
       name: 'Respect My Authority',
       type: types.move,
       tags: [],
       routeContent: 'One of the Marshal background moves.',
       component: RespectMyAuthority,
+   },
+   {
+      name: 'Retribution',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Witch awakening moves.',
+      component: Retribution,
    },
    {
       name: 'Return To Life',
@@ -355,6 +658,13 @@ const moves = [
       component: SeekingSolace,
    },
    {
+      name: 'Self-Preservation',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Shadewalker awakening moves.',
+      component: SelfPreservation,
+   },
+   {
       name: 'Shield Charge',
       type: types.move,
       tags: [],
@@ -367,6 +677,41 @@ const moves = [
       tags: [],
       routeContent: 'One of the Gambler background moves.',
       component: ShowEm,
+   },
+   {
+      name: 'Silver Tongued',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Illusionist awakening moves.',
+      component: SilverTongued,
+   },
+   {
+      name: 'Simulacra',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Illusionist awakening moves.',
+      component: Simulacra,
+   },
+   {
+      name: 'Simulation',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Illusionist awakening moves.',
+      component: Simulation,
+   },
+   {
+      name: 'Skin Walker',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Chameleon awakening moves.',
+      component: SkinWalker,
+   },
+   {
+      name: 'Sneak Thief',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Shadewalker awakening moves.',
+      component: SneakThief,
    },
    {
       name: 'Snipe',
@@ -383,11 +728,32 @@ const moves = [
       component: SomethingWrongOfficer,
    },
    {
+      name: 'Spike',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Empath awakening moves.',
+      component: Spike,
+   },
+   {
+      name: 'Straddle The Border',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Witch awakening moves.',
+      component: StraddleTheBorder,
+   },
+   {
       name: 'Striking The Anvil',
       type: types.move,
       tags: [],
       routeContent: 'One of the Smithy background moves.',
       component: StrikingTheAnvil,
+   },
+   {
+      name: 'Substances',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Venom awakening moves.',
+      component: Substances,
    },
    {
       name: 'Synthesis',
@@ -411,6 +777,13 @@ const moves = [
       component: Taunt,
    },
    {
+      name: 'Temptations',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Venom awakening moves.',
+      component: Temptations,
+   },
+   {
       name: 'Tendons',
       type: types.move,
       tags: [],
@@ -423,6 +796,13 @@ const moves = [
       tags: [],
       routeContent: 'One of the Knight background moves.',
       component: Testudo,
+   },
+   {
+      name: 'The Boss',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Dominion awakening moves.',
+      component: TheBoss,
    },
    {
       name: 'The Plan',
@@ -453,11 +833,39 @@ const moves = [
       component: Trap,
    },
    {
+      name: 'Twisted Firestarter',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Pyro awakening moves.',
+      component: TwistedFirestarter,
+   },
+   {
+      name: 'Uncanny Resemblence',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Chameleon awakening moves.',
+      component: UncannyResemblence,
+   },
+   {
       name: 'Understand Someone',
       type: types.move,
       tags: [tags.basicMove, tags.insight],
       routeContent: 'A basic move using the Insight stat.',
       component: UnderstandSomeone,
+   },
+   {
+      name: 'Unified Consciousness',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Empath awakening moves.',
+      component: UnifiedConsciousness,
+   },
+   {
+      name: 'Words And Stones Can Both Break Bones',
+      type: types.move,
+      tags: [],
+      routeContent: 'One of the Glutton awakening moves.',
+      component: WordsAndStonesCanBothBreakBones,
    },
    {
       name: 'Yarn',

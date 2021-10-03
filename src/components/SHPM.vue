@@ -41,6 +41,6 @@ const prefixes = ref(pfx);
 :deep(.option .option__prefix) {
     font-weight: 900;
     padding-right: 0;
-    color: $color-z-pop;
+    color: $color-highlight-sink;
 }
 </style>

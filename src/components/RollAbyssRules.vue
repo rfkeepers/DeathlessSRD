@@ -7,7 +7,7 @@ import Options from "@/components/Options.vue";
 <!-- ============================== Template ============================== -->
 <template>
 <div>
-If you <em>roll above your current ABYSS</em>, the depths return your gaze.  The MC describes a vision that painfully stresses comprehension, then you choose 1: (thoughts, maybe just choose one and let the mc decide if its a vision that painfully stresses comprehension).
+If you <em>roll above your current ABYSS</em>, the depths <slot>return your gaze.  The MC describes a vision that painfully stresses comprehension</slot>, then you choose 1:
 <Options bullet="⇀" :options="[
     'The Abyss takes from you, add one mark of the Abyss.',
     'You take something back with you, the MC will say what it is.',
