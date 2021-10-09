@@ -3,7 +3,10 @@
   <div id="deathless" class="headerBar">
     <div class="headerBar__title" @click="routeHome">Deathless</div>
   </div>
-  <div class="pageBody">
+  <div :class="{
+    'pageBody': true,
+    'pageBody--glossary': isGlossaryPage,
+  }">
     <router-view></router-view>
   </div>
 </div>
@@ -19,6 +22,9 @@ export default {
       {to: "/feedback", text: "Feedback"},
     ],
   }; },
+  computed: {
+    isGlossaryPage() { return this.$route.href?.includes('glossary'); }
+  },
   mounted() { window.addEventListener('resize', this.onResize); },
   beforeUnmount() { window.removeEventListener('resize', this.onResize); },
   methods: {

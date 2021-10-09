@@ -10,7 +10,7 @@ const name = 'Caches';
 <Move id="caches" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        Caches: <b>〚&nbsp;〛〚&nbsp;〛〚&nbsp;〛〚&nbsp;〛</b> You have four caches hidden throughout the wilds.  When you unearth one of your caches, check off one box and tell the MC what you had hidden inside.
+        Caches: <b>〚&nbsp;〛:〚&nbsp;〛:〚&nbsp;〛:〚&nbsp;〛</b> You have four caches hidden throughout the wilds.  When you unearth one of your caches, check off one box and tell the MC what you had hidden inside.
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>

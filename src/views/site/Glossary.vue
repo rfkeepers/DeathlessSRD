@@ -1,8 +1,7 @@
 <!-- ============================== Script ============================== -->
 <script setup>
-import { types } from '@/glossary/consts.js';
 import { glossary } from '@/glossary/glossary.js';
-import { ref, watch, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 const route = useRoute();
 const router = useRouter();
@@ -134,16 +133,16 @@ onUnmounted(() => {
 <!-- ============================== Style ============================== -->
 <style lang="scss" scoped>
 .glossary {
-    height: 100%;
-    width: calc(100vw - 360px);
-    left: 360px;
+    height: calc(100% - 1em);
+    width: calc(100% - 360px);
     padding: 0 32px;
-    position: fixed;
+    margin-left: 360px;
 
     @media screen and (max-width: 900px) {
         width: 100%;
         left: 0;
         padding: 0;
+        margin-left: 0;
         position: inherit;
     }
 

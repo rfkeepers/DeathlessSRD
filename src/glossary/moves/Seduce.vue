@@ -4,7 +4,7 @@ import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
 
-const name = 'Sedudce';
+const name = 'Seduce';
 </script>
 
 <!-- ============================== Template ============================== -->

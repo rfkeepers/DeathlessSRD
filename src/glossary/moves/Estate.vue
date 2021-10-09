@@ -11,7 +11,7 @@ const name = 'Estate';
 <Move id="estate" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        Before your death, you were wealthy and well known in the upper eschelons of society; a landowner with one, perhaps even several, estates.  One of these estates could be repossessed, if you're willing to do the work to win it back.  Tell the MC about the estate- its location, design, and qualities- and then from the options below select the current status of the land.
+        Before your death, you were established and well known in the upper eschelons of society; a landowner with one, perhaps even several, estates.  One of these estates could be repossessed, if you're willing to do the work to win it back.  Tell the table about the details- its location, design, and qualities- and then from the options below select the current status of the land.
         <Options bullet="❍" :options="[
             'Abandoned: Without you around there was no reason for any caretakers or visitors to stay behind.  The wilds reclaimed both the land and the buildings, all of it succumbing to disrepair.  It\'s yours for the taking, what little of it is left standing.',
             'Seized: The land was taken, perhaps violently, by something fearsome: a troop of deserters, a gang of outlaws, beasts and monsters, or something worse.  No one else dares enter the premise.  Good luck.',

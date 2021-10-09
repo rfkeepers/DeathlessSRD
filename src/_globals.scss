@@ -6,8 +6,8 @@ $color-text: #dcd3c7;
 $color-z: #6b6e70;
 
 //applications of those colors
-$color-background-popped: scale-color($color-background, $lightness: +32%);
-$color-background-pop: scale-color($color-background, $lightness: +8%);
+$color-background-popped: scale-color($color-background, $lightness: +12%);
+$color-background-pop: scale-color($color-background, $lightness: +6%);
 $color-background-sink: scale-color($color-background, $lightness: -24%);
 $color-background-sunk: scale-color($color-background, $lightness: -36%);
 $color-foreground-pop: scale-color($color-foreground, $lightness: +8%);
@@ -23,7 +23,8 @@ $color-text-sunk: scale-color($color-text, $lightness: -48%);
 $color-link: scale-color($color-highlight, $lightness: +15%);
 $color-link-active: scale-color($color-text, $lightness: +25%);
 $color-z-pop: scale-color($color-z, $lightness: +8%);
-$color-z-sunk: scale-color($color-z, $lightness: -32%);
+$color-z-sink: scale-color($color-z, $lightness: -32%);
+$color-z-sunk: scale-color($color-z, $lightness: -48%);
 
 // css and variable overwrites
 * {
@@ -43,7 +44,7 @@ $color-z-sunk: scale-color($color-z, $lightness: -32%);
   --glossary-color-search-background: #{$color-background-sunk};
   --glossary-color-search-border: #{$color-foreground-sunk};
   --glossary-color-entry-highlight: #{$color-foreground-sunk};
-  --glossary-color-entry-type: #{$color-z-sunk};
+  --glossary-color-entry-type: #{$color-z-sink};
 
   --stat-color: #{$color-foreground-pop};
 }
@@ -131,6 +132,12 @@ h3 {
   }
 }
 
+h4 {
+  color: $color-highlight;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
 ul {
   margin: 0;
   list-style-type: none;
@@ -176,11 +183,21 @@ input {
   @media screen and (min-width: 900px) {
     padding-left: 16%;
     padding-right: 16%;
+
+    &--glossary {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   @media screen and (min-width: 1280px) {
     padding-left: 20%;
     padding-right: 20%;
+
+    &--glossary {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 

@@ -3,11 +3,6 @@
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 
-const moveOpts = [
-    'opt 1',
-    'opt 2',
-    'opt 3',
-];
 </script>
 
 <!-- ============================== Template ============================== -->
