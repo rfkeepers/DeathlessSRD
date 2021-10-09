@@ -17,7 +17,8 @@ const name = 'Find An Opening';
         <Options bullet="⇀" :options="[
             'I need a way in / out / around / through.',
             'I need to know what poses the biggest threat.',
-            'I need to find something vulnerable to me.',
+            'I need to find something vulnerable or open to me.',
+            'I need something valuable.',
             'I need to know who is in control.',
         ]" />
         <br>

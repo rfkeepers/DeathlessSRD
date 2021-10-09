@@ -16,7 +16,7 @@ const name = 'Case A Joint';
             'What important detail is going unnoticed or getting ignored?',
             'What should I be on the lookout for, now or later?',
             'What here is out of place, or shouldn\'t be here?',
-            'What would be the easiest way to break in again later?',
+            'What would be the easiest way to break in now or later?',
             'What here would be worth stealing?',
         ]" />
     </template>

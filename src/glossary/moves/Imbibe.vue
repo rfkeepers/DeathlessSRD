@@ -3,31 +3,30 @@
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 
-const name = 'Substances';
+const name = 'Imbibe';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="substances" leftLined>
+<Move id="imbibe" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>Cost: 1 Abyss / 2 Resilience</template>
+    <template v-slot:preconditions>Cost: 2 Abyss / 3 Resilience</template>
     <template v-slot:body>
-        When you <b>lace food or drink with your toxic blood</b>, whomever consumes the toxin experiences one of the following effects (your choice):
+        When you <b>ingest a potent drug or chemical</b> to commune with the Abyss, choose one from below.  For the duration of the effect, you:
         <Options bullet="⇀" :options="[
-            'hallucenations',
-            'euphoria',
-            'illness',
-            'paranoia',
-            'drowsiness',
+            'Expand consciousness into prescient awareness.',
+            'Dilate the senses to incorporate all experience.',
+            'Numb interference to isolate clarity.',
+            'Loose the shackles that restrict the body.',
         ]" />
         <br>
-        The MC also chooses one of these:
+        Communion with the Abyss has its consequences.  Ask or tell the MC which of the following also affects you:
         <Options bullet="⇀" :options="[
-            'The effects are severe and short-lived.',
-            'The poison cannot be concealed.',
-            'A large quantity needs to be consumed.',
-            'It will take time for the effects to kick in.',
+            'Sudden, unshakable trances.',
+            'Volatile sensory experiences.',
+            'Imagination indistinguishable from reality.',
         ]" />
+
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>

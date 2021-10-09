@@ -16,7 +16,7 @@ const name = 'Read Their Tell';
         <Options bullet="⇀" :options="[
             'The MC will tell you some useful detail they\'re keeping secret.',
             'Ask the MC a question about that character\'s situation or plans, and they\'ll answer honestly.',
-            'You don\'t accidentally give them any information they can use.',
+            'You don\'t let slip any information they can use against you or your allies.',
         ]" />
     </template>
     <template v-slot:example>

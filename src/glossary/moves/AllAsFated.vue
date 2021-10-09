@@ -1,7 +1,6 @@
 <!-- ============================== Script ============================== -->
 <script setup>
 import Move from "@/components/Move.vue";
-import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
 import SHPM from "@/components/SHPM.vue";
 
@@ -16,9 +15,9 @@ const name = 'All As Fated';
     <template v-slot:body>
         When you <b>exclaim that the events in motion are determined and inexorable</b>, name three events happening right now (they do not need to be near you), briefly describe the future conclusion of each, and <Roll insight/>.
         <SHPM use="hsp" :options="[
-            'If at all possible, the outcomes will play out exactly as you described.  The GM will decide which of the three events are true, and which ones aren\'t, and does not need to reveal which is which.  Direct interference by another PC may still alter the course of things.',
-            'The MC chooses two of the three.',
-            'The MC chooses one of the three.',
+            'If at all possible, one or more of the outcomes will play out exactly as you described.  The GM will decide which of the events are true, and which ones aren\'t, and does not need to reveal which is which.  Direct interference by another PC may still alter the course of things.',
+            'The MC chooses two predictions to be true.',
+            'The MC chooses one.',
         ]" />
     </template>
     <template v-slot:example>
