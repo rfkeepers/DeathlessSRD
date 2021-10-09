@@ -9,7 +9,7 @@ const name = 'The Boss';
 <template>
 <Move id="the_boss" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Occupied )</template>
+    <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
         You can be compelled to <b>make an example of someone who resists you</b>.
     </template>

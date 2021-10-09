@@ -9,7 +9,7 @@ const name = 'Immolate';
 <template>
 <Move id="immolate" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Occupied )</template>
+    <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
         When you would <b>mark the Abyss</b>, but haven't died, you may deal self-harm instead and give yourself an Injury or a Condition.
     </template>

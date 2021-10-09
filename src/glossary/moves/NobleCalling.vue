@@ -9,7 +9,7 @@ const name = 'Noble Calling';
 <template>
 <Move id="noble_calling" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Occupied )</template>
+    <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
         Treat your <b>Resolve</b> as 1 higher while acting as Martyr.
     </template>

@@ -5,7 +5,7 @@
 <!-- ============================== Template ============================== -->
 <template>
 <div class="glossaryHome">
-    Welcome to the glossary.  Here you can search quick references to any move, background, awakening, or other thingy in the game!
+    Welcome to the glossary.  Here you can search quick references to any move, background, attunement, or other thingy in the game!
 </div>
 </template>
 

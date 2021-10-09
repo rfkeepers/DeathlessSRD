@@ -9,7 +9,7 @@ const name = 'Doppelganger';
 <template>
 <Move id="doppelganger" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Occupied )</template>
+    <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
         When you convince a character you're someone whom you aren't, then <b>dangerously overindulge in that recognition</b>, clear a Condition or gain 2 Resilience.
     </template>

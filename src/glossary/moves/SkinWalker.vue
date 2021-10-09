@@ -11,7 +11,7 @@ const name = 'Skin Walker';
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>Cost: 3 Abyss / 3 Resilience</template>
     <template v-slot:body>
-        You <b>shed your current body and emerge anew from the husk</b>.  All Harm is sustained through the transformation, but every other aspect of your physique and appearance can be changed.  The next time you <em>Die</em>, choose whether the changes revert to your old body, or if you keep this new one permanently.  If you have Occupied this awakening through death, if you get a new body altogether you may use this move without paying the cost.
+        You <b>shed your current body and emerge anew from the husk</b>.  All Harm is sustained through the transformation, but every other aspect of your physique and appearance can be changed.  The next time you <em>Die</em>, choose whether the changes revert to your old body, or if you keep this new one permanently.  If you have Attuned this attunement through death, if you get a new body altogether you may use this move without paying the cost.
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>

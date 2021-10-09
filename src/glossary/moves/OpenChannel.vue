@@ -9,7 +9,7 @@ const name = 'Open Channel';
 <template>
 <Move id="open_channel" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Occupied )</template>
+    <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
         Whenever you <b>betray yourself</b> by exposing a hidden truth or weakness you needed to keep secret, clear a Condition or gain 2 Resilience.
     </template>

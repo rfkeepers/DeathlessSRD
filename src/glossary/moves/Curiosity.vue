@@ -9,7 +9,7 @@ const name = 'Curiosity';
 <template>
 <Move id="curiosity" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Occupied )</template>
+    <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
         You can be compelled to <b>investigate something unknown</b>.
     </template>

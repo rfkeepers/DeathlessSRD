@@ -9,7 +9,7 @@ const name = 'Twisted Firestarter';
 <template>
 <Move id="twisted_firestarter" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Occupied )</template>
+    <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
         When you <b>cause uninvited Harm or destruction</b>, erase a Condition or gain 2 Resilience.
     </template>

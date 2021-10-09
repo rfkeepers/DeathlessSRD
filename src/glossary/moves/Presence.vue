@@ -9,7 +9,7 @@ const name = 'Presence';
 <template>
 <Move id="presence" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Occupied )</template>
+    <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
         Treat your <b>Force</b> as 1 greater while acting as Dominion.
     </template>

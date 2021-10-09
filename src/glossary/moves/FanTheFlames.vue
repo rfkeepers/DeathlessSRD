@@ -9,7 +9,7 @@ const name = 'Fan The Flames';
 <template>
 <Move id="fan_the_flames" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Occupied )</template>
+    <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
         You can be compelled to <b>take an action or situation much farther than you had intended</b>.
     </template>

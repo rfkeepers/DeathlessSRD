@@ -9,7 +9,7 @@ const name = 'More';
 <template>
 <Move id="more" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Occupied )</template>
+    <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
         When you <b>drop your guard and let someone freely Harm you</b>, encouraging them to do it more, and worse this time, clear a Condition or gain 2 Resilience.
     </template>

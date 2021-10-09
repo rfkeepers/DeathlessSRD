@@ -9,7 +9,7 @@ const name = 'Keep Them From Harm';
 <template>
 <Move id="keep_them_from_harm" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Occupied )</template>
+    <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
         When you <b>save someone's life</b> despite having good reason to let them die, clear a Condition or gain 2 Resilience.
     </template>
