@@ -1,4 +1,5 @@
 import { tags, types } from '@/glossary/consts.js';
+import * as help from '@/glossary/helpers.js';
 
 import AllArePrey from '@/glossary/moves/AllArePrey.vue';
 import AllAsFated from '@/glossary/moves/AllAsFated.vue';
@@ -876,26 +877,6 @@ const moves = [
    },
 ];
 
-// construct the paths for each move.
-const formatPathVal = (pv) => pv.toLowerCase().replaceAll(' ', '_').replace(/[^a-zA-Z_]/g, '');;
-const makePath = ({ type, name }) => `/${formatPathVal(type)}/${formatPathVal(name)}`;
-const makeMeta = ({ name, routeContent, type }) => ({
-    title: `${name} - ${type}`,
-    tags: [{
-        name: 'description',
-        content: routeContent, 
-    }],
-});
-moves.forEach(m => {
-    m.path = makePath(m);
-    m.meta = makeMeta(m);
-});
-
-const moveConsts = moves.map(m => ({
-    name: m.name,
-    path: m.path,
-    type: m.type,
-    tags: m.tags,
-}));
-
+help.addRouting(moves);
+const moveConsts = help.reduceToConsts(moves);
 export { moves, moveConsts };

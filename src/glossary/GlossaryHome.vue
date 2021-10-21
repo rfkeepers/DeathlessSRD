@@ -6,6 +6,12 @@
 <template>
 <div class="glossaryHome">
     Welcome to the glossary.  Here you can search quick references to any move, background, attunement, or other thingy in the game!
+    <div class="glossaryHome__controls">
+        <br><br>
+        <b>Swipe right</b> to open the menu.
+        <br><br>
+        <b>Swipe Left</b> or select an entry to close it again.
+    </div>
 </div>
 </template>
 
@@ -14,5 +20,12 @@
 .glossaryHome {
     width: 100%;
     height: 100%;
+
+    .glossaryHome__controls {
+        display: none;
+        @media screen and (max-width: 900px) {
+            display: block;
+        }
+    }
 }
 </style>

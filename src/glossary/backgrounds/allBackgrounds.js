@@ -1,4 +1,5 @@
 import { types } from '@/glossary/consts.js';
+import * as help from '@/glossary/helpers.js';
 
 import Bard from '@/glossary/backgrounds/Bard.vue';
 import Butcher from '@/glossary/backgrounds/Butcher.vue';
@@ -179,27 +180,7 @@ const backgrounds = [
         component: Wrestler,
     },
 ];
- 
-// construct the paths for each entry.
-const formatPathVal = (pv) => pv.toLowerCase().replaceAll(' ', '_');
-const makePath = ({ type, name }) => `/${formatPathVal(type)}/${formatPathVal(name)}`;
-const makeMeta = ({ name, routeContent, type }) => ({
-    title: `${name} - ${type}`,
-    tags: [{
-        name: 'description',
-        content: routeContent, 
-    }],
-});
-backgrounds.forEach(b => {
-    b.path = makePath(b);
-    b.meta = makeMeta(b);
-});
 
-const backgroundConsts = backgrounds.map(b => ({
-    name: b.name,
-    path: b.path,
-    type: b.type,
-    tags: b.tags,
-}));
-
+help.addRouting(backgrounds);
+const backgroundConsts = help.reduceToConsts(backgrounds);
 export { backgrounds, backgroundConsts };

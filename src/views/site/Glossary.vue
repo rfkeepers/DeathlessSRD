@@ -11,25 +11,26 @@ let touchX = 0;
 let touchY = 0;
 let touchT = 0;
 const handleTouchStart = (ev) => {
-    if (!matchMedia("screen and (max-width: 900px)")) return;
+    if (!matchMedia("screen and (max-width: 900px)").matches) return;
     touchX = ev.targetTouches[0].screenX;
     touchY = ev.targetTouches[0].screenY;
     touchT = ev.timeStamp;
 };
 const handleTouchEnd = (ev) => {
-    if (!matchMedia("screen and (max-width: 900px)")) return;
+    if (!matchMedia("screen and (max-width: 900px)").matches) return;
     const diffX = ev.changedTouches[0].screenX - touchX;
     const diffY = ev.changedTouches[0].screenY - touchY;
     const diffT = ev.timeStamp - touchT;
     touchX = 0;
     touchY = 0;
     touchT = 0;
-    if (diffX > 100 && -50 < diffY && diffY < 50 && diffT < 1000) hide();
+    if (diffX < -100 && -50 < diffY && diffY < 50 && diffT < 1000) hide();
     if (diffX > 100 && -50 < diffY && diffY < 50 && diffT < 1000) show();
 };
 
 // ---------- slideout visibility control
 const page = ref(null);
+const slideout = ref(null);
 const searchInput = ref(null);
 let isVisible = ref(true);
 const show = () => {
@@ -79,6 +80,11 @@ onMounted(() => {
     }
     page.value.addEventListener('touchstart', handleTouchStart, false);
     page.value.addEventListener('touchend', handleTouchEnd, false);
+    slideout.value.addEventListener('touchstart', handleTouchStart, false);
+    slideout.value.addEventListener('touchend', handleTouchEnd, false);
+    if (matchMedia("screen and (max-width: 900px)").matches && route.path.includes('landing')) {
+        isVisible.value = false;
+    }
 });
 onUnmounted(() => {
     document.removeEventListener('click', hideIfShown);

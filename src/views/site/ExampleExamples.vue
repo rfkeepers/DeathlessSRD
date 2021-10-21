@@ -12,11 +12,11 @@ const moveOpts = ['You catch a faint whiff of cologne, the smell of a person who
     <Move id="take_in_the_scenery" ruled>
         <template v-slot:name>Take In The Scenery</template>
         <template v-slot:body>
-            When you pause for a moment and <b>take a moment to enjoy your surroundings</b>, roll +happiness.  On a 10+, the MC will describe what whispers of sweet nothings the world gives you.  On a 7-9, pick one from below.  On a miss, well, prepare for the worst, which probably means a slight chance of rain.
+            When you pause for a moment and <b>take a moment to enjoy your surroundings</b>, roll +happiness.  <em>On a 10+</em>, the MC will describe what whispers of sweet nothings the world gives you.  <em>On a 7-9</em>, pick one from below.  <em>On a miss</em>, well, prepare for the worst, which probably means a slight chance of rain.
             <Options :options="moveOpts"/>
         </template>
         <template v-slot:example>
-            This is the perfect move to use after you, dear MC, have wowed the table with your sensuous talents of word-painting, evoking a pastoral scene of dappled light over desirable hills and valleys in expanse all around the characters.  As the players sit idly in their daydreaming, it's time to have them <b>Take In The Scenery</b>.
+            This is the perfect move to use after you, dear MC, have wowed the table with your sensuous talents of word-painting, evoking a pastoral scene of dappled light over desirable hills and valleys in expanse all around the characters.  As the players sit idly in their daydreaming, it's time to have them <em>Take In The Scenery</em>.
             <h3 class="lineTo">Outcomes</h3>
             <div class="quote"><i>{{moveOpts[0]}}</i></div>
             What better time to dive into someone's past than when you catch the character (or the player!) staring off into space.  Dig in to this moment and ask a few questions: how long has it been since the last time they caught that scent?  and does it surprise them to encounter it again, here, wherever it is they're at?
@@ -28,8 +28,8 @@ const moveOpts = ['You catch a faint whiff of cologne, the smell of a person who
             <div class="playExample miniBorder">
             <p>Jess wraps up a novelish description of the view of the city from the bridge.  "And that's what you see," they punctuate.</p>
             <p>"Woooowee," Em sighs.</p>
-            <p>A moment of silence passes through the table.  "Seems like you're trying to <b>Take In The Scenery</b>," Jess suggests.</p>
-            <p>"Yeah", Em agrees, "I haven't been to a real city for so long, it's overwhelming to see."  She rolls a 8 and decide that someone in a rush <b>bumped into them</b>, and that she <b>won't get to make eye contact</b>.  She describes the sudden flutter of papers and apologies and how, after everything is picked up, she turns to hand the person their last paper but they've already kept going down the street.</p>
+            <p>A moment of silence passes through the table.  "Seems like you're trying to <em>Take In The Scenery</em>," Jess suggests.</p>
+            <p>"Yeah", Em agrees, "I haven't been to a real city for so long, it's overwhelming to see."  She rolls an 8 and decides that someone in a rush <em>bumped into them</em>, and that she <em>won't get to make eye contact</em>.  She describes the sudden flutter of papers and apologies and how, after everything is picked up, she turns to hand the person their last paper but they've already kept going down the street.</p>
             <p>Jess nods, "they huddle around their crumpled paperwork and scurry down the street, their daffodil-yellow jacket loud against the few people walking by in their brown and grey suits.  Remind me, who is it you were here to find?"</p>
             <p>"Brigamoor?  I think?" Em says.</p>
             <p>"Well," Jess continues, "As you look at the last paper, the one in your hands, you see a very offical looking letterhead stamped at the top with the name, 'Gayle Brigamoor'.  Looking back up the street you catch a flash of yellow climbing into a cab.  The door shuts and it begins to rumble down the street."</p>

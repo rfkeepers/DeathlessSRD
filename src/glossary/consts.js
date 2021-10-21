@@ -10,6 +10,7 @@ const tags = {
 };
 
 const types = {
+    attunement: 'Attunement',
     background: 'Background',
     move: 'Move',
 };
