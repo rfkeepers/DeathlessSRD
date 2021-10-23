@@ -11,7 +11,7 @@ const name = 'Immolate';
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
-        When you would <b>mark the Abyss</b>, but haven't died, you may deal self-harm instead and give yourself an Injury or a Condition.
+        Once per scene, when you would <b>burn a mark of the Abyss</b>, you instead sacrifice your own body or mind and take an Injury or a Condition.
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>

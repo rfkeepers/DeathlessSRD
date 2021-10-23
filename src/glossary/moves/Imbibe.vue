@@ -2,6 +2,8 @@
 <script setup>
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
+import Roll from "@/components/Roll.vue";
+import RollAbyssRules from "@/components/RollAbyssRules.vue";
 
 const name = 'Imbibe';
 </script>
@@ -17,7 +19,7 @@ const name = 'Imbibe';
             'Expand consciousness into prescient awareness.',
             'Dilate the senses to incorporate all experience.',
             'Numb interference to isolate clarity.',
-            'Loose the shackles that restrict the body.',
+            'Loose the shackles that contain the body.',
         ]" />
         <br>
         Communion with the Abyss has its consequences.  Ask or tell the MC which of the following also affects you:
@@ -26,6 +28,10 @@ const name = 'Imbibe';
             'Volatile sensory experiences.',
             'Imagination indistinguishable from reality.',
         ]" />
+        <br>
+        Finally, <Roll abyss/>.  Not sure I like this.  How do I do the same thing to commune with the Abyss?
+        <br><br>
+        <RollAbyssRules />
 
     </template>
     <template v-slot:example>

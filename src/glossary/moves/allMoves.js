@@ -738,7 +738,7 @@ const moves = [
    {
       name: 'Straddle The Border',
       type: types.move,
-      tags: [],
+      tags: ['Witch'],
       routeContent: 'One of the Witch attunement moves.',
       component: StraddleTheBorder,
    },

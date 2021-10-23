@@ -11,7 +11,7 @@ const name = 'Bad Karma';
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>( Attuned )</template>
     <template v-slot:body>
-        When you <b>Harm someone without provocation</b>, who has never harmed you before, erase one Condition or take 2 resilience.
+        When you <b>Harm someone without provocation</b>, when they are neither aggressive toward you now and have never harmed you in the past, erase one Condition or take 2 resilience.
     </template>
     <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
