@@ -8,7 +8,8 @@ const moveOpts = ['You catch a faint whiff of cologne, the smell of a person who
 <!-- ============================== Template ============================== -->
 <template>
 <div class="exampleExamples">
-    <div>Suppose you're reading along with the text and I'm explaining all manner of goodness about how the game and the rules and the conversation works out for all of the players involved.  Suddenly, a wild move appears!  "Egads", you say, "what do I do with it?"  Just click on the blue question marks to find out...</div>
+    <div>Suppose you're reading along with the text and I'm explaining all manner of goodness about how the game and the rules and the conversation works out for all of the players involved.  Suddenly, a wild move appears!  "Egads", you say, "what do I do with it?"  Just click on the question marks to find out...</div>
+    <br>
     <Move id="take_in_the_scenery" ruled>
         <template v-slot:name>Take In The Scenery</template>
         <template v-slot:body>

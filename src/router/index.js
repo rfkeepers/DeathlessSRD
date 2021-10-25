@@ -34,29 +34,29 @@ const routes = [
     },
   },
   {
-    path: '/moves',
-    name: 'Move Examples',
+    path: '/design/moves',
+    name: 'Move UX Design',
     component: moveExamples,
     meta: {
-      title: titleMaker('Move Examples'),
+      title: titleMaker('Move UX Design'),
       tags: [
         {
           name: 'description',
-          content: 'Showcases the Move component.',
+          content: 'Showcases various designs for the Move component.',
         },
       ],
     },
   },
   {
-    path: '/examples',
-    name: 'Example Examples',
+    path: '/design/examples',
+    name: 'Example UX Design',
     component: exampleExamples,
     meta: {
-      title: titleMaker('Example Examples'),
+      title: titleMaker('Example UX Design'),
       tags: [
         {
           name: 'description',
-          content: 'Showcases the Example component.',
+          content: 'Showcases designs for the Example panel component.',
         },
       ],
     },
@@ -70,7 +70,7 @@ const routes = [
       tags: [
         {
           name: 'description',
-          content: 'Showcases the Glossary component.',
+          content: 'The glossary reference for all rules in the game.',
         },
       ],
     },

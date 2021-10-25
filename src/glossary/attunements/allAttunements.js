@@ -10,7 +10,6 @@ import Martyr from '@/glossary/attunements/Martyr.vue';
 import Pyro from '@/glossary/attunements/Pyro.vue';
 import Shadewalker from '@/glossary/attunements/Shadewalker.vue';
 import Sightseer from '@/glossary/attunements/Sightseer.vue';
-import Template from '@/glossary/attunements/Template.vue';
 import Venom from '@/glossary/attunements/Venom.vue';
 import Witch from '@/glossary/attunements/Witch.vue';
 
@@ -77,13 +76,6 @@ const attunements = [
         tags: [],
         routeContent: 'The Sightseer attunement.',
         component: Sightseer,
-    },
-    {
-        name: 'Template',
-        type: types.attunement,
-        tags: [],
-        routeContent: 'The Template attunement.',
-        component: Template,
     },
     {
         name: 'Venom',

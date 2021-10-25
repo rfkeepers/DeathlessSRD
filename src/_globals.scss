@@ -31,20 +31,26 @@ $color-z-sunk: scale-color($color-z, $lightness: -48%);
   box-sizing: border-box;
 }
 
-:root {
-  --move-color-border: #{$color-text-sink};
-  --move-color-shaded: #{$color-background-pop};
-
-  --example-color-icon: #{$color-highlight};
+:root {  
   --example-color-background: #{$color-background-sink};
   --example-color-border: #{$color-background-pop};
-
+  --example-color-icon: #{$color-highlight};
+  
+  --glossary-color-entry-highlight: #{$color-foreground-sunk};
+  --glossary-color-entry-type: #{$color-z-sink};
   --glossary-color-list-background: #{$color-background-pop};
   --glossary-color-list-border: #{$color-background-popped};
   --glossary-color-search-background: #{$color-background-sunk};
   --glossary-color-search-border: #{$color-foreground-sunk};
-  --glossary-color-entry-highlight: #{$color-foreground-sunk};
-  --glossary-color-entry-type: #{$color-z-sink};
+  
+  --move-color-border: #{$color-text-sink};
+  --move-color-shaded: #{$color-background-pop};
+
+  --nav-color-background: #{$color-background};
+  --nav-color-background-hover: #{$color-z-sunk};
+  --nav-color-border: #{$color-foreground-sunk};
+  --nav-color-flag: #{$color-foreground-sink};
+  --nav-color-text: #{$color-text};
 
   --stat-color: #{$color-foreground-pop};
 }
