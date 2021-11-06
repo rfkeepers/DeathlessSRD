@@ -1,3 +1,4 @@
+<!-- ============================== Template ============================== -->
 <template>
 <div
     class="navDropdown"
@@ -25,7 +26,7 @@
             <router-link
                 v-else
                 :to="l.to"
-                @click="$emit('routed')"
+                @click="emitRouted"
             >
                 {{ l.text }}
             </router-link>
@@ -34,9 +35,13 @@
 </div>
 </template>
 
+<!-- ============================== Script ============================== -->
 <script>
+import * as evt from '@/utils/event.js';
+
 const navDropdown = {
     name: 'navDropdown',
+    emits: ['routed'],
     props: {
         name: {
             type: String,
@@ -65,8 +70,11 @@ const navDropdown = {
         },
         routeTo(link) {
             if (link.external) { window.location.href = link.to; }
-            this.$emit('routed');
+            this.emitRouted();
             this.$router.push(link.to);
+        },
+        emitRouted() {
+            evt.emit('routed');
         },
     },
 };
@@ -74,7 +82,9 @@ const navDropdown = {
 export default navDropdown;
 </script>
 
+<!-- ============================== Style ============================== -->
 <style scoped lang="scss">
+
 .navDropdown {
     cursor: pointer;
     text-indent: 1em;
@@ -90,13 +100,12 @@ export default navDropdown;
 }
 
 .navPopover {
-
     @media screen and (min-width: 900px) {
         position: relative;
     }
     
     &__list {
-        z-index: 100;
+        z-index: 1100;
     
         @media screen and (min-width: 900px) {
             position: absolute;

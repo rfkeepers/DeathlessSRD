@@ -5,6 +5,10 @@ const props = defineProps({
         type: Array,
         description: "Array of string options values.",
     },
+    asHtml: {
+        type: Boolean,
+        description: "Treat the options values as HTML instead of plain text.",
+    },
     bullet: {
         type: String,
         description: "Custom bullet character prepended to all options.",
@@ -57,7 +61,8 @@ const customStyle = {
                 <span v-if="selectable" class="option__selectable" :style="customStyle">▢</span>
                 <span v-if="standard" class="option__standard" :style="customStyle">●</span>
                 <div class="option__text">
-                    {{opt}}
+                    <span v-if="asHtml" v-html="opt"></span>
+                    <span v-else>{{opt}}</span>
                     <slot :name="`subslot-${idx}`" />
                 </div>
             </ul>
@@ -72,6 +77,7 @@ const customStyle = {
     &__list {
         &__item {
             margin-top: 8px;
+            // line-height: 1.4em;
         }
     }
 }

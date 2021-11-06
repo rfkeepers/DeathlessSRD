@@ -1,34 +1,73 @@
-<!-- ============================== Script ============================== -->
+/<!-- ============================== Script ============================== -->
 <script setup>
+import Options from '@/components/Options.vue';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<div class="fancy">
-    Do you ever think about what happens afterward?
+<h1 class="title">
+    <b>What Is This?</b>
+</h1>
+<div class="blurb">
+    Deathless is a work-in-progress pbta about flawed characters who never stay dead.  It explores compulsions towards bad behavior, relationships that tether, and the inevitable entropy of the dieing mind.
+    <br><br>
+    The players endure the loop between their Entanglements and the Abyss.  The Abyss marks the drift towards madness, the inescapable loss of self in the transition between life and death and life again.  In response, Entanglements reel them back from the brink, into the bindings of joys and pains which only the living may suffer.
+    <br><br>
+    Through it all the characters will get compelled, and rewarded, for bending to their faults and vices.  Slipping deeper into the Abyss offers power, but power reveals foibles and viciousness.  The only way to succeed, to stay human, is to rise above your failings.
 </div>
-<br>
-<div class="fancy">
-    Everyone dies, you suppose.  Nothing special about that.  Your way was just as ordinary as anyones'.  An accident at work.  Earlier in life than you expected.  Timing is usually the only remarkable part.
-</div>
-<br>
-<div class="fancy">
-    And then you came back.  Lucky, lucky you.  Oh, but you thought they'd have been happy to see you again.  Why wouldn't they?  Back to life!  Not dead at all!  Back to hold your little girl.  Back to care for your spouse and your home.  Back, again, to make it all go right this time, you swear it.  You swear on whatever gave you a second chance that your daughter will never stare at another empty plate for dinner.  You'll never get indebted to another shark.  Never again will anyone cry over what you haven't done... or what you have.
-    
-    <!-- Hauled out of your own home by your friends and neighbors.
-    
-    plague on it.  Doesn’t matter much now that you’re back.  Back and shunned by all.  Hauled out of your own home by your friends and neighbors, with not even the decency to turn your child’s face away as they dragged your heels down the street, threw you from town and told you to never return.  You knew it would go that way.  As a child you listened to stories about the deathless, how they sneak into town at night to eat unruly infants and infect the good nature of a town, about the exorcisms to perform when someone crawls back out of a grave.  You could’ve just stayed away. -->
-</div>
-<br>
-<div class="fancy">
-    They dragged you through the streets.  Neighbors and old friends, 
+
+<h2 class="title">
+    <b>What Here Is Desirable?</b>
+</h2>
+<div class="blurb">
+    Deathless is designed to encourage a specifc kind of play.  The principles it holds close to its heart are:
     <br>
-    ut could you have stayed away, really?  You’re no monster, no horror.  It’s just you.  Tired without sleep, hungry without food, bleeding when cut, joyous and relieved to open the door and see your hearth and home… every bit like it used to be.  Why shouldn’t you get to come home again and embrace your child and sup with your family and sleep in your bed?  Stories be damned, they should have welcomed you back with joy!  Not dead after all, right as can be, aren’t we all lucky!?  They could have given you a chance.
+    <Options bullet="⇀" asHtml :options="[
+        '<em>Drama is more important than verisimilitude.</em>  Character interaction always takes the spotlight.',
+        '<em>Relationships precede combat mechanics.</em>  Words and knives both cut deep.',
+        '<em>The players and MC share ownership.</em>  We all play to find out what happens.',
+        '<em>Stare ugliness in the eyes.</em>  What is terrible should be confronted, not hidden.',
+    ]" />
+    <br>
+    Likewise, the game does not try to accomodate every story.  Deathless thrives in a setting where:
+    <br>
+    <Options bullet="⇀" asHtml :options="[
+        'The world is <em>dangerous and cruel</em>.',
+        '<em>Horrible people</em> are in control.',
+        'Characters are <em>complicated</em>, real, and surprising.',
+        'The players\' characters <em>lack</em> extraordinary power.',
+        'The unnatural is a <em>reflection of humanity</em>.',
+    ]" />
 </div>
-<br>
-<div class="fancy">
-    Hut could you have stayed away, really?  You’re no monster, no horror.  It’s just you.  Tired without sleep, hungry without food, bleeding when cut, joyous and relieved to open the door and see your hearth and home… every bit like it used to be.  Why shouldn’t you get to come home again and embrace your child and sup with your family and sleep in your bed?  Stories be damned, they should have welcomed you back with joy!  Not dead after all, right as can be, aren’t we all lucky!?  They could have given you a chance.
+
+<h2 class="title">
+    <b>What Here Is Unexpected?</b>
+</h2>
+<div class="blurb">
+    Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling with your stats with fiction and conversation at the forefront of play.  The rest varies in small or great ways.
+    <br>
+    <Options bullet="⇀" :options="[
+        'Non-traditional playbooks.  Your starting moves come from terse Backgrounds.  In play, characters adopt Attunements- transient personas designed as tightly focused compendiums of moves.',
+        'Entanglements to bind the characters to their relationships.',
+        'Compelling and Resistance mechanics that drive characters towads peril.',
+        'No abstractions to handle combat.  Harm is a fluid expression for all violence, both physical and emotional.',
+        'Player-vs-Player handling built into the system.',
+    ]" />
 </div>
+
+<h2 class="title">
+    <b>What Here Is Unfinished?</b>
+</h2>
+<div class="blurb">
+    <Options bullet="⇀" :options="[
+        'The core game is complete and playable, but many mechanics need refinement.',
+        'The rolling changes (dice pool instead of 2d6) isn\'t quite there yet.  It has a decent base, but could use another layer.',
+        'Rules are altogether absent for secondary systems like: currency, travel, downtime, and designing npcs and threats.',
+        'No setting details are present.  Deathless isn\'t intended to require a setting, but having a foundation that adds context for its tone and behavior can help readers grok the intended game.  Too much abstraction hooks nobody.',
+        'Oh, and it lacks playtesting. Like, at all.',
+    ]" />
+</div>
+
 <div>
     Todo:<br>
     1. rolling<br>
@@ -56,17 +95,12 @@
     padding-bottom: 16px;
 
     &::first-letter {
-        font-weight: 400;
-        font-size: 3em;
-        color: $color-foreground;
-        padding-right: 4px;
+        color: $color-text-sunk;
+        font-weight: 500;
+        font-size: 2em;
         line-height: 0.6em;
+        padding-right: 1px;
         float: left;
-        padding-top: 8px;
     }
-}
-
-.header {
-    margin-left: 0;
 }
 </style>

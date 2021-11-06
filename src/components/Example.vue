@@ -117,7 +117,7 @@ onUnmounted(() => {
     position: fixed;
     height: 100%;
     width: 800px;
-    top: 58px;
+    top: 50px;
     right: -800px;
 
     &:focus{
@@ -127,6 +127,7 @@ onUnmounted(() => {
     @media screen and (max-width: 900px) {
         width: 110vw;
         right: -110vw;
+        top: 54px;
     }
 
     &--shown {
@@ -148,7 +149,6 @@ onUnmounted(() => {
         font-size: 1.5em;
         font-weight: 900;
         line-height: 1.25em;
-        margin-bottom: 8px;
     }
 
     .body {

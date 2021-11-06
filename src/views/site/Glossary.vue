@@ -1,5 +1,6 @@
 <!-- ============================== Script ============================== -->
 <script setup>
+import * as evt from '@/utils/event';
 import { glossary } from '@/glossary/glossary.js';
 import { ref, onMounted, onUnmounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
@@ -85,9 +86,11 @@ onMounted(() => {
     if (matchMedia("screen and (max-width: 900px)").matches && route.path.includes('landing')) {
         isVisible.value = false;
     }
+    evt.listen('navOpen', hideIfShown);
 });
 onUnmounted(() => {
     document.removeEventListener('click', hideIfShown);
+    evt.listen('navOpen', hideIfShown);
 });
 </script>
 
@@ -163,7 +166,7 @@ onUnmounted(() => {
     transition: left 0.25s ease-out;
     height: 100%;
     width: 360px;
-    top: 58px;
+    top: 54px;
 
     background-color: var(--glossary-color-list-background, black);
     border-right: 1px solid var(--glossary-color-list-border, white);
@@ -177,6 +180,7 @@ onUnmounted(() => {
 
     @media screen and (min-width: 900px) {
         left: 0;
+        top: 50px;
     }
 
     @media screen and (max-width: 900px) {

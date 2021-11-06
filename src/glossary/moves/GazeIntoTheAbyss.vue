@@ -13,7 +13,7 @@ const name = 'Gaze Into The Abyss';
 <Move id="gaze_int_the_abyss" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>go looking for answers in the endless sea underneath all things</b>, you gaze into the infinite depths and find truths, however difficult to grasp they may be.  Choose 1 from below, and <Roll abyss/>.
+        When you <b>go looking for answers</b> in the endless sea underneath all things, you gaze into the infinite depths and find truths, however difficult to grasp they may be.  Choose 1 from below, and <Roll abyss/>.
         <Options bullet="⇀" :options="[
             'A gripping sensation guides you.',
             'A brief and obscure vision is revealed.',

@@ -1,3 +1,4 @@
+<!-- ============================== Template ============================== -->
 <template>
 <div class="overlord">
 
@@ -18,7 +19,7 @@
     <!-- Navigation -->
     <div
       class="headerBar__nav-button"
-      @click="linksShowing = !linksShowing"
+      @click="showNavs"
     >
       &#9776;
     </div>
@@ -26,20 +27,17 @@
     <!-- Nav Dropdown -->
     <div class="headerBar__links" v-if="linksShowing">
       <NavDropdown
-        @routed="hideNavs"
         name="Content"
         :links="contentLinks"
       />
       <div class="headerBar__links__spacer">|</div>
       <NavDropdown
-        @routed="hideNavs"
         name="Glossary"
         :links="glossaryLinks"
       />
       <!-- <NavLink>Glossary</NavLink> -->
       <div class="headerBar__links__spacer">|</div>
       <NavDropdown
-        @routed="hideNavs"
         name="About"
         :links="aboutLinks"
       />
@@ -57,13 +55,16 @@
 </div>
 </template>
 
+<!-- ============================== Script ============================== -->
 <script>
 import NavDropdown from '@/components/NavDropdown.vue';
+import * as evt from '@/utils/event.js';
 
 // --------------------------------------------------------------------
 export default {
   name: "App",
   components: { NavDropdown },
+  emits: ['routed'],
 
   data() { return {
     linksShowing: matchMedia("screen and (min-width: 900px)").matches,
@@ -74,7 +75,7 @@ export default {
       {to: "/design/examples", text: "Designing Examples UX"},
     ],
     contentLinks: [
-      {to: "/about", text: "What Is Deathless?"},
+      {to: "/", text: "What Is Deathless?"},
       {to: "/other", text: "Next Part"},
     ],
     glossaryLinks: [
@@ -89,10 +90,12 @@ export default {
   // --------------------------------------------------------------------
   mounted() {
     window.addEventListener('resize', this.onResize);
+    evt.listen('routed', this.hideNavs);
   },
 
   beforeUnmount() {
     window.removeEventListener('resize', this.onResize);
+    evt.remove('routed', this.hideNavs);
   },
 
   methods: {
@@ -104,8 +107,15 @@ export default {
       this.linksShowing = !matchMedia("screen and (max-width: 900px)").matches;
     },
 
+    showNavs() {
+      this.linksShowing = !this.linksShowing;
+      if (this.linksShowing) {
+        evt.emit('navOpen');
+      }
+    },
+
     routeHome() {
-      this.$emit('routed');
+      evt.emit('routed');
       this.$router.push('/');
     },
   },
@@ -140,15 +150,16 @@ export default {
 </script>
 
 
+<!-- ============================== Style ============================== -->
 <style lang="scss">
 .headerBar {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .pageBody {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: auto;
@@ -158,8 +169,8 @@ export default {
 <style lang="scss" scoped>
 .headerBar {
   background: $color-background-sink;
-  min-height: 58px;
-  height: 58px;
+  // min-height: 58px;
+  // height: 58px;
   padding: 0.67em 1.5em 1em 1.5em;
   border-bottom: 2px solid $color-foreground-sunk;
   display: grid;

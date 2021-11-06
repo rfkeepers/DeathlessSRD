@@ -33,11 +33,11 @@ import Dreamlike from '@/glossary/moves/Dreamlike.vue';
 import DrownInTheAbyss from '@/glossary/moves/DrownInTheAbyss.vue';
 import EasyPrey from '@/glossary/moves/EasyPrey.vue';
 import Effigy from '@/glossary/moves/Effigy.vue';
+import EnjoyRespite from '@/glossary/moves/EnjoyRespite.vue';
 import Estate from '@/glossary/moves/Estate.vue';
 import ExpertGuide from '@/glossary/moves/ExpertGuide.vue';
 import FanTheFlames from '@/glossary/moves/FanTheFlames.vue';
 import FindAnOpening from '@/glossary/moves/FindAnOpening.vue';
-import FindRespite from '@/glossary/moves/FindRespite.vue';
 import Fireball from '@/glossary/moves/Fireball.vue';
 import ForgeSlag from '@/glossary/moves/ForgeSlag.vue';
 import GazeIntoTheAbyss from '@/glossary/moves/GazeIntoTheAbyss.vue';
@@ -337,6 +337,13 @@ const moves = [
       component: Effigy,
    },
    {
+      name: 'Enjoy Respite',
+      type: types.move,
+      tags: [tags.basicMove],
+      routeContent: 'The basic move for sharing a moment with someone.',
+      component: EnjoyRespite
+   },
+   {
       name: 'Estate',
       type: types.move,
       tags: ['Wealthy Elite'],
@@ -363,13 +370,6 @@ const moves = [
       tags: [tags.basicMove, tags.insight],
       routeContent: 'A basic move using the Insight stat.',
       component: FindAnOpening,
-   },
-   {
-      name: 'Find Respite',
-      type: types.move,
-      tags: [tags.basicMove],
-      routeContent: 'The basic move for sharing a moment with someone.',
-      component: FindRespite
    },
    {
       name: 'Fireball',

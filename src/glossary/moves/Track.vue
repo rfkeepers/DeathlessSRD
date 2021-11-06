@@ -12,7 +12,7 @@ const name = 'Track';
 <Move id="track" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>follow the tracks</b> of beasts or man, <Roll insight/>.  <em>S:</em> Ask 2 questions from the list.  <em>P:</em> Ask 1.
+        When you <b>follow the tracks</b> of beasts or people, <Roll insight/>.  <em>S:</em> Ask 2 questions from the list.  <em>P:</em> Ask 1.
         <Options bullet="⇀" :options="[
             'What creatures/people are there, and how many are in their group?',
             'How long ago were they here?',
