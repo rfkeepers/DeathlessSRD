@@ -7,10 +7,10 @@ import feedback from '@/views/site/Feedback.vue'
 import glossary from '@/views/site/Glossary.vue'
 import glossaryHome from '@/glossary/GlossaryHome.vue'
 import glossaryNotFound from '@/glossary/GlossaryNotFound.vue'
-// import glossaryRoutes from '@/glossary/routes.js'
 import notFound from '@/views/site/NotFound.vue'
+import rolling from '@/views/rules/Rolling.vue'
 
-const titleMaker = (...t) => t.join(' - ').concat(' - Deathless');
+const titleMaker = (...t) => t.concat('Deathless').join(' - ');
 
 const formattedRoutes = glossaryRoutes.map(gr => {
   const route = Object.assign({}, gr);
@@ -30,6 +30,20 @@ const routes = [
           name: 'description',
           content: 'Deathless - a pbta about scrutinizing the mechanics of death within a fantasy gaming setting.',
         },
+      ],
+    },
+  },
+  {
+    path: '/rules/rolling',
+    name: 'Rolling',
+    component: rolling,
+    meta: {
+      title: titleMaker('Rolling', 'Rules'),
+      tags: [
+        {
+          name: 'description',
+          content: 'The dice rolling and resolution mechanics in Deathless.',
+        }
       ],
     },
   },

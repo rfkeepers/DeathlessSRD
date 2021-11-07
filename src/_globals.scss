@@ -325,6 +325,10 @@ input {
   }
 }
 
+.spaceBelow {
+  padding-bottom: 1.25em;
+}
+
 .hint {
   color: $color-text-sink;
 }
@@ -376,12 +380,8 @@ input {
 .playExample {
   padding: 0 6% 0 4%;
   font-style: oblique;
-  h2: justify;
+  text-align: justify;
   margin-top: 16px;
-
-  @media screen and (max-width: 900px) {
-    padding: 0;
-  }
 }
 
 .miniBorder {

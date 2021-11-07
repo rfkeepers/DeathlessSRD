@@ -20,7 +20,7 @@ import Options from '@/components/Options.vue';
     <b>What Here Is Desirable?</b>
 </h2>
 <div class="blurb">
-    Deathless is designed to encourage a specifc kind of play.  The principles it holds close to its heart are:
+    Deathless is designed to encourage a specifc kind of play, driven by the following principles:
     <br>
     <Options bullet="⇀" asHtml :options="[
         '<em>Drama is more important than verisimilitude.</em>  Character interaction always takes the spotlight.',
@@ -67,7 +67,7 @@ import Options from '@/components/Options.vue';
         'Oh, and it lacks playtesting. Like, at all.',
     ]" />
 </div>
-
+<br><br>
 <div>
     Todo:<br>
     1. rolling<br>

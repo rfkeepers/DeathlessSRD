@@ -36,18 +36,18 @@ const props = defineProps({
     },
 });
 const quant = props.abyss ? '2d6 against your ABYSS'
-    : props.dice ? `${props.n} DICE`
+    : props.dice || props.n > 0 ? `${props.n} DICE`
     : props.glamour ? 'GLAMOUR'
     : props.force ? 'FORCE'
     : props.insight ? 'INSIGHT'
     : props.resolve ? 'RESOLVE'
     : props.skill ? 'SKILL'
-    : '????';
+    : 'SOMETHING';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<router-link to="/rolling">
+<router-link to="/rules/rolling">
     <span class="roll">roll {{quant}}</span>
 </router-link>
 </template>
