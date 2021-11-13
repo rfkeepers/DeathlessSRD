@@ -70,7 +70,7 @@ import Options from '@/components/Options.vue';
 <br><br>
 <div>
     Todo:<br>
-    1. rolling<br>
+    1. rolling (partially done)<br>
     2. entanglements<br>
     3. manifesto<br>
     4. the abyss<br>

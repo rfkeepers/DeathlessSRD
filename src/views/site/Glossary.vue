@@ -204,7 +204,7 @@ onUnmounted(() => {
     }
 
     &__entries {
-        padding-top: 1em;
+        // padding-top: 1em;
         height: 100%;
         overflow-y: auto;
 

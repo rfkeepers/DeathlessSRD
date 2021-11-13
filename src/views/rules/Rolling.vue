@@ -94,6 +94,6 @@ defineProps({
 <style lang="scss" scoped>
 $varname: 1;
 .rolling {
-    padding-bottom: 32px;
+    padding-bottom: 48px;
 }
 </style>

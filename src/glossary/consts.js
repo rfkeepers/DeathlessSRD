@@ -12,6 +12,7 @@ const tags = {
 const types = {
     attunement: 'Attunement',
     background: 'Background',
+    entanglement: 'Entanglement',
     move: 'Move',
 };
 

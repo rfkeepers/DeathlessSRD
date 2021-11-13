@@ -54,7 +54,7 @@ const name = 'Snipe';
         <p>"Can I wait just around, like, a doorway or a corner for one to walk by," Micah asks, "as soon as they appear I'm going to throw a punch.  Try to take them out in a single hit."</p>
         <p>"Sounds like a Snipe", the MC says.</p>
         <p>Micah rolls and gets a Partial success.  "Better than nothing, I guess," she says.</p>
-        <p>"So you hide in some kind of shadowed enclave, and when the first one walks by you catch them square in the jaw.  Completely unaware, so they drop unconscious.  The other one is quick to react, though, and they have a knife ready.  While you're coming up from the punch they swing at you.  Add a Wound, 'slashed face', where they cut you from the cheekbone to your forehead."</p>
+        <p>"So you hide in some kind of shadowed enclave, and when the first one walks by you catch them square in the jaw.  Completely unaware, so they drop unconscious.  The other one is quick to react, and they already have a knife ready.  While you're coming up from the punch they swing at you.  Add a Wound, 'slashed face', where they cut you from the cheekbone to your forehead."</p>
         </div>
     </template>
 </Move>

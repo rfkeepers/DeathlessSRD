@@ -34,8 +34,8 @@ const name = 'Find An Opening';
         As a take on the classic <i>read a sitch</i>, I wanted to switch the direction from "how much can I possibly learn about this moment" towards "how can I get the thing I need".  The test is whether it's better or worse to have the player use it when they need something specific, instead of when they want to explore their total options.  The most plausible problem I can think of is that it might focus the resolution too much on "a thing".  eg: a player asks for something vulnerable to them, and the MC presents it, and now play revolves entirely around that thing as a sort of macguffin, instead of using the full environment alongside that.  At the same time, I do want to keep pushing the notion that players shouldn't need to roll to ask questions, but instead to resolve them.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
-        <p>Flynn, in a tight spot with all these guards advancing in, starts looking for a way to escape the building.  "I'm hoping there's a window or, I dunno, a vent?"</p>
-        <p>The MC says it sounds like she's trying to Find an Opening.</p>
+        <p>Flynn, in a tight spot with guards advancing on their position, starts looking for a way to escape the building.  "I'm hoping there's a window or, I dunno, a vent?"</p>
+        <p>"That's a Find An Opening," the MC says, "which means an Insight roll."</p>
         <p>Flynn agrees and rolls a Partial success, choosing 'I need a way out' from the list.</p>
         <p>"There's a window, sure.  Kinda high up, which makes it hard to reach.  But that's not the problem.  The problem is the window has a full pane of glass and no hinges.  To get out that way you're going to need to shatter it.  That'll be pretty noisy, not to mention the risk of getting cut up."</p>
         </div>

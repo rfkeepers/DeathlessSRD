@@ -34,15 +34,15 @@ const name = 'Persuade';
         I have a conflicted relationship with persuasion moves.  That is, how do you maintain an npc's independent motivations if you let any old roll make them, "just do the thing you ask"?  Works fine in a game that doesn't hinge as much on behavioral conflicts.  So I ended up writing an overbearing move like this to make the ends meet.  I do see like persuasion moves overall.  They're one of the rules that help give the MC plausible deniability over how they're making the npcs behave.  But writing one nuance seems to highlight all the nuances that got ignored.
         <h3 class="lineTo">In Play</h3>
         <div class="playExample miniBorder">
-        <p>"Like I said," the MC reiterates, playing the part of the Consul, "you haven't brought rigorous evidence.  Certainly not enough to warrant action against a person as important as the Baron."</p>
+        <p>"Like I said," the MC reiterates, playing the part of Consul Bergen, "you haven't brought rigorous evidence.  Certainly not enough to warrant action against a person as important as the Baron."</p>
         <p>"We told you where to find people who'd give evidence under oath!"</p>
-        <p>"You know where to find two ruffians willing to speak?  Wonderful, bring them here yourselves! Let them speak!  I'll give them the floor.  I swear, if I have to hear one more claim like this today."</p>
-        <p>"Hold up," Ewan say, "one more?  Someone else told you this?"</p>
+        <p>"You know where to find two ruffians willing to speak?  Wonderful, bring them here yourselves! Let them speak!  I'll give them the floor.  I swear it.  But what I don't need today is another baseless claim."</p>
+        <p>"Hold up," Ewan say, "another?  Someone else told you this?"</p>
         <p>"The Consul clams up real quick," says the MC.</p>
         <p>"We're not stopping here," Ewan continues.  "What, are you taking payment from the Baron, too?"</p>
         <p>"It's a delicate matter"</p>
-        <p>"Who?" Ewan asks, "who was it?  If you really aren't in the Baron's pocket then I sure as hell hope you think his business is as vile as we do.  You need better evidence?  Fine, tell us who else is talking to you.  Just that.  We can find them.  We can get you evidence."  Ewan pauses, waits for the MC to say something, then sighs, "what will it take to get a name?"</p>
-        <p>"Roll to Persuade this guy," the MC tells him.  Ewan rolls a Success.  "Okay," the MC begins, "the Consul makes a curt nod towards the door and waits for one of you to close it.  'You want a name?  I want a reason to move this to action.  You have three hours to bring me your informants.  And before you accuse me of being severe you should know that the Baron has ears here- with all your shouting you'll be lucky if what I've afforded you is long enough.  I need people who know names, who know places, who know where I can find paperwork.  Bring them to me and you'll get your name.'."</p>
+        <p>"Who?" Ewan asks, "who was it?  If you really aren't in the Baron's pocket then I sure hope you think his business is as vile as we do.  You need better evidence?  Fine, tell us who else is talking to you.  Just that.  We can find them.  We can get you evidence."  Ewan pauses, waits for the MC to say something, then sighs, "what will it take to get a name?"</p>
+        <p>"Roll to Persuade this guy," the MC tells him.  Ewan rolls a Success.  "Okay," the MC begins, "he makes a curt nod towards the door and waits for one of you to close it.  'You want a name?  I want a reason to move this to action.  You have three hours to bring me your informants.  And before you accuse me of being severe you should know that the Baron has ears here- with all your shouting you'll be lucky if what I've afforded you is long enough.  I need people who know names, who know places, who know where I can find paperwork.  Bring them to me and you'll get your name.'."</p>
         </div>
     </template>
 </Move>
