@@ -2,12 +2,12 @@
 <script setup>
     import Move from '@/components/Move.vue';
     import Options from "@/components/Options.vue";
-
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-    <h1>Obsession</h1>
+<h1 id="entanglement_obsession">Obsession</h1>
+<div class="blurb">
     While hopes and dreams often provide simple aspiration, an obsession can overwhelm the motivation for living altogether.  Taking on an Obsession is entirely up to the player.  No other character may ask you to do so, the MC cannot, nor can a move or compel force you into it.  But they shouldn't be taken lightly, either.  Once acknowledge, it can be very difficult to clear your mind of its Obsessions without resolving them entirely.
     <br><br>
     Examples:
@@ -56,8 +56,9 @@
     <Options bullet="❍" :options="[
         'If you find yourself in a situation where chasing your Obsession has become distasteful, disturbing, or self destructive, your only out is to find closure, somehow.  Obsession is difficult like that, you don\'t have the power to tell yourself to stop.  Instead, you may propose to change the terms.  If the table agrees with your proposal, you may rewrite your Obsession at no cost.  This may not alter the type of Entanglement.'
     ]" />
-    <br><br>
-    &nbsp;
+</div>
+<br><br>
+&nbsp;
 </template>
 
 <!-- ============================== Style ============================== -->

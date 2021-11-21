@@ -1,24 +1,27 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { glossaryRoutes } from '@/glossary/glossary.js';
+
 import home from '@/views/site/Home.vue'
-import moveExamples from '@/views/site/MoveExamples.vue'
-import exampleExamples from '@/views/site/ExampleExamples.vue'
 import feedback from '@/views/site/Feedback.vue'
+
+import entanglements from '@/views/rules/Entanglements.vue'
+import rolling from '@/views/rules/Rolling.vue'
+
 import glossary from '@/views/site/Glossary.vue'
 import glossaryHome from '@/glossary/GlossaryHome.vue'
 import glossaryNotFound from '@/glossary/GlossaryNotFound.vue'
+
+import exampleExamples from '@/views/site/ExampleExamples.vue'
+import moveExamples from '@/views/site/MoveExamples.vue'
+
 import notFound from '@/views/site/NotFound.vue'
-import rolling from '@/views/rules/Rolling.vue'
 
 const titleMaker = (...t) => t.concat('Deathless').join(' - ');
+const nameMaker = (...t) => t.join('.');
 
-const formattedRoutes = glossaryRoutes.map(gr => {
-  const route = Object.assign({}, gr);
-  gr.meta.title = titleMaker(gr.meta.title);
-  gr.path = gr.path.substring(1);
-});
-
-const routes = [
+// ------------------------------------------------------------------------------------- 
+// core
+let routes = [
   {
     path: '/',
     name: 'Home',
@@ -34,11 +37,30 @@ const routes = [
     },
   },
   {
-    path: '/rules/rolling',
+    path: '/feedback',
+    name: 'Feedback',
+    component: feedback,
+    meta: {
+      title: titleMaker('Feedback'),
+      tags: [
+        {
+          name: 'description',
+          content: 'Give some feedback about the game!',
+        },
+      ],
+    },
+  },
+];
+
+// ------------------------------------------------------------------------------------- 
+// rules
+routes = routes.concat([
+  {
+    path: '/rolling',
     name: 'Rolling',
     component: rolling,
     meta: {
-      title: titleMaker('Rolling', 'Rules'),
+      title: titleMaker('Rolling'),
       tags: [
         {
           name: 'description',
@@ -48,33 +70,30 @@ const routes = [
     },
   },
   {
-    path: '/design/moves',
-    name: 'Move UX Design',
-    component: moveExamples,
+    path: '/entanglements',
+    name: 'Entanglements',
+    component: entanglements,
     meta: {
-      title: titleMaker('Move UX Design'),
+      title: titleMaker('Entanglements'),
       tags: [
         {
           name: 'description',
-          content: 'Showcases various designs for the Move component.',
-        },
+          content: 'The entanglement mechanics in Deathless.',
+        }
       ],
     },
   },
-  {
-    path: '/design/examples',
-    name: 'Example UX Design',
-    component: exampleExamples,
-    meta: {
-      title: titleMaker('Example UX Design'),
-      tags: [
-        {
-          name: 'description',
-          content: 'Showcases designs for the Example panel component.',
-        },
-      ],
-    },
-  },
+]);
+
+// ------------------------------------------------------------------------------------- 
+// glossary
+// correct the path for the glossary entries
+glossaryRoutes.forEach(gr => {
+  gr.meta.title = titleMaker(gr.meta.title);
+  gr.path = gr.path.substring(1);
+});
+
+routes = routes.concat([
   {
     path: '/glossary',
     name: 'Glossary',
@@ -107,20 +126,45 @@ const routes = [
       },
     ],
   },
+]);
+
+
+// ------------------------------------------------------------------------------------- 
+// design
+routes = routes.concat([
   {
-    path: '/feedback',
-    name: 'Feedback',
-    component: feedback,
+    path: '/design/moves',
+    name: 'Move UX Design',
+    component: moveExamples,
     meta: {
-      title: titleMaker('Feedback'),
+      title: titleMaker('Move UX Design'),
       tags: [
         {
           name: 'description',
-          content: 'Give some feedback about the game!',
+          content: 'Showcases various designs for the Move component.',
         },
       ],
     },
   },
+  {
+    path: '/design/examples',
+    name: 'Example UX Design',
+    component: exampleExamples,
+    meta: {
+      title: titleMaker('Example UX Design'),
+      tags: [
+        {
+          name: 'description',
+          content: 'Showcases designs for the Example panel component.',
+        },
+      ],
+    },
+  },
+]);
+
+// ------------------------------------------------------------------------------------- 
+// catchall
+routes = routes.concat([
   {
     path: '/:pathMatch(.*)*',
     component: notFound,
@@ -128,11 +172,11 @@ const routes = [
       title: 'Not Found',
     },
   },
-];
+]);
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
 });
 
 export default router;

@@ -3,6 +3,7 @@
 import * as evt from '@/utils/event';
 import { glossary } from '@/glossary/glossary.js';
 import { ref, onMounted, onUnmounted } from 'vue';
+
 import { useRoute, useRouter } from 'vue-router';
 const route = useRoute();
 const router = useRouter();

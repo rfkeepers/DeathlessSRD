@@ -2,12 +2,12 @@
 <script setup>
     import Move from '@/components/Move.vue';
     import Options from "@/components/Options.vue";
-
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-    <h1>Loyalty</h1>
+<h1 id="entanglement_loyalty">Loyalty</h1>
+<div class="blurb">
     Expressing Loyalty means more than just an alignment of purpose between you and another character.  It means more than to recognize someone as your boss or charge.  Loyalty is devotion.  If they are your superior, you agree to be at their beck and call.  If they are your ward, you agree to shelter, guide, and nurture them.  And in both cases you must be prepared to make sacrifices for them when it is asked or needed of you.  For as long as it takes.  Perhaps as long as they live.
     <br><br>
     Examples:
@@ -63,8 +63,9 @@
         'If your oath is not permanent then when the time or event of its end arrives you may erase the Entanglement immediately and erase one mark of Abyss.  If you choose to not erase the Entanglement, then instead erase the end condition and make your Loyalty permanent.',
         'When someone to whom you have pledged Loyalty dies, erase your Entanglement.  If they died of unnatural causes which you were unable to prevent, mark the Abyss.',
     ]" />
-    <br><br>
-    &nbsp;
+</div>
+<br><br>
+&nbsp;
 </template>
 
 <!-- ============================== Style ============================== -->

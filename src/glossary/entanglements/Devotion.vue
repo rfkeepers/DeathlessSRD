@@ -1,14 +1,15 @@
 <!-- ============================== Script ============================== -->
 <script setup>
     import Move from '@/components/Move.vue';
-    import Options from "@/components/Options.vue";
-
+    import Options from '@/components/Options.vue';
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-    <h1>Devotions</h1>
+<h1 id="entanglement_devotion">Devotions</h1>
+<div class="blurb">
     To devote yourself to a task means more than a simple agreement to help.  It is the commitment to risk honor and name and blood for a cause.  The player is allowed to entangle themselves within any request for help, whether or not the MC intended to have made such a request.  Be warned that devotion implies adversity.  There is no such thing as a small and menial goal.
+    todo: rewrite this
     <br><br>
     Examples:
     <Options bullet="⇀" :options="[
@@ -20,7 +21,7 @@
     <Move id="make_a_promise" ruled shaded>
         <template v-slot:name>Devote yourself</template>
         <template v-slot:body>
-            When someone pleas for you to <b>commit yourself to their cause or their need</b>, you have a choice: dismiss their cries, or devote yourself to the task.  If you dismiss them, you're done here and can get on with your life, unburdened.  If you take part in their struggles, erase a mark of Abyss and write a new Entanglement to describe who you're helping and the commitment you've made to them.
+            When someone asks you to <b>commit yourself to their cause or their need</b>, you have a choice: dismiss their cries, or devote yourself to the task.  If you dismiss them, you're done here and can get on with your life, unburdened.  If you take part in their struggles, erase a mark of Abyss and write a new Entanglement to describe who you're helping and the commitment you've made to them.
         </template>
         <template v-slot:example>
         <h3 class="lineTo">Design Thoughts</h3>
@@ -43,8 +44,9 @@
     <Options bullet="❍" :options="[
         'In a situation where fulfilling your Devotion as it is written becomes untenable, or if the situation changes to dramatically conflict with the nature of your commitment, but you still wish to see the Entanglement through to the end, you may propose to change the terms.  If the table agrees with your proposal, you may rewrite your devotion at no cost.  This may not alter the type of Entanglement.',
     ]" />
-    <br><br>
-    &nbsp;
+</div>
+<br><br>
+&nbsp;
 </template>
 
 <!-- ============================== Style ============================== -->

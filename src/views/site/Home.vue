@@ -17,7 +17,7 @@ import Options from '@/components/Options.vue';
 </div>
 
 <h2 class="title">
-    <b>What Here Is Desirable?</b>
+    <b>What Here Is Useful or Interesting?</b>
 </h2>
 <div class="blurb">
     Deathless is designed to encourage a specifc kind of play, driven by the following principles:
@@ -61,8 +61,10 @@ import Options from '@/components/Options.vue';
 <div class="blurb">
     <Options bullet="⇀" :options="[
         'The core game is complete and playable, but many mechanics need refinement.',
-        'The rolling changes (dice pool instead of 2d6) isn\'t quite there yet.  It has a decent base, but could use another layer.',
+        'The rolling changes (dice pool instead of 2d6) isn\'t quite there yet.  It has a decent base, but could use another layer.  And perhaps shifting values.',
+        'Entanglements have a lot of refinement to go through before they find the right niche.',
         'Rules are altogether absent for secondary systems like: currency, travel, downtime, and designing npcs and threats.',
+        'Attunement personas need to be renamed abyss personas, and stratified into early and later tiers (high cost and benefit in the higher tier).',
         'No setting details are present.  Deathless isn\'t intended to require a setting, but having a foundation that adds context for its tone and behavior can help readers grok the intended game.  Too much abstraction hooks nobody.',
         'Oh, and it lacks playtesting. Like, at all.',
     ]" />

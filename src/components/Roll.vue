@@ -47,7 +47,7 @@ const quant = props.abyss ? '2d6 against your ABYSS'
 
 <!-- ============================== Template ============================== -->
 <template>
-<router-link to="/rules/rolling">
+<router-link to="/rolling">
     <span class="roll">roll {{quant}}</span>
 </router-link>
 </template>

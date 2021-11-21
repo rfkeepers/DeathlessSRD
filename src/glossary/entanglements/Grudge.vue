@@ -2,12 +2,12 @@
 <script setup>
     import Move from '@/components/Move.vue';
     import Options from "@/components/Options.vue";
-
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-    <h1>Grudge</h1>
+<h1 id="entanglement_grudge">Grudge</h1>
+<div class="blurb">
     Sometimes it isn't about taking on other peoples problems.  You'll have a few of your own issues to settle along the way.  It doesn’t take much to decide that it's time to hold a Grudge.  Dealing with wrongdoings is often daily life for the characters.  They shouldn't be spoken lightly.  No matter who started the fight, as soon as you declare a Grudge the MC will turn that character into a proper rival or villain.
     <br><br>
     Examples:
@@ -43,8 +43,9 @@
     <Options bullet="❍" :options="[
         'If you find yourself in a situation where fulfilling your grudge as it is written becomes untenable, or if your understanding of the situation changes to dramatically conflict with the nature of your commitment, but you still wish to see the Entanglement through to the end, you may propose to change the terms.  If the table agrees with your proposal, you may rewrite your grudge at no cost.  This may not alter the type of Entanglement.',
     ]" />
-    <br><br>
-    &nbsp;
+</div>
+<br><br>
+&nbsp;
 </template>
 
 <!-- ============================== Style ============================== -->
