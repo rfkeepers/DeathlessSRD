@@ -39,9 +39,9 @@ const name = 'Help and Hindrance';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         I'm not even sure I'd call this a move.  But, since it involves <i>handling moves</i>, I figure I can lump it all together.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

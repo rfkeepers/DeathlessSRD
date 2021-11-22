@@ -18,14 +18,14 @@ const moveOpts = ['You catch a faint whiff of cologne, the smell of a person who
         </template>
         <template v-slot:example>
             This is the perfect move to use after you, dear MC, have wowed the table with your sensuous talents of word-painting, evoking a pastoral scene of dappled light over desirable hills and valleys in expanse all around the characters.  As the players sit idly in their daydreaming, it's time to have them <em>Take In The Scenery</em>.
-            <h3 class="lineTo">Outcomes</h3>
+            <h3 class="lineTo indent">Outcomes</h3>
             <div class="quote"><i>{{moveOpts[0]}}</i></div>
             What better time to dive into someone's past than when you catch the character (or the player!) staring off into space.  Dig in to this moment and ask a few questions: how long has it been since the last time they caught that scent?  and does it surprise them to encounter it again, here, wherever it is they're at?
             <div class="quote"><i>{{moveOpts[1]}}</i></div>
             This is a chance for the narrative to branch multiple ways.  A brief moment of eye contact is an opportunity to flare up all kinds of emotions: curiosity, memory, lust, frustration.  Likewise, contact ignored can mean more than just eye contact was lost: pickpocketing, having something dropped or broken without realizing it, or the most simple irony that the person whom they're looking for nearly just knocked the character over.
             <div class="quote"><i>{{moveOpts[2]}}</i></div>
             There's nothing worse than a violent interruption in a moment of appreciation.  Especially when you were just about to remember that thing.  Oh, what was it?  Something important, you're sure of it.  Oh well.
-            <h3 class="lineTo">In Play</h3>
+            <h3 class="lineTo indent">In Play</h3>
             <div class="playExample miniBorder">
             <p>Jess wraps up a novelish description of the view of the city from the bridge.  "And that's what you see," they punctuate.</p>
             <p>"Woooowee," Em sighs.</p>

@@ -34,9 +34,9 @@ const name = 'Overwhelm';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         I like this move well enough.  But I know it's going to become the defacto "fight a thing" move.  Which isn't, I suppose, entirely the wrong approach.  If a character wants to deal belligerent Harm, this here fits the bill.  I just hope it comes to mind for considerations that aren't strictly combat, too.  That could be too dreamy of me: believing the move has more breadth than it's capable of.  But it would be nice for the pattern of things, avoiding a strict combat move and all, if it worked for both.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>"The guard looks nervous.  They can see the odds, they know they're outnumbered.  But they're trying to do their job, and their job is to keep you out of the place."</p>
         <p>"Can I grab them by the shirt and shove them against the door?" Micah asks.</p>

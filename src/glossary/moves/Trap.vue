@@ -28,9 +28,9 @@ const name = 'Trap';
         </SHPM>
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Similar to Expert Guide's question about what, exactly, can qualify as a trap for one to walk into, this move also has some wiggle room about what constitutes a trap that can be laid.  I imagine that most players will view it like I had when writing the move: a physical trap with physical containment.  But I suppose I wouldn't be bothered if a table managed to use it in a less specific format.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

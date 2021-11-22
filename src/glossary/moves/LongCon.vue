@@ -28,9 +28,9 @@ const name = 'Long Con';
         </SHPM>
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         I have trouble writing moves whose effects stretch out across longer periods of time.  Or perhaps that's an inherently difficult format for pbta moves.  Whatever the case, while I like this move in general, I'm not 100% certain it's working exactly the way I want to.  Or, alternatively, that I want it to be a long-form move at all.  Fun to write, but perhaps not as fun to play out. 
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

@@ -14,9 +14,9 @@ const name = 'Ghost';
         Treat your <b>Skill</b> as 1 higher while acting as Shadewalker
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         More simple stat boosts.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

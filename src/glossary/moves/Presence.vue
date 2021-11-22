@@ -14,9 +14,9 @@ const name = 'Presence';
         Treat your <b>FORCE</b> as 1 greater while attuned to Dominion.
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         A straightforward bonus, not much to say about it.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

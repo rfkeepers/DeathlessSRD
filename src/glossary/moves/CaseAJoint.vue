@@ -21,9 +21,9 @@ const name = 'Case A Joint';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         For nearly the entirety of the games lifespan I didn't have a basic move for reading a situation (in terms of the place you're in).  I decided to keep that sort of knowledge here relegated to the grifter.  I'm still happy with that choice, and I think in the end helped me find the space for the current basic move, which I like more.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

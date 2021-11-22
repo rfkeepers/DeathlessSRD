@@ -20,9 +20,9 @@ const name = 'Know Your Enemy';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Another Understand Someone variation.  Do I have too many of these?  I think I've lost count.  I'm certainly not writing as many Overwhelm variants.  I wrote the Tactician quite early on, and the Gambler much later.  In review, I think I might have wrote the same concept twice with differing themes.  Or, at least, this move certainly overlaps with the "read their tell" move.  Maybe a little overlap is okay?
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

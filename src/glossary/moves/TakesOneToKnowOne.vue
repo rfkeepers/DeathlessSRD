@@ -13,9 +13,9 @@ const name = 'Takes One To Know One';
         Anytime you ask a question from <b>Understand Someone</b>, you may also ask, "what illegal activities are you involved in?".
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         This makes it into the Smuggler playbook to make it the only one that gets three moves.  There's no real reason for it, outside of that I like this addition.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

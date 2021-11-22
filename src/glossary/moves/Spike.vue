@@ -22,9 +22,9 @@ const name = 'Spike';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         A miniature ode to The Veil.  One of those moves where I played with, "pick N, one of the choices is 'it doesn't fuck me over, too'." and I like how it turned out.  It isn't my favorite move by any means, but I think it works out here, and that makes me happy.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

@@ -20,9 +20,9 @@ const name = 'Enjoy Respite';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         I'm always a fan of intimacy moves as a way to tell the players, "yes, the game wants you to get into these moments".  And the more hurt the characters experience, especially emotionally, the more I expect them to seek out intimacy as a response.  Especially in Deathless, with the numerous opportunities that awakened moves provide similar mechanical resolution through bad behavior, I want to have a baseline for good behavior, too.  That's why the move is descriptively broad with its take on intimacy.  So long as, at the end of the scene, the characters come away feeling greater connection, I think it's okay to have that broadness.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Flynn and Micah enter their home together in silence.  Flynn limps on one leg, using Micah as a crutch the other ankle.  Micah holds a bloodied kerchief against her left eye.</p>
         <p>Inside the house they say nothing.  Flynn lays Micah on a bed and begins to clean the wound with water and cloth.  They'll be lucky if Micah can use that eye after this, she thinks to herself.  After cleaning as best she can, she reaches for another box: needle and thread from an old sewing kit.  It isn't a very safe way to stitch it up, and she's no medic, but it's the only option they have.</p>

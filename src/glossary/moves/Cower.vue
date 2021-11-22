@@ -33,9 +33,9 @@ const name = 'Cower';
         </SHPM>
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         I like this move so far, but the Hit options need to change.  Right now they're inverses of each other (when you are great, they are small), so picking one is effectively the same as picking the other.  They need some narrative distance to crystalize good scenery around them.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

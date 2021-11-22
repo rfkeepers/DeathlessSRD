@@ -29,9 +29,9 @@ const name = 'Rabbit In the Hat';
         </SHPM>
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Another experiment in turning a magic trick into a move.  This one isn't as elegant as And For My Next Move.  It has more built in complication just in terms of figuring out the results.  On one hand I do like what the move is reaching for.  On the other hand, I don't want to stall the table over contrivances around it, such as what you pulled and who would suspect you and etc turning into a discussion that sidelines the game itself.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

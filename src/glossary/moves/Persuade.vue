@@ -30,9 +30,9 @@ const name = 'Persuade';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         I have a conflicted relationship with persuasion moves.  That is, how do you maintain an npc's independent motivations if you let any old roll make them, "just do the thing you ask"?  Works fine in a game that doesn't hinge as much on behavioral conflicts.  So I ended up writing an overbearing move like this to make the ends meet.  I do see like persuasion moves overall.  They're one of the rules that help give the MC plausible deniability over how they're making the npcs behave.  But writing one nuance seems to highlight all the nuances that got ignored.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>"Like I said," the MC reiterates, playing the part of Consul Bergen, "you haven't brought rigorous evidence.  Certainly not enough to warrant action against a person as important as the Baron."</p>
         <p>"We told you where to find people who'd give evidence under oath!"</p>

@@ -31,9 +31,9 @@ const name = 'Template';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Another move I stole from prior Dungeon World playbooks.  At the time I both really wanted to explore the move itself again, to give it some breathing room in a system that isn't focused so directly on fantasy combat.  I also chose it because, at that time, I imagined that every attunement would be rolling a particular stat, and I hadn't changed the way rolling against the Abyss works, and wanted an Abyss-based attunement.  Almost all of those mechanics and constants have changed at this point.  Reviewing the move again, although I enjoy the potential horror of it, I'm not sure it's diving into the game's theme of backing fantasy tropes with foibles in the way the other attunements are.  Perhaps this is too critical of me, but I really want the move to evoke the character lashing out with thier negative feelings in a way that brings horror into the world, and I'm no longer sure this is it.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

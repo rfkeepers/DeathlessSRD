@@ -20,9 +20,9 @@ const name = 'Kneel';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         It's not just "I am the Law" again.  I promise.  I'm not just rewriting all of Dungeon World's moves.  Please believe me.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

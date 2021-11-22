@@ -21,9 +21,9 @@ const name = 'Playing With Fire';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         I worry often that this shares too much space with Fireball: that one is the same as the other, really, just to greater or lesser intensity.  The overlap is most important in that it limits the space where I'm exploring the foibles behind fantasy concepts to the same space across two moves.  The Attunements are supposed to be focused, but not necessarily so specifically pointed.  And in this case I've doubled down on "harm self to make fire".  Mechanical differences exist, but the theme is identical.  In that vein, I'll probably remake this move to something else later.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

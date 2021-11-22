@@ -149,6 +149,7 @@ onUnmounted(() => {
         font-size: 1.5em;
         font-weight: 900;
         line-height: 1.25em;
+        margin-bottom: 16px;
     }
 
     .body {

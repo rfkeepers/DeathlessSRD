@@ -20,9 +20,9 @@ const name = 'Taunt';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Sometimes I worry the Wrestler background feels too obviously like a pro wrestler.  Sometimes I also worry that I too thinly veil my idea theft, like how this is just I Am The Law in dungeon world.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

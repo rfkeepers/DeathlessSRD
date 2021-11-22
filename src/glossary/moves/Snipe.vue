@@ -43,11 +43,11 @@ const name = 'Snipe';
         </SHPM>
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         I can't stand the trigger for this move.  I've reworked it so many times and it never sits just right.  Always either too broad, "when you do something in a specific way", or too niche (and without supporting mechanics), "when you do something that only prior expertise would allow".  But I do like the general concept.  Maybe it'll end up in the kill-your-darlings drawer, if I ever have an epiphany about what a better way to use SKILL for a basic move would be.  Something with appropriate restriction.
         <br><br>
         Also, the name.  'Snipe' is such a gun-oriented term.  Which, I guess, does kinda fit in that I assume this is the skill to roll for shooting at things.  But if it leads the player in that direction, it also leads them away from other possible directions.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>"Two of the baron's people are coming down the street, following the sound of shattered glass.  They're being slow and thorough about it."</p>
         <p>"Well I'm screwed," Flynn says, "can't fight if I can't stand."</p>

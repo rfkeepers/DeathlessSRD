@@ -14,9 +14,9 @@ const name = 'Twisted Firestarter';
         When you <b>cause uninvited Harm or destruction</b>, erase a Condition or gain 2 Resilience.
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Not much to say about this one.  It's small and sufficient.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

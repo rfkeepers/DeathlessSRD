@@ -21,9 +21,9 @@ const name = 'Drown In The Abyss';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         There's not much point in tracking the character's ever-increasing Abyss if we don't put some sort of punishment at the end of it.  I'm hoping to make this feel thematically distinct from things like Urban Shadows' Corruption track.  It's not supposed to be the point at which you give up your character (though the option is offered, as an out).  It's supposed to give the players something to fear, some kind of sword of damocles, even though death is off the table.  Plus it gives a reason to push back against the abyss and engage with the entanglements mechanic.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

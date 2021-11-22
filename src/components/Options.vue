@@ -22,6 +22,10 @@ const props = defineProps({
         type: String,
         description: "Width of the bullet spacing, for alignment of text.",
     },
+    indent: {
+        type: Boolean,
+        description: "Indents the options by an additional margin.",
+    },
     numbered: {
         type: Boolean,
         description: "Prefixes the options with increasing numbers (ex: 1. 2. ... N.).",
@@ -47,69 +51,86 @@ const customStyle = {
 
 <!-- ============================== Template ============================== -->
 <template>
-<div class="options">
-    <ul class=options__list>
-        <li class="options__list__item">
-            <ul
-                v-for="(opt, idx) in options"
-                :key="opt"
-                class="option"
-            >
-                <span v-if="bullet" class="option__custom" :style="customStyle">{{bullet}}</span>
-                <span v-if="numbered" class="option__numbered" :style="customStyle">{{idx+1}}.&nbsp;</span>
-                <span v-if="prefixed" class="option__prefix" :style="customStyle">{{prefixes[idx]}}</span>
-                <span v-if="selectable" class="option__selectable" :style="customStyle">▢</span>
-                <span v-if="standard" class="option__standard" :style="customStyle">●</span>
-                <div class="option__text">
-                    <span v-if="asHtml" v-html="opt"></span>
-                    <span v-else>{{opt}}</span>
-                    <slot :name="`subslot-${idx}`" />
-                </div>
-            </ul>
-        </li>
-    </ul>
-</div>
+<ul
+    v-for="(opt, idx) in options"
+    :key="opt"
+    :class="{
+        'options': true,
+        'options--indent': indent,
+    }"
+>
+    <li class="options__item">
+        <span v-if="bullet" class="options__item__custom" :style="customStyle">{{bullet}}</span>
+        <span v-if="numbered" class="options__item__numbered" :style="customStyle">{{idx+1}}.&nbsp;</span>
+        <span v-if="prefixed" class="options__item__prefix" :style="customStyle">{{prefixes[idx]}}</span>
+        <span v-if="selectable" class="options__item__selectable" :style="customStyle">▢</span>
+        <span v-if="standard" class="options__item__standard" :style="customStyle">●</span>
+        <div class="options__item__text">
+            <span v-if="asHtml" v-html="opt"></span>
+            <span v-else>{{opt}}</span>
+            <slot :name="`subslot-${idx}`" />
+        </div>
+    </li>
+</ul>
 </template>
 
 <!-- ============================== Style ============================== -->
 <style lang="scss" scoped>
+$stdWidth: 32px;
+$smlWidth: 28px;
+
 .options {
-    &__list {
-        &__item {
-            margin-top: 8px;
-            // line-height: 1.4em;
+    margin-top: 8px;
+    margin-bottom: 4px;
+
+    &--indent {
+        margin-left: 2%;
+    }
+    
+    &__item {
+        display: flex;
+
+        &__standard {
+            font-size: 1.25em;
+            padding-right: 8px;
+            min-width: $stdWidth;
+
+            @media screen and (max-width: 900px) {
+                min-width: $smlWidth;
+            }
         }
-    }
-}
 
-.option {
-    display: flex;
-    padding-bottom: 4px;
+        &__selectable {
+            font-size: 1.75em;
+            padding-right: 8px;
+            min-width: $stdWidth;
 
-    &__standard {
-        font-size: 1.25em;
-        padding-right: 8px;
-        min-width: 32px;
-    }
+            @media screen and (max-width: 900px) {
+                min-width: $smlWidth;
+            }
+        }
 
-    &__selectable {
-        font-size: 1.75em;
-        padding-right: 8px;
-        min-width: 32px;
-    }
+        &__custom {
+            padding-right: 8px;
+            min-width: $stdWidth;
 
-    &__custom {
-        padding-right: 8px;
-        min-width: 32px;
-    }
+            @media screen and (max-width: 900px) {
+                min-width: $smlWidth;
+            }
+        }
 
-    &__prefix {
-        padding-right: 8px;
-        min-width: 32px;
-    }
+        &__prefix {
+            padding-right: 8px;
+            min-width: $stdWidth;
 
-    &__text {
-        // included in case the caller wants to deep change the text styling for reasons like alignment.
+            @media screen and (max-width: 900px) {
+                min-width: $smlWidth;
+            }
+        }
+
+        &__text {
+            // included in case the caller wants to deep change the text styling for reasons like alignment.
+        }
     }
 }
 </style>

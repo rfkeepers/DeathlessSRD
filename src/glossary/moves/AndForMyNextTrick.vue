@@ -21,9 +21,9 @@ const stat = 'GLAMOUR';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         This move was a bit of a goof-off creation.  A fun experiment in trying to turn a magic trick into a move.  It turned out to be a lot of fun to think through and tease out.  The initial variations fell flat, but where it eventually landed makes me happy.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

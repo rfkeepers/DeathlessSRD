@@ -19,9 +19,9 @@ const name = 'Hobnob';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         This move, among all the moves I've written, I have very little quality barometer for: whether it's good, terrible, has a good underpinning and bad execution versus the opposite.  Something about its value eludes me, and I'm always bothered that I don't know why.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

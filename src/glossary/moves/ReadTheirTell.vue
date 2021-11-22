@@ -20,9 +20,9 @@ const name = 'Read Their Tell';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         The trigger here doesn't sit right with me.  "figure someone out" is basically "understand someone" in a nutshell.  "during a moment of intimacy or intensity" either severely restricts when you can use the move (unnecessarily, really), or doesn't restrict it at all, depending on how strict the table wants to be.  Neither context really hits on the feel of studying someone until you recognize how they're betraying their own secrets.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

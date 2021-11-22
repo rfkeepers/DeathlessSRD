@@ -1,4 +1,4 @@
-/<!-- ============================== Script ============================== -->
+<!-- ============================== Script ============================== -->
 <script setup>
 import Options from '@/components/Options.vue';
 </script>
@@ -6,31 +6,29 @@ import Options from '@/components/Options.vue';
 <!-- ============================== Template ============================== -->
 <template>
 <h1 class="title">
-    <b>What Is This?</b>
+    <b>What Is Deathless?</b>
 </h1>
-<div class="blurb">
-    Deathless is a work-in-progress pbta about flawed characters who never stay dead.  It explores compulsions towards bad behavior, relationships that tether, and the inevitable entropy of the dieing mind.
-    <br><br>
-    The players endure the loop between their Entanglements and the Abyss.  The Abyss marks the drift towards madness, the inescapable loss of self in the transition between life and death and life again.  In response, Entanglements reel them back from the brink, into the bindings of joys and pains which only the living may suffer.
-    <br><br>
-    Through it all the characters will get compelled, and rewarded, for bending to their faults and vices.  Slipping deeper into the Abyss offers power, but power reveals foibles and viciousness.  The only way to succeed, to stay human, is to rise above your failings.
-</div>
+Deathless is a work-in-progress pbta about flawed characters who never stay dead.  It explores compulsions towards bad behavior, relationships that tether, and the inevitable entropy of the dieing mind.
+<br><br>
+The players endure the loop between their Entanglements and the Abyss.  The Abyss marks the drift towards madness, the inescapable loss of self in the transition between life and death and life again.  In response, Entanglements reel them back from the brink, into the bindings of joys and pains which only the living may suffer.
+<br><br>
+Through it all the characters will get compelled, and rewarded, for bending to their faults and vices.  Slipping deeper into the Abyss offers power, but power reveals foibles and viciousness.  The only way to succeed, to stay human, is to rise above your failings.
 
 <h2 class="title">
     <b>What Here Is Useful or Interesting?</b>
 </h2>
-<div class="blurb">
-    Deathless is designed to encourage a specifc kind of play, driven by the following principles:
-    <br>
+Deathless is designed to encourage a specifc kind of play, driven by the following principles:
+<div class="blurb spaceAbove">
     <Options bullet="⇀" asHtml :options="[
         '<em>Drama is more important than verisimilitude.</em>  Character interaction always takes the spotlight.',
         '<em>Relationships precede combat mechanics.</em>  Words and knives both cut deep.',
         '<em>The players and MC share ownership.</em>  We all play to find out what happens.',
         '<em>Stare ugliness in the eyes.</em>  What is terrible should be confronted, not hidden.',
     ]" />
-    <br>
-    Likewise, the game does not try to accomodate every story.  Deathless thrives in a setting where:
-    <br>
+</div>
+<br>
+Likewise, the game does not try to accomodate every story.  Deathless thrives in a setting where:
+<div class="blurb spaceAbove">
     <Options bullet="⇀" asHtml :options="[
         'The world is <em>dangerous and cruel</em>.',
         '<em>Horrible people</em> are in control.',
@@ -43,9 +41,8 @@ import Options from '@/components/Options.vue';
 <h2 class="title">
     <b>What Here Is Unexpected?</b>
 </h2>
-<div class="blurb">
-    Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling with your stats with fiction and conversation at the forefront of play.  The rest varies in small or great ways.
-    <br>
+Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling with your stats with fiction and conversation at the forefront of play.  The rest varies in small or great ways.
+<div class="blurb spaceAbove">
     <Options bullet="⇀" :options="[
         'Non-traditional playbooks.  Your starting moves come from terse Backgrounds.  In play, characters adopt Attunements- transient personas designed as tightly focused compendiums of moves.',
         'Entanglements to bind the characters to their relationships.',
@@ -70,10 +67,10 @@ import Options from '@/components/Options.vue';
     ]" />
 </div>
 <br><br>
+
 <div>
     Todo:<br>
     1. rolling (partially done)<br>
-    2. entanglements<br>
     3. manifesto<br>
     4. the abyss<br>
     5. stats<br>

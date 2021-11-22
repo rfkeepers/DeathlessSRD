@@ -19,9 +19,9 @@ const name = 'Bail!';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Among pbta staples that I like, but have conflicted feelings about when it comes to widespread availability (ie: basic move status), is the 'escape a spot' move.  The tug-of-war is whether frequency of usage must drive availability.  Personally, as the writer of these things, they're tastier when I place them within a specific thematic flavor, than without.  But that also means that I've deprived the game of a useful tool that it might be worse off without.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

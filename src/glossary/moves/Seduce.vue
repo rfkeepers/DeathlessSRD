@@ -20,9 +20,9 @@ const name = 'Seduce';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         The background for this move concerns me more than the move itself.  <i>Fatale</i> is a pretty loaded concept thanks to his noir history.  Its context could color the players choice to use the background more-so than the move itself, thanks to things like gender norms and cultural precursors.  That said, I haven't found a playbook for this particular move (and I think the move works well enough to keep) besides that.  So here it stands.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

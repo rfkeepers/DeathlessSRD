@@ -20,9 +20,9 @@ const name = 'Compel';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Compelling is one of the mechanics I like about the game as a whole.  This Compel move, I'm not fully decided on how I feel about it.  I know I'm keeping the "if the other player agrees, you both gain 1 Resilience".  Whether or not there's a condition where players roll, I'm not as certain.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>skipping play examples for secondary moves.</p>
         </div>

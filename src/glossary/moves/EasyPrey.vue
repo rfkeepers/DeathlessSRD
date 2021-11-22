@@ -19,9 +19,9 @@ const name = 'Easy Prey';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Pickpocketing, as an isolated move, is another action that I like to leave off the table.  It's not that I dislike the moves, or that I don't think they work out.  More like, in a fickle-artist manner I always think I can do better by making some variant of it (like this).  It probably isn't better, but still I like it.  In this particular case I tried to trade off the narration of, "whatever it is, it's stolen now" with, "whatever it is, here's how you can steal it".  And I think that's an okay tradeoff, so long as players aren't upset about making (in all likelihood) two rolls to get the thing instead of one.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

@@ -14,9 +14,9 @@ const name = 'Sneak Thief';
         You can be compelled to <b>steal something of significant value</b> when doing so places you at risk or provides you no real benefit.
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         If compulsory behavior can't be compelled, then what can?
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

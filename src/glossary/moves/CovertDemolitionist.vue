@@ -13,7 +13,7 @@ const name = 'Covert Demolitionist';
 <Move id="covert_demolitionist" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>break and enter</b>, <Roll resolve/>. <em>S:</em> Pick two.  <em>P:</em> Pick one.
+        When you <b>break and enter</b> into a place or thing, <Roll resolve/>. <em>S:</em> Pick two.  <em>P:</em> Pick one.
         <Options bullet="⇀" :options="[
             'It doesn\'t take long to do.',
             'You don\'t make much noise.',
@@ -21,9 +21,9 @@ const name = 'Covert Demolitionist';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Graverobbers were apparently very industrious in their capacity to get through any impediment, and in very short order at that.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

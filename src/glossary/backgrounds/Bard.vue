@@ -18,14 +18,14 @@
     <hr>
     <br>
     <h4>Relationships with fellow players (pick one):</h4>
-    <Options bullet="❍" :options="[
+    <Options indent bullet="❍" :options="[
         '_____________ was one of your Patrons.  Ask them about the terms of their patronage.',
         'In a previous love triangle, you were rivals with _____________.  Whose affection were you two trying to win, and which of you (if either) earned their hand?',
         '_____________ is an on-and-off traveling companion.  Ask them which of you gets into the most trouble.',
     ]" />
     <br>
     <h4>Relationships with NPCs (pick one and name them):</h4>
-    <Options bullet="❍" :options="[
+    <Options indent bullet="❍" :options="[
         'a dear friend.',
         'one of your patrons.',
         'your go-to source for finding gigs.',

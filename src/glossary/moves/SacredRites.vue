@@ -23,9 +23,9 @@ const name = 'Sacred Rites';
         <RollAbyssRules />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         The outcomes on this move are a little wonky.  The first option is basically a rehash of `gaze into the abyss`.  I really like the second option, and maybe the best way forward is to rewrite the move around that entirely.  "when you ritural to shape the world... h: if possible, s: maybe not obvious, p: maybe not welcome".  I think I like that better.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

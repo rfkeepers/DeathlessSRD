@@ -14,9 +14,9 @@ const name = 'The Boss';
         You can be compelled to <b>make an example of someone who resists you</b>.
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Ah, the nasty side of power fantasies.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

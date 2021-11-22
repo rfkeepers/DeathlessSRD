@@ -21,9 +21,9 @@ const name = 'All As Fated';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         The concept here is fun, but I really don't know that I've put it into a move in any way that does the thing justice.  That, and, it's asking a whole lot of the MC and players.  It adds cognitive load to their plate.  Tons of cognitive load.  And I've complained about cognitive load issues on other moves, so it feels a bit disingenuous to add so much of it here.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

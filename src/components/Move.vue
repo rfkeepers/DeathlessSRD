@@ -57,7 +57,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 .move {
     --indent--small: 16px; 
-    --indent: 24px;
+    --indent: 2%;
 
     padding: 12px 6% 12px 4%;
 
@@ -83,6 +83,10 @@ const props = defineProps({
         display: flex;
         justify-content: space-between;
         align-items: end;
+
+        @media screen and (max-width: 900px) {
+            align-items: start;
+        }
     }
 
     &__name {

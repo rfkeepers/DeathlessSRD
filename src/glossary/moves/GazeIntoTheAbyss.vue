@@ -23,9 +23,9 @@ const name = 'Gaze Into The Abyss';
         <RollAbyssRules />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         This move had two goals: first to provide some kind of 'spout lore/open your brain' variant.  Second, to give the Abyss stat something to use.  In the former case I feel it's, you know, fine.  The success options are overlapping flavor without much direction at all.  It makes the choice between them a bit useless.  They get the point across, and not much more.  On the latter end, I think it makes sense to use Abyss for the role, but I'm not sure it justifies anything about abyss as a rollable stat.  That part feels more incidental than anything.  Which is okay?  I guess?
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>(note, this play example is slightly out of sync, following an update to the move)</p>
         <p>"We don't have much to go on here," Ewan says, "I think I'm going to risk looking for answers in the Abyss."</p>

@@ -11,12 +11,12 @@ const name = 'Hearts and Minds';
 <Move id="hearts_and_minds" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>perform for an audience</b> with the intent to rouse or soothe, <Roll glamour/>.  <em>H:</em> Tell the MC how they react. <em>P:</em> The MC will tell you whether the effect is short-lived, goes too far, or gets an additional and unwanted result.
+        When you <b>perform for an audience</b> with the intent to rouse or soothe, <Roll glamour/>.  <em>H:</em> Tell the MC what reaction you get. <em>P:</em> The MC will tell you whether the effect is short-lived, goes too far, or gets an additional and unwanted result.
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Not much to say about this.  It's a pretty standard performer-themed move.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>skipping play examples for now.</p>
         </div>

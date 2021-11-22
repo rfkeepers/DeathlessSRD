@@ -30,9 +30,9 @@ const name = 'Dismantle';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Having a move for picking locks and disarming traps always seemed to me like having a move for solving a puzzle.  The very nature of those things is to provide impediment.  For narrative games to offer locks and lock picking moves both is something of a zero-sum situation.  I figure, if the MC wants a lock in the way then, sure, some character should have the opportunity to shine and pick it.  But an impediment is an impediment, and one of the mc principles in deathless is that everything has a cost.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

@@ -19,9 +19,9 @@ const name = 'Respect My Authority';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         "swagger" the move, I guess.  Open question: is it reasonable to avoid a move name <i>because</i> it has a south park reference?
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

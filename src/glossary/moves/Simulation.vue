@@ -21,9 +21,9 @@ const name = 'Simulation';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         The trigger here is difficult to pin.  Or at least, difficult to consolidate into a concise trigger.  The goal is to reduce 1: the (physical) limits of space which the illusion can encompass, and 2: explain that the player has near complete control of every aspect of that illusion.  
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

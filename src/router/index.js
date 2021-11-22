@@ -4,8 +4,9 @@ import { glossaryRoutes } from '@/glossary/glossary.js';
 import home from '@/views/site/Home.vue'
 import feedback from '@/views/site/Feedback.vue'
 
-import entanglements from '@/views/rules/Entanglements.vue'
-import rolling from '@/views/rules/Rolling.vue'
+import entanglements from '@/views/game/Entanglements.vue'
+import manifesto from '@/views/game/Manifesto.vue'
+import rolling from '@/views/game/Rolling.vue'
 
 import glossary from '@/views/site/Glossary.vue'
 import glossaryHome from '@/glossary/GlossaryHome.vue'
@@ -53,22 +54,8 @@ let routes = [
 ];
 
 // ------------------------------------------------------------------------------------- 
-// rules
+// the game
 routes = routes.concat([
-  {
-    path: '/rolling',
-    name: 'Rolling',
-    component: rolling,
-    meta: {
-      title: titleMaker('Rolling'),
-      tags: [
-        {
-          name: 'description',
-          content: 'The dice rolling and resolution mechanics in Deathless.',
-        }
-      ],
-    },
-  },
   {
     path: '/entanglements',
     name: 'Entanglements',
@@ -79,6 +66,34 @@ routes = routes.concat([
         {
           name: 'description',
           content: 'The entanglement mechanics in Deathless.',
+        }
+      ],
+    },
+  },
+  {
+    path: '/manifesto',
+    name: 'Manifesto',
+    component: manifesto,
+    meta: {
+      title: titleMaker('Manifesto'),
+      tags: [
+        {
+          name: 'description',
+          content: 'The manifesto of the game\'s agenda, as well as the players\' and MC\'s agendas.',
+        }
+      ],
+    },
+  },
+  {
+    path: '/rolling',
+    name: 'Rolling',
+    component: rolling,
+    meta: {
+      title: titleMaker('Rolling'),
+      tags: [
+        {
+          name: 'description',
+          content: 'The dice rolling and resolution mechanics in Deathless.',
         }
       ],
     },

@@ -32,9 +32,9 @@ const name = 'Combobulate';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         How do you distill "the knowledge of years of study" into a move?  Without making a "barf forth information" move, that is.  This take is the "do an arbitrary thing with consequences/preconditions" route.  Works with the theme, and provides the flexibility that a resource of knowledge might offer a character.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

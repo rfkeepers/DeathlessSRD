@@ -32,9 +32,9 @@ const name = 'Return To Life';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         There's a lot that goes into dieing.  As, I suppose, there should be.  I don't feel there's much to say about this move.  It's more a thing to help recordkeeping stay straight than anything else.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

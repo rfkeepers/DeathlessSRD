@@ -30,9 +30,9 @@ const name = 'Intervene';
     </template>
     <template v-slot:example>
         
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         For the most part I'm happy with it.  My primary worry is, like Overwhelm and Snipe, that players will take it as a physical-only interaction.  eg, acting as bodily shields.  My hope is that tables can use it as a way to intervene on someones behalf in arguments, accusations, attention, and so on. 
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>"Marienne was the one who told the consul about your shitty trafficking ring in the first place, Baron," Flynn blurts.</p>
         <p>"Oh the Baron is pissed to here that," the MC says. "He literally jumps up from his chair, bumps the table along the way, everyone's wine glasses spill over, it's a mess.  His face is red.  He grabs the nearest steak knife and his hand shakes as he points it at her."</p>

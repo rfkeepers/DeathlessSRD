@@ -25,9 +25,9 @@ const name = 'Understand Someone';
         When you Understand another PC, ask one question from the list.  If they choose to answer honestly they get to ask you one question from the list as well, which you must answer honestly.
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Not much to say about this one.  I purposefully avoided a couple topics: "are you lying?" is just something that characters don't get to know in this game.  Though I'm sure MCs will figure out a way to convey that with the "subtle signals" option.  "How could I get you to __?" is reserved for Persuasion.  The rest are mostly standard.  It's a sufficient list, but I bet I'll weed and replace some in testing. 
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>"So Rosefitz is just munching away at dinner?  Is he making us wait on him just to be a jerk?" Flynn wonders.</p>
         <p>"Yeah, he doesn't show any sign of giving you his time," the MC confirms.</p>

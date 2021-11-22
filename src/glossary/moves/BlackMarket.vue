@@ -20,9 +20,9 @@ const name = 'Black Market';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         One of my favorite things about this project, especially curating the backgrounds, is how much breadth of exploration I got to do with reducing a concept down to a move or two.  I won't say that I always hit the mark, but in terms of really exploring the possibilities of moves for the first time it was a great sandbox.  This is one of the moves that I look to fondly with that in mind.  It's also obscure, and places all of its outcomes on a fairly reductive view of the potential hazards of the character making that action, while also loading its primary goal into an almost-guaranteed state.  And for that it may ultimately not make a great move.  If that's how it ends up, that'll be okay.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

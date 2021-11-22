@@ -20,9 +20,9 @@ const name = 'Jury-Rig';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Early on I figured a fix-it move would be easy to plug in.  How hard could it be to write?  "When you fix something, roll FIX.  On success, it's fixed!"  Easy.  Then I started going down the rabbit hole on the partial success.  Can't just say, "you didn't fix it".  That'd be a bad move.  So I started thinking about how to partially fix it.  And working out how to partially fix something involves figuring out how to partially break something.  There's no end to tje ways to partially break a thing.  And very few of them work well for move outcomes.  In the end, I like what I came out with.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

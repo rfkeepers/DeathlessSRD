@@ -20,9 +20,9 @@ const name = 'Contest of Strength';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         Another move that walks the line between resolving a quick action and reducing a scene to a move.  In theory, I think it's okay.  But it might be trying to do too much for the narrative all at once.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

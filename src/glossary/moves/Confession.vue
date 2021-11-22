@@ -29,9 +29,9 @@ const name = 'Confession';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         One of the more complicated moves in the game.  However, I think it fills a space that, although niche, has a good way of building itself around the theme of the concept.  That said, this could be one of those situations where I'm trying to take a real scene and reduce it into a move.  eg: it's too complicated for regular use, but too reductive to use within a scene and still get to have the scene play out organically.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

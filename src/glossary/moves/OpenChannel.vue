@@ -14,9 +14,9 @@ const name = 'Open Channel';
         Whenever you <b>betray yourself</b> by exposing a hidden truth or weakness you needed to keep secret, clear a Condition or gain 2 Resilience.
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         I have a fondness for this move, and I'm not entirely certain why.  Perhaps because it works as a condition removal without centering itself on terrible behavior, but still maintaining a good level of doing damage to yourself in the process.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

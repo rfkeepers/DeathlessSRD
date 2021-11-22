@@ -20,9 +20,9 @@ const name = 'Estate';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         As a character-building question, I really like this move.  As part of a background, I'm hoping that it has an appeal to the particular type of player who likes to provide space or place to the group more than they like to provide specific abilities.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>

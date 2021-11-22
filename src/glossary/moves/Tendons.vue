@@ -20,9 +20,9 @@ const name = 'Tendons';
         ]" />
     </template>
     <template v-slot:example>
-        <h3 class="lineTo">Design Thoughts</h3>
+        <h3 class="lineTo indent">Design Thoughts</h3>
         This move originated back when the game had a fair bit of crunch around its combat.  The Butcher background as a whole, actually, was one of the first written to that design.  I feel like you can still feel the combat focus here, and I think that's okay; it's not like players aren't allowed to invest into that.  At the same time, I sometimes feel weird re-reading the move, because I think so much about its combat history, and that makes it feel distinct from the other backgrounds.
-        <h3 class="lineTo">In Play</h3>
+        <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>
         </div>
