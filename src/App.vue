@@ -79,6 +79,7 @@ export default {
       {to: "/manifesto", text: "Manifesto"},
       {to: "/rolling", text: "Rolling"},
       {to: "/entanglements", text: "Entanglements"},
+      {to: "/stats", text: "Stats"},
     ],
     glossaryLinks: [
       {to: "/glossary/landing", text: "Glossary"},

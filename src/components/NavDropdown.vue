@@ -142,6 +142,9 @@ export default navDropdown;
 
             @media screen and (max-width: 900px) {
                 padding: 8px;
+                padding-left: 16px;
+                margin-left: 20px;
+                border-left: 1px solid var(--nav-color-background-hover, white);
             }
 
             @media screen and (min-width: 900px) {

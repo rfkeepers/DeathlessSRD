@@ -54,6 +54,6 @@ const name = 'Help and Hindrance';
 :deep(.option .option__numbered) {
     font-weight: 900;
     padding-right: 0;
-    color: $color-z-pop;
+    color: $color-neutral-pop;
 }
 </style>

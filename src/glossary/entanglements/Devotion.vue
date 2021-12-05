@@ -17,19 +17,17 @@ defineProps({
     <h1 v-else>Devotions</h1>
 </div>
 
-<div class="blurb">
+<div :class="{ blurb: !embedded }">
 
     To devote yourself to a task means more than a simple agreement to help.  It is the commitment to risk honor and name and blood for a cause.  The player is allowed to entangle themselves within any request for help, whether or not the MC intended to have made such a request.  Be warned that devotion implies adversity.  There is no such thing as a small and menial goal.
     <br><br>
 
     Examples:
-    <div class="blurb">
-        <Options bullet="⇀" :options="[
-            'I swore to Marienne that I would rescue her child from the Baron de RoseFitz.',
-            'I am the defender of the people of Sekkerdi, and promised to defend them from the demon-boar in the forest.',
-            'Consul Bergen fears for his son\'s safety during the convocation, I have given my word that I will keep him safe.',
-        ]" />
-    </div>
+    <Options bullet="⇀" indent :options="[
+        'I swore to Marienne that I would rescue her child from the Baron de RoseFitz.',
+        'I am the defender of the people of Sekkerdi, and promised to defend them from the demon-boar in the forest.',
+        'Consul Bergen fears for his son\'s safety during the convocation, I have given my word that I will keep him safe.',
+    ]" />
     <br><br>
 
     <Move id="make_a_promise" ruled shaded>

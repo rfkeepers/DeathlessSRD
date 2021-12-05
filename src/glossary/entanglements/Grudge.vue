@@ -16,12 +16,12 @@ defineProps({
     <h2 v-if="embedded">Grudges</h2>
     <h1 v-else>Grudges</h1>
 </div>
-<div class="blurb">
+<div :class="{ blurb: !embedded }">
     Sometimes it isn't about taking on other peoples problems.  You'll have a few of your own issues to settle along the way.  It doesn’t take much to decide that it's time to hold a Grudge.  Dealing with wrongdoings is often daily life for the characters.  They shouldn't be spoken lightly.  No matter who started the fight, as soon as you declare a Grudge the MC will turn that character into a proper rival or villain.
     <br><br>
 
     Examples:
-    <Options bullet="⇀" :options="[
+    <Options bullet="⇀" indent :options="[
         'The Baron de RoseFitz kidnapped my nieces in a raid and sold them.  I won\'t rest until he gets dragged into the streets and hanged.',
         'The demon-boar of Sekkerdi forest ripped off my arm and ate it.  I\'ll hunt it down and have a banquet of meat myself.',
         'Consul Bergen\'s son, was first my apprentice and then my lover, until his father found out and had me illegitimately jailed.  His son died of sickness while I rotted in this cell.  We\'re not even until I take something precious from him in turn.',

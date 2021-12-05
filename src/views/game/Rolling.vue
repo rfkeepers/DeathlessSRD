@@ -2,22 +2,27 @@
 <script setup>
 import Options from '@/components/Options.vue';
 import Roll from "@/components/Roll.vue";
-
 defineProps({
-    foo: {
+    embedded: {
         type: Boolean,
-        description: "foo prop."
-    }
+        description: "alters the display for when embedded into a separate page",
+    },
 });
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
 <div class="rolling">
-    <h1 class="title">
+    <h2 v-if="embedded">
+        Rolling Dice
+    </h2>
+    <h1
+        v-else
+        class="title"
+    >
         Rolling
     </h1>
-    <div class="blurb">
+    <div :class="{ blurb: !embedded }">
         Deathless uses a D6 dice-pool system.  Rolling only happens when resolving a move, but not all moves require a roll.  If you see the text “<Roll something />”, that's your cue.
         <br><br>
         
@@ -31,10 +36,16 @@ defineProps({
         </div>
     </div>    
 
-    <h2 class="title">
+    <h3 v-if="embedded">
         Outcomes
-    </h2>    
-    <div class="blurb">
+    </h3>
+    <h2
+        v-else
+        class="title"
+    >
+        Outcomes
+    </h2>   
+    <div  :class="{ blurb: !embedded }">
         Each roll has three possible outcomes: Success ( <em>S</em> ), Partial Success ( <em>P</em> ), or a Miss ( <em>M</em> ).  You might also see a move describe a Hit ( <em>H</em> ).  A Hit occurs when you get either a Success or a Partial Success.
         <br><br>
         
@@ -42,7 +53,7 @@ defineProps({
         <br><br>
 
         A couple outcome examples with 3d6 rolled:
-        <Options bullet="⇀" asHtml :options="[
+        <Options bullet="⇀" indent asHtml :options="[
             '<em>[1, 2, 3]\</em> is a <em>M</em>iss, because no dice rolld up 5 or 6.',
             '<em>[1, 2, 6]</em> is a <em>H</em>it, and a <em>P</em>artial Success.',
             '<em>[1, 5, 6]</em> is a <em>H</em>it, and a <em>S</em>uccess.',
@@ -50,10 +61,16 @@ defineProps({
         ]" />
     </div>
     
-    <h2 class="title">
+    <h3 v-if="embedded">
+        Variations
+    </h3>
+    <h2
+        v-else
+        class="title"
+    >
         Variations
     </h2>
-    <div class="blurb">
+    <div  :class="{ blurb: !embedded }">
         Sometimes, instead of a specific stat, a move will tell you to roll a certain number of dice.  When you see <Roll :n=3 />, do exactly that: roll 3d6.
         <br><br>
 
@@ -61,39 +78,47 @@ defineProps({
         <br><br>
 
         Some examples of rolling against your Abyss:
-        <Options bullet="⇀" asHtml :options="[
+        <Options bullet="⇀" indent asHtml :options="[
             '<em>\'Against your Abyss\'</em> means rolling 2d6, adding the rolls together, and checking if the result is the same or greater than your Abyss score.',
             '<em>[3, 4] => 7</em>.  If your Abyss is 8 or greater, you rolled below.',
             '<em>[2, 3] => 5</em>.  If your Abyss is 5 or greater, you rolled above.',
         ]" />
     </div>
 
-    <h2 class="title">
+    <h3 v-if="embedded">
+        Modifiers
+    </h3>
+    <h2
+        v-else
+        class="title"
+    >
         Modifiers
     </h2>
-    <div class="blurb">
+    <div  :class="{ blurb: !embedded }">
         Roll reductions occur either from Conditions, or from having another player's character Hinder your actions.  For each Condition attached to a stat, you reduce the the number of dice you roll by 1.  For example: if your Resolve is 3, and you have a Resolve-based Condition, you'll only roll 2d6.  Additionally, if another PC decides to Hinder you, this also reduces your dice pool by 1.
         <br><br> 
         
         Increases are gained from Resilience, getting Helped by oher player's characters, and using the <em>Desperation</em> move  On any roll you may spend 1 Resilience to increase your dice pool by 1.  Or another PC can help aid you in teh action, granting 1 die as well.  Finally, if you're willing (or, as the name suggests, desperate enough) to risk additional consequences, you can make the move a Desperate action.
     </div>
 
-    <h2 class="title">
+    <h3 v-if="embedded">
+        Probabilities
+    </h3>
+    <h2
+        v-else
+        class="title"
+    >
         Probabilities
     </h2>
-
-    <div class="blurb">
+    <div  :class="{ blurb: !embedded }">
         If you're accustomed to PBTA or FITD games, and you like to know your statistics, you may be curious how the roll outcomes in Deathless compare to the other systems.  In general, 2d6 in Deathless is basically the same as 2d6+0 in pbta, which is very close to 1d6 in fitd, and these outcomes tend to stay in sync as you add or remove dice and modifiers.
         <br><br>
         For a more visual comparison // todo
     </div>
 </div>
+<div v-if="embedded" class="spaceBelow">&nbsp;</div>
 </template>
 
 <!-- ============================== Style ============================== -->
 <style lang="scss" scoped>
-$varname: 1;
-.rolling {
-    padding-bottom: 48px;
-}
 </style>

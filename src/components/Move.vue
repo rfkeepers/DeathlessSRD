@@ -73,6 +73,7 @@ const props = defineProps({
     &--ruled {
         border-top: 1px solid var(--move-color-border, white);
         border-bottom: 1px solid var(--move-color-border, white);
+        border-radius: 12px;
     }
 
     &--shaded {

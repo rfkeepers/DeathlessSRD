@@ -17,19 +17,17 @@ defineProps({
     <h1 v-else>Loyalties</h1>
 </div>
 
-<div class="blurb">
+<div :class="{ blurb: !embedded }">
     
     Expressing Loyalty means more than just an alignment of purpose between you and another character.  It means more than to recognize someone as your boss or charge.  Loyalty is devotion.  If they are your superior, you agree to be at their beck and call.  If they are your ward, you agree to shelter, guide, and nurture them.  And in both cases you must be prepared to make sacrifices for them when it is asked or needed of you.  For as long as it takes.  Perhaps as long as they live.
     <br><br>
 
     Examples:
-    <div class="blurb">
-        <Options bullet="⇀" :options="[
-            'I Persuaded Flynn to help me save Marienne\'s child.  In return Flynn asked that I take an oath of loyalty to them until we have ousted the Baron de RoseFitz, and I agreed.',
-            'The demon-boar of Sekkerdi is the great and terrible spirit of the forest manifest in flesh.  As a protector of the forest, I have pledged my life to the boar\'s guard.',
-            'As Consul Bergen died he charged me to raise his son as my own.  I owe him that and so much more.',
-        ]" />
-    </div>
+    <Options bullet="⇀" indent :options="[
+        'I Persuaded Flynn to help me save Marienne\'s child.  In return Flynn asked that I take an oath of loyalty to them until we have ousted the Baron de RoseFitz, and I agreed.',
+        'The demon-boar of Sekkerdi is the great and terrible spirit of the forest manifest in flesh.  As a protector of the forest, I have pledged my life to the boar\'s guard.',
+        'As Consul Bergen died he charged me to raise his son as my own.  I owe him that and so much more.',
+    ]" />
     <br><br>
     
     <Move id="swear_an_oath" ruled shaded>

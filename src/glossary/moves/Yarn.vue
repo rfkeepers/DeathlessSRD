@@ -42,6 +42,6 @@ const name = 'Yarn';
 <!-- ============================== Style ============================== -->
 <style lang="scss" scoped>
 :deep(.option .option__standard) {
-    color: $color-z-pop;
+    color: $color-neutral-pop;
 }
 </style>

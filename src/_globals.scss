@@ -1,9 +1,13 @@
 // colors
-$color-background: #232323;
 $color-foreground: #9e4036;
-$color-highlight: #a28a6a;
+$color-highlight: #9e4036;
+// $color-highlight: #a28a6a;
+// $color-title: #637478;
+$color-title: #a28a6a;
+
+$color-background: #232323;
 $color-text: #dcd3c7;
-$color-z: #6b6e70;
+$color-neutral: #6b6e70;
 
 //applications of those colors
 $color-background-popped: scale-color($color-background, $lightness: +12%);
@@ -23,9 +27,10 @@ $color-text-sink: scale-color($color-text, $lightness: -36%);
 $color-text-sunk: scale-color($color-text, $lightness: -48%);
 $color-link: scale-color($color-highlight, $lightness: +15%);
 $color-link-active: scale-color($color-text, $lightness: +25%);
-$color-z-pop: scale-color($color-z, $lightness: +8%);
-$color-z-sink: scale-color($color-z, $lightness: -32%);
-$color-z-sunk: scale-color($color-z, $lightness: -48%);
+$color-neutral-pop: scale-color($color-neutral, $lightness: +8%);
+$color-neutral-popped: scale-color($color-neutral, $lightness: +16%);
+$color-neutral-sink: scale-color($color-neutral, $lightness: -32%);
+$color-neutral-sunk: scale-color($color-neutral, $lightness: -48%);
 
 // css and variable overwrites
 * {
@@ -38,7 +43,7 @@ $color-z-sunk: scale-color($color-z, $lightness: -48%);
   --example-color-icon: #{$color-highlight};
 
   --glossary-color-entry-highlight: #{$color-foreground-sunk};
-  --glossary-color-entry-type: #{$color-z-sink};
+  --glossary-color-entry-type: #{$color-neutral-sink};
   --glossary-color-list-background: #{$color-background-pop};
   --glossary-color-list-border: #{$color-background-popped};
   --glossary-color-search-background: #{$color-background-sunk};
@@ -48,7 +53,7 @@ $color-z-sunk: scale-color($color-z, $lightness: -48%);
   --move-color-shaded: #{$color-background-pop};
 
   --nav-color-background: #{$color-background};
-  --nav-color-background-hover: #{$color-z-sunk};
+  --nav-color-background-hover: #{$color-neutral-sunk};
   --nav-color-border: #{$color-foreground-sunk};
   --nav-color-flag: #{$color-foreground-sink};
   --nav-color-text: #{$color-text};
@@ -116,9 +121,10 @@ hr {
 }
 
 h1 {
-  color: $color-foreground;
-  font-size: 3em;
-  font-weight: 700;
+  // color: $color-foreground;
+  color: $color-title;
+  font-size: 3.5em;
+  // font-weight: 700;
   line-height: 1.25em;
   margin-block-start: 0em;
   margin-block-end: 0.5em;
@@ -134,12 +140,13 @@ h1 {
 
 h2 {
   // color: $color-highlight-pop;
-  color: $color-foreground;
+  color: $color-title;
+  // color: $color-foreground;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
   margin-top: 32px;
-  font-size: 2.25em;
-  font-weight: 700;
+  font-size: 2.5em;
+  // font-weight: 700;
   line-height: 1em;
 
   @media screen and (min-width: 900px) {
@@ -148,13 +155,14 @@ h2 {
 }
 
 h3 {
-  color: $color-highlight-popped;
+  // color: $color-highlight-popped;
+  color: $color-title;
   width: 100%;
   margin-top: 24px;
-  margin-block-start: 1.25em;
+  margin-block-start: 1.35em;
   margin-block-end: 0.5em;
-  font-size: 1.75em;
-  font-weight: 700;
+  font-size: 1.5em;
+  // font-weight: 700;
 
   @media screen and (min-width: 900px) {
     width: max-content;
@@ -167,7 +175,7 @@ h4 {
   margin-top: 24px;
   margin-bottom: 16px;
   font-size: 1.25em;
-  margin-block-start: 2em;
+  margin-block-start: 2.25em;
 }
 
 ul {
@@ -438,4 +446,5 @@ input {
   border-radius: 12px;
   border-top: 1px solid $color-highlight;
   border-bottom: 1px solid $color-highlight;
+  border-color: $color-title;
 }

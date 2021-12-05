@@ -26,6 +26,7 @@ import Cower from '@/glossary/moves/Cower.vue';
 import CriminalConnections from '@/glossary/moves/CriminalConnections.vue';
 import Curiosity from '@/glossary/moves/Curiosity.vue';
 import DayJob from '@/glossary/moves/DayJob.vue';
+import DesperateActs from '@/glossary/moves/DesperateActs.vue';
 import Determination from '@/glossary/moves/Determination.vue';
 import Dismantle from '@/glossary/moves/Dismantle.vue';
 import Doppelganger from '@/glossary/moves/Doppelganger.vue';
@@ -286,7 +287,14 @@ const moves = [
       tags: ['Butcher'],
       routeContent: 'One of the Butcher background moves.',
       component: DayJob,
+   },{
+      name: 'Desperate Acts',
+      type: types.move,
+      tags: [tags.secondaryMove],
+      routeContent: 'The secondary move for acting out of a position of desperation.',
+      component: DesperateActs,
    },
+   
    {
       name: 'Determination',
       type: types.move,

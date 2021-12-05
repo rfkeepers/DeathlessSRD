@@ -7,6 +7,7 @@ import feedback from '@/views/site/Feedback.vue'
 import entanglements from '@/views/game/Entanglements.vue'
 import manifesto from '@/views/game/Manifesto.vue'
 import rolling from '@/views/game/Rolling.vue'
+import stats from '@/views/game/Stats.vue'
 
 import glossary from '@/views/site/Glossary.vue'
 import glossaryHome from '@/glossary/GlossaryHome.vue'
@@ -94,6 +95,20 @@ routes = routes.concat([
         {
           name: 'description',
           content: 'The dice rolling and resolution mechanics in Deathless.',
+        }
+      ],
+    },
+  },
+  {
+    path: '/stats',
+    name: 'Stats',
+    component: stats,
+    meta: {
+      title: titleMaker('Stats'),
+      tags: [
+        {
+          name: 'description',
+          content: 'Character stats, the Abyss, possibly rolling as well.',
         }
       ],
     },

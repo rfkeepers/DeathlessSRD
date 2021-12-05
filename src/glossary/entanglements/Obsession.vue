@@ -17,19 +17,17 @@ defineProps({
     <h1 v-else>Obsessions</h1>
 </div>
 
-<div class="blurb">
+<div :class="{ blurb: !embedded }">
 
     While hopes and dreams often provide simple aspiration, an obsession can overwhelm the motivation for living altogether.  Taking on an Obsession is entirely up to the player.  No other character may ask you to do so, the MC cannot, nor can a move or compel force you into it.  But they shouldn't be taken lightly, either.  Once acknowledge, it can be very difficult to clear your mind of its Obsessions without resolving them entirely.
     <br><br>
 
     Examples:
-    <div class="blurb">
-        <Options bullet="⇀" :options="[
-            'There is nothing more rotten than the sale of a human life.  I will put an end to the trafficking ring run by the Baron de RoseFitz.',
-            'Demonic blood is rare and excuisitely valuable.  Draining the demon-boar of Sekkerdi would make enough lucre to live for generations in splendor.',
-            'I have a son, Bergen; a product of my own loins on the eve of my death.  This long existence will turn me hollow if I never meet him.',
-        ]" />
-    </div>
+    <Options bullet="⇀" indent :options="[
+        'There is nothing more rotten than the sale of a human life.  I will put an end to the trafficking ring run by the Baron de RoseFitz.',
+        'Demonic blood is rare and excuisitely valuable.  Draining the demon-boar of Sekkerdi would make enough lucre to live for generations in splendor.',
+        'I have a son, Bergen; a product of my own loins on the eve of my death.  This long existence will turn me hollow if I never meet him.',
+    ]" />
     <br><br>
 
     <Move id="become_obsessed" ruled shaded>
@@ -54,8 +52,8 @@ defineProps({
     <h3 v-if="embedded">Completion</h3>
     <h2 v-else>Completion</h2>
     If something in the world changes and the source of your Obsession, or your ability to pursue it, disappears, erase the Entanglement and answer the questions below.  If you answered 'yes' to any of those questions, erase 2 marks of Abyss.  If you did not, gain 2 marks of Abyss.
-    <div class="blurb spaceAbove">
-        <Options bullet="❍" :options="[
+    <div class="spaceAbove">
+        <Options bullet="❍" indent :options="[
             'If your obsession was a question, were you able to answer it to some satisfaction, even if not completely?',
             'If your obsession was an opportunity, were you able to capitalize on it to some satisfaction, even if only a little bit?',
             'If your obsession was a project, were you able to affect or progress it meaningfully, even if only incrementally?',

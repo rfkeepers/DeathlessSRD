@@ -9,6 +9,10 @@ const props = defineProps({
         type: Boolean,
         details: 'Roll details for a specific number of dice',
     },
+    plusD8: {
+        type: Boolean,
+        details: 'Roll details for adding a d8 risk die',
+    },
     n: {
         type: Number,
         details: 'quanity of dice to roll',
@@ -36,6 +40,7 @@ const props = defineProps({
     },
 });
 const quant = props.abyss ? '2d6 against your ABYSS'
+    : props.plusD8 ? 'an additional 1d8'
     : props.dice || props.n > 0 ? `${props.n} DICE`
     : props.glamour ? 'GLAMOUR'
     : props.force ? 'FORCE'
