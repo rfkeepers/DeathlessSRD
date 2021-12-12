@@ -9,7 +9,7 @@ const name = 'Immolate';
 <template>
 <Move id="immolate" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Attuned )</template>
+    <template v-slot:preconditions>( Embodied )</template>
     <template v-slot:body>
         Once per scene, when you would <b>burn a mark of the Abyss</b>, you instead sacrifice your own body or mind and take an Injury or a Condition.
     </template>

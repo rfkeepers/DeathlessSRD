@@ -44,7 +44,7 @@ Likewise, the game does not try to accomodate every story.  Deathless thrives in
 Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling with your stats with fiction and conversation at the forefront of play.  The rest varies in small or great ways.
 <div class="spaceAbove">
     <Options bullet="⇀" indent :options="[
-        'Non-traditional playbooks.  Your starting moves come from terse Backgrounds.  In play, characters adopt Attunements- transient personas designed as tightly focused compendiums of moves.',
+        'Non-traditional playbooks.  Your starting moves come from terse Backgrounds.  In play, characters adopt Personas- transient personalities designed as tightly focused compendiums of moves.',
         'Entanglements to bind the characters to their relationships.',
         'Compelling and Resistance mechanics that drive characters towads peril.',
         'No abstractions to handle combat.  Harm is a fluid expression for all violence, both physical and emotional.',
@@ -60,7 +60,6 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
     'The rolling changes (dice pool instead of 2d6) isn\'t quite there yet.  It has a decent base, but could use another layer.  And perhaps shifting values.',
     'Entanglements have a lot of refinement to go through before they find the right niche.',
     'Rules are altogether absent for secondary systems like: currency, travel, downtime, and designing npcs and threats.',
-    'Attunement personas need to be renamed abyss personas, and stratified into early and later tiers (high cost and benefit in the higher tier).',
     'No setting details are present.  Deathless isn\'t intended to require a setting, but having a foundation that adds context for its tone and behavior can help readers grok the intended game.  Too much abstraction hooks nobody.',
     'Oh, and it lacks playtesting. Like, at all.',
 ]" />
@@ -70,22 +69,24 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
     Todo:<br>
     1. rolling (partially done)<br>
     3. manifesto (partially done)<br>
-    4. the abyss<br>
-    5. stats<br>
-    6. character generation<br>
-    7. backgrounds<br>
+    4. the abyss (in stats, reworking)<br>
+    5. stats (basically done)<br>
     8. personas<br>
-    9. quickstarts: bait, advisors, something else<br>
     10. death<br>
     11. game overview<br>
     12. MC<br>
     13. Safety<br>
     14. Harm, injury, conditions<br>
     15. Basic and secondary moves<br>
+    16. rework backgrounds<br>
+    17. backgrounds<br>
+    18. rework something else<br>
+    16. character generation<br>
+    9. quickstarts: hunting bait, advisors, and something else<br>
 
     <br><br>
     ideas and experiements:<br>
-    1. use d8 for aid and hindrance, much like desperation.
+    1. how do I stop "you're a shitty person" from equating to "and a powerful one"?
 </div>
 
 </template>

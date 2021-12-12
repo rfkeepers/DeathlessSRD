@@ -9,7 +9,7 @@ const name = 'Dreamlike';
 <template>
 <Move id="dreamlike" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Attuned )</template>
+    <template v-slot:preconditions>( Embodied )</template>
     <template v-slot:body>
         Treat your <b>Glamour</b> as 1 higher while acting as Illusionist.
     </template>

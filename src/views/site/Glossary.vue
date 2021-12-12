@@ -40,7 +40,8 @@ const show = () => {
     searchInput.value.focus();
 };
 const hide = () => {
-    searchInput.value.blur();
+    const siv = searchInput.value;
+    if (siv) siv.blur();
     isVisible.value = matchMedia("screen and (min-width: 900px)").matches;
 };
 const hideIfShown = () => {

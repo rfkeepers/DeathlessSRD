@@ -9,7 +9,7 @@ const name = 'Pragmatic';
 <template>
 <Move id="pragmatic" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Attuned )</template>
+    <template v-slot:preconditions>( Embodied )</template>
     <template v-slot:body>
         When someone comes to you for advice or insight and you put aside any feelings you have for them to <b>give brutal, honest truth about themeselves or their situation</b>, clear a Condition or gain 2 Resilience.
     </template>

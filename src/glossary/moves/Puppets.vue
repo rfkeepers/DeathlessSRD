@@ -9,7 +9,7 @@ const name = 'Puppets';
 <template>
 <Move id="puppets" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Attuned )</template>
+    <template v-slot:preconditions>( Embodied )</template>
     <template v-slot:body>
         When you get someone to <b>demean themselves for your enjoyment</b>, clear a Condition or gain 2 Resilience.
     </template>

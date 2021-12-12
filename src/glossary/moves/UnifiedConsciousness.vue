@@ -9,7 +9,7 @@ const name = 'Unified Consciousness';
 <template>
 <Move id="unified_consciousness" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Attuned )</template>
+    <template v-slot:preconditions>( Embodied )</template>
     <template v-slot:body>
         When you <b>Persuade or Understand Someone</b>, you may spend 1 Resilience to turn a <em>M</em>iss into a <em>P</em>artial Success.
     </template>

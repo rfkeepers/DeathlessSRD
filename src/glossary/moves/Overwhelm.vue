@@ -20,8 +20,9 @@ const name = 'Overwhelm';
         ]">
             <template v-slot:subslot-1>
                 <Options bullet="⇀" :options="[
-                    'Whatever you sought is still there, now neither of you have it.',
-                    'You take it from them, but they take something from you as well.',
+                    'Now neither of you have it.',
+                    'You take something from them, but they take something from you as well.',
+                    'You cause collateral Harm in the process.',
                 ]" />
             </template>
         </SHPM>
@@ -35,10 +36,10 @@ const name = 'Overwhelm';
     </template>
     <template v-slot:example>
         <h3 class="lineTo indent">Design Thoughts</h3>
-        I like this move well enough.  But I know it's going to become the defacto "fight a thing" move.  Which isn't, I suppose, entirely the wrong approach.  If a character wants to deal belligerent Harm, this here fits the bill.  I just hope it comes to mind for considerations that aren't strictly combat, too.  That could be too dreamy of me: believing the move has more breadth than it's capable of.  But it would be nice for the pattern of things, avoiding a strict combat move and all, if it worked for both.
+        I like this move well enough.  But I worry it's going to become the defacto "fight a thing" move.  Which isn't, I suppose, entirely the wrong approach.  If a character wants to deal belligerent Harm, this here fits the bill.  Hopefully it comes to mind for considerations that aren't strictly combat, too.  That could be too dreamy of me: believing the move has more breadth than it's capable of.  It would be nice for the pattern of things, avoiding a strict combat move and all, if it worked for both.
         <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
-        <p>"The guard looks nervous.  They can see the odds, they know they're outnumbered.  But they're trying to do their job, and their job is to keep you out of the place."</p>
+        <p>"The bloke guarding the door looks nervous.  They can see the odds, they know they're outnumbered.  But they're trying to do their job, and their job is to keep you out of the place."</p>
         <p>"Can I grab them by the shirt and shove them against the door?" Micah asks.</p>
         <p>"Go for it," says the MC.</p>
         <p>"Listen to me you worthless shite," she begins, "you think we're who you're keeping out?  The consul ordered a raid on this estate.  They know about the Baron's trafficking.  You're going to let us through this door because we will turn you into a body if we have to, and no one's going to know the difference whether it happens now, or later when that raid burns this all to the ground."</p>
@@ -46,9 +47,8 @@ const name = 'Overwhelm';
         <p>"I was hoping for Overwhelm?  Seize the last of his courage, or whatever is keeping him here?"</p>
         <p>"Sure," the MC agrees, "I'll take that.  Show me that Force."</p>
         <p>Micah rolls a Partial success and looks up to the MC. "Ugh," she says, "I don't want neither of us to have it, I want through this door.  Other option: what do they want from me?  They can take it."</p>
-        <p>The MC ponders a moment, "I think they take a promise from you.  Like, they describe how if they abandon this door then they're toast.  Not just out of a job; the Baron's people will hunt them down.  They don't let loose ends hang around.  So this guard wants a promise: after tonight, they need somewhere to lay low.  Just for a night or two.  Do you promise?"</p>
-        <p>"Fine," Micah says, "whatever."</p>
-
+        <p>The MC ponders a moment, "I think they take a promise from you.  Like, they describe how if they abandon this door then they're toast.  Not just out of a job; the Baron's people will hunt them down.  They don't let loose ends hang around.  So he wants this: after tonight, they need somewhere to lay low.  Just for a night or two.  Do you promise?"</p>
+        <p>"Fine," Micah says, "sure."</p>
         </div>
     </template>
 </Move>

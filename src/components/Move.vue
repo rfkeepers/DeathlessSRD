@@ -21,7 +21,7 @@ const props = defineProps({
     },
     leftLined: {
         type: Boolean,
-        body: "Renders the move body with a vertical border on the left side."
+        body: "Renders the move body with a vertical border on the left side.",
     },
 });
 </script>

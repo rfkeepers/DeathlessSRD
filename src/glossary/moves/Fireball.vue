@@ -15,7 +15,7 @@ const name = 'Fireball';
     </template>
     <template v-slot:example>
         <h3 class="lineTo indent">Design Thoughts</h3>
-        This is the move to which I attribute the entire design philosophy of the Attunements playbook system.  In the beginning I was desigining for a very low/no-magic space.  But, because I'm ever a fan of magical realism, I wanted to venture a little into the space without making the game <i>about</i> doing the magic.  And so I caught onto the idea of magic as an evocation of personality flaws, and that exploration led me to where I am now.
+        This is the move to which I attribute the entire design philosophy of the Personas playbook system.  In the beginning I was desigining for a very low/no-magic space.  But, because I'm ever a fan of magical realism, I wanted to venture a little into the space without making the game <i>about</i> doing the magic.  And so I caught onto the idea of magic as an evocation of personality flaws, and that exploration led me to where I am now.
         <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

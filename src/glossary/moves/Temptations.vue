@@ -9,7 +9,7 @@ const name = 'Temptations';
 <template>
 <Move id="temptations" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Attuned )</template>
+    <template v-slot:preconditions>( Embodied )</template>
     <template v-slot:body>
         You can be compelled to <b>pursue or engage in illicit behavior</b>.
     </template>

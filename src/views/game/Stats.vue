@@ -7,7 +7,7 @@ import Rolling from "@/views/game/Rolling.vue";
 
 <!-- ============================== Template ============================== -->
 <template>
-<h1>Stats & Rolling Dice</h1>
+<h1 class="title">Stats &amp; Rolling Dice</h1>
 
 <div class="stats">
     <h2>Stats</h2>
@@ -17,7 +17,7 @@ import Rolling from "@/views/game/Rolling.vue";
     For example, Force applies equally to brutish attacks as to commanding leadership.  In both cases the character uses a display of power to get what they want.
 
     <h3>Glamour</h3>
-    Define the impression someone has of you.  Make a thing seem to be something it is not.  Lure others towards your needs.
+    Define the impression someone has of you and lure others towards your needs.  Make something seem like that which it is not.
 
     <h3>Insight</h3>
     Observe the moment, pierce the surface and look beneath, or imagine how the details string together.  Address what is, and not what seems to be.
@@ -46,7 +46,12 @@ import Rolling from "@/views/game/Rolling.vue";
 
 
     holy shit I just realized what the game needs to be about, and it is NOT the abyss.  It's about https://www.youtube.com/watch?v=dZrEayPIrVE .  You do terrible things, sure.  And you don't have to feel bad about it, because you live forever.  So how do you make the game about dealing with it?  Loss and connection, instead of the abyss, is essential.  Fighting against your nature and the sins you are compelled to do is essential.  But these are all generators.  How do you atone for yourself?  How do you investigate atonement?
+    <br><br>
 
+    To say "the more abyss you have the more powerful you are" inverts the theme of the game, I think.  Want power?  Keep on sinning to get more?  That's like saying, "sin is good, keep on doing it".  Urban shadows avoids this by having the corruption track 'kill' you at its fulfillment.  Corruption there is not about loss of humanity, it's about a turn of humanity towards a specific end.  The abyss, "all I need to do to absolve my sin is make connections with people" isn't the right vector.  So... how to have both a growth of power to use the personas (and do I drop shared skills to do that?) without mechanizing, "regret nothing and reap the rewards"?
+
+    <br><br>
+    keep the theme in mind.  "if this were a video game, you'd have no introspection for the small stuff.  here you must.  Feel your humanity slipping away at each step."
 
 
     <br><br>

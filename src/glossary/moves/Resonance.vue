@@ -9,7 +9,7 @@ const name = 'Resonance';
 <template>
 <Move id="resonance" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Attuned )</template>
+    <template v-slot:preconditions>( Embodied )</template>
     <template v-slot:body>
         You can be compelled to <b>let a character manipulate you</b>.
     </template>

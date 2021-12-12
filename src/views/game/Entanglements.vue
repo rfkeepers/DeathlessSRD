@@ -20,6 +20,7 @@ const ents = [
 
 const scrollTo = (hash, behavior = 'smooth') => {
     let el = document.getElementById(hash);
+    if (!el) return;
     el.scrollIntoView({ behavior });
 };
 

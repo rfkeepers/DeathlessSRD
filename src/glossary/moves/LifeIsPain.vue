@@ -9,7 +9,7 @@ const name = 'Life Is Pain';
 <template>
 <Move id="life_is_pain" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Attuned )</template>
+    <template v-slot:preconditions>( Embodied )</template>
     <template v-slot:body>
         When acting as Glutton, you may spend 1 Resilience during any move to <b>ignore the effects of a Condition</b>.
     </template>

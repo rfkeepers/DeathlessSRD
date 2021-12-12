@@ -9,10 +9,10 @@ const name = 'Desperate Acts';
 
 <!-- ============================== Template ============================== -->
 <template>
-<Move id="desperate_acts" leftLined>
+<Move id="desperate_acts" leftLined >
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you need any possible advantage you can get, you can turn a regular move (before or after rolling) into an act of desperation.  Describe what extreme behavior your desperation requires in this moment, then <Roll plusD8 />.
+        When you'll take any possible advantage you can get, describe how you can turn a regular move (before or after you roll) into an act of desperation.  Describe what extreme behavior your desperation requires in this moment, then <Roll plusD8 />.
         <br><br>
         <RollPlusD8Rules />
     </template>

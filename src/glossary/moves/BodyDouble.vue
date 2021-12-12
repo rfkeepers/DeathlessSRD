@@ -15,7 +15,7 @@ const name = 'Body Double';
     </template>
     <template v-slot:example>
         <h3 class="lineTo indent">Design Thoughts</h3>
-        This would be one of my favorite moves, if I were designing for Dungeon World.  As it is, I'm not sure it evokes enough of the themes (foibles, in particular) in the Shadewalker attunement.  Right now it leans a little too much towards, "Hey, now there's two of you, cool", and not enough towards, "You're happy to let someone else take the fall for you."
+        This would be one of my favorite moves, if I were designing for Dungeon World.  As it is, I'm not sure it evokes enough of the themes (foibles, in particular) in the Shadewalker persona.  Right now it leans a little too much towards, "Hey, now there's two of you, cool", and not enough towards, "You're happy to let someone else take the fall for you."
         <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>Skipping play examples for now.</p>

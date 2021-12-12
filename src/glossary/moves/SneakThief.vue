@@ -9,7 +9,7 @@ const name = 'Sneak Thief';
 <template>
 <Move id="sneak_thief" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Attuned )</template>
+    <template v-slot:preconditions>( Embodied )</template>
     <template v-slot:body>
         You can be compelled to <b>steal something of significant value</b> when doing so places you at risk or provides you no real benefit.
     </template>

@@ -13,13 +13,13 @@
     <h1>The aldkfj</h1>
     <div>blurb</div>
     <br>
-    These moves are available to any character with an <em>ABYSS</em> of 3 or more, so long as they are willing to pay the lefthand cost.  When attuned to this persona, pay the righthand cost instead.
+    These moves are available to any character with an <em>ABYSS</em> of 3 or more, so long as they are willing to pay the lefthand cost.  When embodying this persona, pay the righthand cost instead.
     <br><br>
     <Cook ruled shaded :leftLined="false"/>
     <br><br>
     <Imbibe ruled shaded :leftLined="false"/>
     <br><br>
-    The remaining moves require the character to be attuned to this persona.  
+    The remaining moves require the character to embody this persona.  
     <br><br>
     <Immolate ruled shaded :leftLined="false"/>
     <br><br>

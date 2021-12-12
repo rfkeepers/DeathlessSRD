@@ -2,6 +2,8 @@
 <script setup>
 import Options from '@/components/Options.vue';
 import Roll from "@/components/Roll.vue";
+import DesperateActs from "@/glossary/moves/DesperateActs.vue";
+import HelpOut from "@/glossary/moves/HelpOut.vue";
 defineProps({
     embedded: {
         type: Boolean,
@@ -95,10 +97,20 @@ defineProps({
         Modifiers
     </h2>
     <div  :class="{ blurb: !embedded }">
-        Roll reductions occur either from Conditions, or from having another player's character Hinder your actions.  For each Condition attached to a stat, you reduce the the number of dice you roll by 1.  For example: if your Resolve is 3, and you have a Resolve-based Condition, you'll only roll 2d6.  Additionally, if another PC decides to Hinder you, this also reduces your dice pool by 1.
-        <br><br> 
+        For each Condition attached to a stat, you reduce the the number of d6 dice in your pool by 1.  For example: if your Resolve is 3, and you have a Resolve-based Condition, you only roll 2d6.  
+        <br><br>
         
-        Increases are gained from Resilience, getting Helped by oher player's characters, and using the <em>Desperation</em> move  On any roll you may spend 1 Resilience to increase your dice pool by 1.  Or another PC can help aid you in teh action, granting 1 die as well.  Finally, if you're willing (or, as the name suggests, desperate enough) to risk additional consequences, you can make the move a Desperate action.
+        You may spend 1 Resilience on any of your own rolls to increase the dice pool by 1d6.  This can only happen once per roll.
+        <br><br>
+        
+        If another PC helps you out, use the following move:
+        <br>
+        <HelpOut />
+        <br>
+
+        Finally, if you're willing (or, as the name suggests, desperate enough) to put yourself in a risky position, try:
+        <br>
+        <DesperateActs />
     </div>
 
     <h3 v-if="embedded">

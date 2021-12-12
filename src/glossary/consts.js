@@ -4,13 +4,14 @@ const tags = {
     force: 'force',
     glamour: 'glamour',
     insight: 'insight',
+    modifierMove: 'modifier_move',
     resolve: 'resolve',
     secondaryMove: 'secondary_move',
     skill: 'skill',
 };
 
 const types = {
-    attunement: 'Attunement',
+    persona: 'Persona',
     background: 'Background',
     entanglement: 'Entanglement',
     move: 'Move',

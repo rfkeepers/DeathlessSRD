@@ -9,7 +9,7 @@ const name = 'Silver Tongued';
 <template>
 <Move id="silver_tongued" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Attuned )</template>
+    <template v-slot:preconditions>( Embodied )</template>
     <template v-slot:body>
         When you <b>tell a lie to your detriment</b>, and the character you lied to acts in belief of the lie, clear a Condition or gain 2 Resilience.
     </template>

@@ -9,7 +9,7 @@ const name = 'Anything You Want Me To Be';
 <template>
 <Move id="anything_you_want_me_to_be" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>( Attuned )</template>
+    <template v-slot:preconditions>( Embodied )</template>
     <template v-slot:body>
         When you <b>Understand Someone</b> while acting as Chameleon, roll GLAMOUR instead of INSIGHT.
     </template>
