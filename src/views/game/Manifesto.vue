@@ -17,7 +17,7 @@ You see, the game has an agenda, and to get the most out of it, you need to play
 <h2>Player Agendas</h2>
 <div class="blurb">
     <Options bullet="⇀" :options="[
-        'Play a real person: flawed, engaged, and aspiring.',
+        'Play a real person: flawed, engaged, and aware.',
         'Instigate the change you want in the world.',
         'Get tangled up in everyone\'s business.',
     ]" />
@@ -26,7 +26,7 @@ You see, the game has an agenda, and to get the most out of it, you need to play
 As a player, you want to sync up with the themes and expectations of the game, or else you'll end up fighting with it.
 <br>
 
-<h4>Play a real person: flawed, engaged, and aspiring.</h4>
+<h4>Play a real person: flawed, engaged, and aware.</h4>
 <div class="leftLined">
     That means not being a cartoon murderhobo.
 </div>
@@ -45,11 +45,10 @@ As a player, you want to sync up with the themes and expectations of the game, o
 <h2>Player Principles</h2>
 <div class="blurb">
     <Options bullet="⇀" :options="[
-        'Embrace the drama.',
-        'Save your character by saving others.',
+        'Save yourself by saving others.',
         'Appreciate the fragility of good connections.',
         'Don\'t be afraid to make different commitments than your fellow players.',
-        'Fear no risks, embrace all consequences.',
+        'Embrace all consequences.',
     ]" />
 </div>
 <br>

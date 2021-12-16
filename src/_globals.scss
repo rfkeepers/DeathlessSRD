@@ -348,6 +348,37 @@ input {
   cursor: pointer;
 }
 
+blurb {
+  text-align: left;
+  margin-left: 2%;
+
+  @media screen and (max-width: 900px) {
+    margin-left: 0%;
+  }
+
+  &--inverse {
+    margin-left: 0%;
+
+    @media screen and (max-width: 900px) {
+      margin-left: 2%;
+    }
+  }
+
+  &--for {
+    @extend .blurb;
+    margin-left: 0;
+
+    @media screen and (min-width: 900px) {
+      &:before {
+        content: "╘";
+        margin-right: 16px;
+        font-size: 1.5em;
+        color: $color-foreground;
+      }
+    }
+  }
+}
+
 .blurb {
   text-align: left;
   margin-left: 2%;
