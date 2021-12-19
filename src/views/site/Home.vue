@@ -21,9 +21,9 @@ Deathless is designed to encourage a specifc kind of play, driven by the followi
 <div class="spaceAbove">
     <Options bullet="⇀" indent asHtml :options="[
         '<em>Drama is more important than verisimilitude.</em>  Character interaction always takes the spotlight.',
-        '<em>Relationships precede mechanics.</em>  Words cut as deep as knives.  Is this true?.',
-        '<em>The players and MC share ownership.</em>  We all play to find out what happens.',
+        '<em>To do it, you do it.</em>  The rules bring context to the fiction, not abstract away the details.',
         '<em>We stare ugliness in the eyes.</em>  What is terrible should be confronted, not hidden.',
+        '<em>The players and MC share ownership.</em>  We all play to find out what happens.',
     ]" />
 </div>
 <br>

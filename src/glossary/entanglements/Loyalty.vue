@@ -60,16 +60,16 @@ defineProps({
     
     <em>When sworn to An NPC:</em>
     
-    <div class="blurb spaceAbove">
+    <blurb class="spaceAbove">
         If you do any of the following with clear intent: ignore the call of those you are sworn to serve; willingly leave their jurisdiction without order or permission; or intentionally cause them Harm or allow Harm to befall them, whether directly or indirectly, erase the Loyalty and mark the Abyss.  The MC will always give you a warning if your actions would default on the Entanglement, and your choice to defy this warning is what counts as clear intent.
-    </div>
+    </blurb>
     <br>
 
     <em>When sworn to a player's Character:</em>
 
-    <div class="blurb spaceAbove">
+    <blurb class="spaceAbove">
         If you do any of the following with clear intent: ignore a plea for help from those you are sworn to serve, intentionally leave them stranded in a time of need, or intentionally sabotage or prevent their attendance to their other Entanglements, erase the Entanglement and mark the Abyss.  The MC will always give you a warning if your actions would default on the Entanglement, and your choice to defy this warning is what counts as clear intent.
-    </div>
+    </blurb>
 
     <h3 v-if="embedded">Abandonment</h3>
     <h2 v-else>Abandonment</h2>
