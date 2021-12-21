@@ -108,12 +108,12 @@ import Options from '@/components/Options.vue';
         Further reading:&nbsp;<a href="https://rpg.stackexchange.com/questions/30906/what-do-the-terms-lines-and-veils-mean">Lines and Veils on RPGStackExchange</a>
 
         <h3>During</h3>
-        <h4>X Card</h4>
+        <h4 class="noTopMargin">X Card</h4>
         Depending on your circumstance the X may be a physical card which players can reach out and touch, or it may be the act of saying, typing, or showing an X.  A player may tap the X card any time that they are uncomfortable with the current scene.  Once tapped, the scene either changes course or cuts to somewhere else.  No questions asked, no explanations needed.
         <br>
         Further reading:&nbsp;<a href="http://tinyurl.com/x-card-rpg">X-Card by John Stavropoulos</a>
 
-        <h3>Support Flower</h3>
+        <h4>Support Flower</h4>
         The support flower is similar to the X card, but more nuanced in execution.  It allows for participants to request that the scene stop (red), but also for it to slow down or proceed with caution (yellow).  It also allows participants to ask for more, or to dig in deeper (green) when they like where the scene is headed.
         <br>
         Further reading:&nbsp;<a href="https://the-act-apart.itch.io/the-support-flower">Support Flower by the Act Apart</a>
