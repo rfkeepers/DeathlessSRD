@@ -76,10 +76,9 @@ export default {
     ],
     contentLinks: [
       {to: "/", text: "What Is Deathless?"},
-      {to: "/manifesto", text: "Manifesto"},
-      {to: "/rolling", text: "Rolling"},
+      {to: "/heart", text: "The Heart"},
+      {to: "/stats", text: "Stats & Rolling"},
       {to: "/entanglements", text: "Entanglements"},
-      {to: "/stats", text: "Stats"},
     ],
     glossaryLinks: [
       {to: "/glossary/landing", text: "Glossary"},

@@ -90,7 +90,8 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
     1. how do I stop "you're a shitty person" from equating to "and a powerful one"?<br>
     2. It's not the Abyss, it's 'WOES' (or anguish, or something similar).  And you do take it when you kill (and die?).  But you also take it "whenever you perform or are complicit in an act which crosses the line of a personal ethos" (like black bile).  Woes can be burned to enact terrible, powerful behavior.  At some point, instead of losing yourself, you have to contend with your woes.  How and when?  Well, that depends on the mechanic.  Maybe just when the bar tops off?  Maybe when you roll under?<br>
     3. After introducing woes, I need to refactor how engaging with personas works.<br>
-    4. When you die, you don't lose your memories.  You have to face your woes/agony.  In facing them, you learn what persona you unlock/embody.
+    4. When you die, you don't lose your memories.  You have to face your woes/agony.  In facing them, you learn what persona you unlock/embody.<br>
+    5. Unlocking personas: When you die, you unlock the persona.  but you have to have a minimum of the abyss. every 2, stepping up.  So the first unlock requires at least two, the second 4, the third 6, etc.  (or, 0, 2, 4, 6, etc).
 </div>
 
 </template>

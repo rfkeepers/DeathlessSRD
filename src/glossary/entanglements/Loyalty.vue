@@ -18,7 +18,7 @@ defineProps({
 </div>
 
 <div :class="{ blurb: !embedded }">
-    
+
     Expressing Loyalty means more than just an alignment of purpose between you and another character.  It means more than to recognize someone as your boss or charge.  Loyalty is devotion.  If they are your superior, you agree to be at their beck and call.  If they are your ward, you agree to shelter, guide, and nurture them.  And in both cases you must be prepared to make sacrifices for them when it is asked or needed of you.  For as long as it takes.  Perhaps as long as they live.
     <br><br>
 
@@ -29,7 +29,7 @@ defineProps({
         'As Consul Bergen died he charged me to raise his son as my own.  I owe him that and so much more.',
     ]" />
     <br><br>
-    
+
     <Move id="swear_an_oath" ruled shaded>
         <template v-slot:name>Swear An Oath</template>
         <template v-slot:body>
@@ -46,30 +46,30 @@ defineProps({
         </div>
         </template>
     </Move>
-    
+
     <h3 v-if="embedded">Maintaining Loyalty</h3>
     <h2 v-else>Maintaining Loyalty</h2>
     When you earnestly go out of your way to endure significant Harm, hardship, or danger for the sake of protecting those you are sworn to serve- whether or not you are successful- erase a mark of Abyss.  This can only occur once per scene, independent of the number of Entanglements involved.
-    
+
     <div class="spaceAbove">
         If those you are sworn to serve receive significant Injury or are placed in great danger while you are elsewhere and unable to protect them, mark the Abyss.
     </div>
-    
+
     <h3 v-if="embedded">Failure</h3>
     <h2 v-else>Failure</h2>
-    
+
     <em>When sworn to An NPC:</em>
-    
-    <blurb class="spaceAbove">
+
+    <div class="blurb spaceAbove">
         If you do any of the following with clear intent: ignore the call of those you are sworn to serve; willingly leave their jurisdiction without order or permission; or intentionally cause them Harm or allow Harm to befall them, whether directly or indirectly, erase the Loyalty and mark the Abyss.  The MC will always give you a warning if your actions would default on the Entanglement, and your choice to defy this warning is what counts as clear intent.
-    </blurb>
+    </div>
     <br>
 
     <em>When sworn to a player's Character:</em>
 
-    <blurb class="spaceAbove">
+    <div class="blurb spaceAbove">
         If you do any of the following with clear intent: ignore a plea for help from those you are sworn to serve, intentionally leave them stranded in a time of need, or intentionally sabotage or prevent their attendance to their other Entanglements, erase the Entanglement and mark the Abyss.  The MC will always give you a warning if your actions would default on the Entanglement, and your choice to defy this warning is what counts as clear intent.
-    </blurb>
+    </div>
 
     <h3 v-if="embedded">Abandonment</h3>
     <h2 v-else>Abandonment</h2>

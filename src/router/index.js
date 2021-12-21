@@ -5,7 +5,7 @@ import home from '@/views/site/Home.vue'
 import feedback from '@/views/site/Feedback.vue'
 
 import entanglements from '@/views/game/Entanglements.vue'
-import manifesto from '@/views/game/Manifesto.vue'
+import heart from '@/views/game/Heart.vue'
 import rolling from '@/views/game/Rolling.vue'
 import stats from '@/views/game/Stats.vue'
 
@@ -21,7 +21,7 @@ import notFound from '@/views/site/NotFound.vue'
 const titleMaker = (...t) => t.concat('Deathless').join(' - ');
 const nameMaker = (...t) => t.join('.');
 
-// ------------------------------------------------------------------------------------- 
+// -------------------------------------------------------------------------------------
 // core
 let routes = [
   {
@@ -54,7 +54,7 @@ let routes = [
   },
 ];
 
-// ------------------------------------------------------------------------------------- 
+// -------------------------------------------------------------------------------------
 // the game
 routes = routes.concat([
   {
@@ -72,15 +72,15 @@ routes = routes.concat([
     },
   },
   {
-    path: '/manifesto',
-    name: 'Manifesto',
-    component: manifesto,
+    path: '/heart',
+    name: 'The Heart',
+    component: heart,
     meta: {
-      title: titleMaker('Manifesto'),
+      title: titleMaker('The Heart'),
       tags: [
         {
           name: 'description',
-          content: 'The manifesto of the game\'s agenda, as well as the players\' and MC\'s agendas.',
+          content: 'The heart of the game: its tone and aesthetic, the agendas, and what play looks like.',
         }
       ],
     },
@@ -115,7 +115,7 @@ routes = routes.concat([
   },
 ]);
 
-// ------------------------------------------------------------------------------------- 
+// -------------------------------------------------------------------------------------
 // glossary
 // correct the path for the glossary entries
 glossaryRoutes.forEach(gr => {
@@ -159,7 +159,7 @@ routes = routes.concat([
 ]);
 
 
-// ------------------------------------------------------------------------------------- 
+// -------------------------------------------------------------------------------------
 // design
 routes = routes.concat([
   {
@@ -192,7 +192,7 @@ routes = routes.concat([
   },
 ]);
 
-// ------------------------------------------------------------------------------------- 
+// -------------------------------------------------------------------------------------
 // catchall
 routes = routes.concat([
   {

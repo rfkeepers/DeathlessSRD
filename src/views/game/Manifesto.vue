@@ -15,13 +15,13 @@ const props = defineProps({
 You see, the game has an agenda, and to get the most out of it, you need to play it that way.
 
 <h2>Player Agendas</h2>
-<blurb>
+<div class="blurb">
     <Options bullet="⇀" :options="[
         'Play a real person: flawed, engaged, and aware.',
         'Instigate the change you want in the world.',
         'Get tangled up in everyone\'s business.',
     ]" />
-</blurb>
+</div>
 <br>
 As a player, you want to sync up with the themes and expectations of the game, or else you'll end up fighting with it.
 <br>
@@ -43,21 +43,21 @@ As a player, you want to sync up with the themes and expectations of the game, o
 <br>
 
 <h2>Player Principles</h2>
-<blurb>
+<div class="blurb">
     <Options bullet="⇀" :options="[
         'Save yourself by saving others.',
         'Appreciate the fragility of good connections.',
         'Don\'t be afraid to make different commitments than your fellow players.',
         'Embrace all consequences.',
     ]" />
-</blurb>
+</div>
 <br>
 
 <hr>
 <br>
 
 <h2>MC Principles in PBTA</h2>
-<blurb>
+<div class="blurb">
     <Options bullet="⇀" :options="[
         'Begin with the fiction.',
         'Address the characters before the players.',
@@ -66,13 +66,13 @@ As a player, you want to sync up with the themes and expectations of the game, o
         'Tell players the requirements or consequences, then ask, \'what do you do?\'.',
         'End with the fiction.',
     ]" />
-</blurb>
+</div>
 <br>
 
 <h2>MC Principles in Deathless</h2>
-<blurb>
+<div class="blurb">
     <Options bullet="⇀" :options="[
-        'Fill the story with frequent strife and rare relief.',
+        'Fill the story with frequent strife and transient relief.',
         'Make the people in the world real, complicated, and worth meeting.',
         'Deal in costly decisions, misfortune, and trouble that always comes looking.',
         'Give nothing away freely.',
@@ -82,24 +82,24 @@ As a player, you want to sync up with the themes and expectations of the game, o
         'Pursue accountability for the actions commmitted.',
         'Use the characters\' failures as leverage to change the world.',
     ]" />
-</blurb>
+</div>
 <br>
 
 <hr>
 <br>
 
 <h2>The Master of Ceremony's Agenda</h2>
-<blurb>
-    <Options bullet="⇀" :options="[
-        'Portray the world as an oppressive machine with dissenting cogs.',
-        'Fill the PCs lives with dramatic motivation.',
-        'Play to find out what happens.',
-    ]" />
-</blurb>
+    <div class="blurb">
+        <Options bullet="⇀" :options="[
+            'Portray the world as an oppressive machine with dissenting cogs.',
+            'Fill the PCs lives with dramatic motivation.',
+            'Play to find out what happens.',
+        ]" />
+    </div>
 <br>
 
 <h2>The MC's Moves</h2>
-<blurb>
+<div class="blurb">
     <Options bullet="⇀" :options="[
         'Reveal an unwelcome truth',
         'Turn safety to danger',
@@ -115,7 +115,7 @@ As a player, you want to sync up with the themes and expectations of the game, o
         'Advance an antagonist\'s agenda, on or offscreen',
         'Offer a painful opportunity',
     ]" />
-</blurb>
+</div>
 <br><br>
 
 <!-- <h2>Player Agendas:</h2>
@@ -126,9 +126,9 @@ As a player, you want to sync up with the themes and expectations of the game, o
 ]" />
 <br>
 <h3 class="lineTo indent">Play a real person: flawed, engaged, and aspiring.</h3>
-<blurb>
+<div class="blurb">
     yea do it
-</blurb>
+</div>
 <br>
 <h2>Player Principles:</h2>
 <Options bullet="⇀" :options="[
@@ -139,9 +139,9 @@ As a player, you want to sync up with the themes and expectations of the game, o
     'Fear no risks, embrace all consequences.',
 ]" />
 <br>
-<blurb>
+<div class="blurb">
 
-</blurb>
+</div>
 <hr>
 <br>
 <h2>MC Principles in PBTA:</h2>
