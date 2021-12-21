@@ -14,7 +14,7 @@ The players endure the loop between their Entanglements and the Abyss.  The Abys
 <br><br>
 Through it all the characters will get compelled, and rewarded, for bending to their faults and vices.  Slipping deeper into the Abyss offers power, but power reveals foibles and viciousness.  The only way to succeed, to stay human, is to rise above your failings.
 
-<h2 class="title">
+<h2>
     What Here Is Useful or Interesting?
 </h2>
 Deathless is designed to encourage a specifc kind of play, driven by the following principles:
@@ -38,7 +38,7 @@ Likewise, the game does not try to accomodate every story.  Deathless thrives in
     ]" />
 </div>
 
-<h2 class="title">
+<h2>
     What Here Is Unexpected?
 </h2>
 Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling with your stats with fiction and conversation at the forefront of play.  The rest varies in small or great ways.
@@ -52,7 +52,7 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
     ]" />
 </div>
 
-<h2 class="title">
+<h2>
     What Here Is Unfinished?
 </h2>
 <Options bullet="⇀" indent :options="[
