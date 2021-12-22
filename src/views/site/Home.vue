@@ -73,8 +73,7 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
     4. the abyss (in stats, reworking)<br>
     5. stats (basically done)<br>
     10. death (basically done)<br>
-    11. game overview (basically done)<br>
-    12. MC<br>
+    12. MC guide<br>
     13. Safety<br>
     14. Harm, injury, conditions<br>
     15. Basic and secondary moves<br>

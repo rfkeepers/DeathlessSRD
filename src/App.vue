@@ -79,6 +79,7 @@ export default {
       {to: "/heart", text: "The Heart"},
       {to: "/stats", text: "Stats & Rolling"},
       {to: "/entanglements", text: "Entanglements"},
+      {to: "/mc", text: "The MC"},
     ],
     glossaryLinks: [
       {to: "/glossary/landing", text: "Glossary"},
@@ -171,8 +172,6 @@ export default {
 <style lang="scss" scoped>
 .headerBar {
   background: $color-background-sink;
-  // min-height: 58px;
-  // height: 58px;
   padding: 0.67em 1.5em 1em 1.5em;
   border-bottom: 2px solid $color-foreground-sunk;
   display: grid;

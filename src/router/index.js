@@ -1,22 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { glossaryRoutes } from '@/glossary/glossary.js';
 
-import home from '@/views/site/Home.vue'
-import feedback from '@/views/site/Feedback.vue'
+import home from '@/views/site/Home.vue';
+import feedback from '@/views/site/Feedback.vue';
 
-import entanglements from '@/views/game/Entanglements.vue'
-import heart from '@/views/game/Heart.vue'
-import rolling from '@/views/game/Rolling.vue'
-import stats from '@/views/game/Stats.vue'
+import entanglements from '@/views/game/Entanglements.vue';
+import heart from '@/views/game/Heart.vue';
+import mc from '@/views/game/MC.vue';
+import rolling from '@/views/game/Rolling.vue';
+import stats from '@/views/game/Stats.vue';
 
-import glossary from '@/views/site/Glossary.vue'
-import glossaryHome from '@/glossary/GlossaryHome.vue'
-import glossaryNotFound from '@/glossary/GlossaryNotFound.vue'
+import glossary from '@/views/site/Glossary.vue';
+import glossaryHome from '@/glossary/GlossaryHome.vue';
+import glossaryNotFound from '@/glossary/GlossaryNotFound.vue';
 
-import exampleExamples from '@/views/site/ExampleExamples.vue'
-import moveExamples from '@/views/site/MoveExamples.vue'
+import exampleExamples from '@/views/site/ExampleExamples.vue';
+import moveExamples from '@/views/site/MoveExamples.vue';
 
-import notFound from '@/views/site/NotFound.vue'
+import notFound from '@/views/site/NotFound.vue';
 
 const titleMaker = (...t) => t.concat('Deathless').join(' - ');
 const nameMaker = (...t) => t.join('.');
@@ -80,7 +81,21 @@ routes = routes.concat([
       tags: [
         {
           name: 'description',
-          content: 'The heart of the game: its tone and aesthetic, the agendas, and what play looks like.',
+          content: 'The heart of the game: its tone and aesthetic, the agendas, and safety.',
+        }
+      ],
+    },
+  },
+  {
+    path: '/mc',
+    name: 'The MC',
+    component: mc,
+    meta: {
+      title: titleMaker('MC Guide'),
+      tags: [
+        {
+          name: 'description',
+          content: 'An in-depth guide for the MC.',
         }
       ],
     },
