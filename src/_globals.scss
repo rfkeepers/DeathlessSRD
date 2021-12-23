@@ -25,6 +25,7 @@ $color-text-pop: scale-color($color-text, $lightness: +8%);
 $color-text-popped: scale-color($color-text, $lightness: +24%);
 $color-text-sink: scale-color($color-text, $lightness: -36%);
 $color-text-sunk: scale-color($color-text, $lightness: -48%);
+$color-title-popped: scale-color($color-title, $lightness: +48%);
 $color-link: scale-color($color-highlight, $lightness: +15%);
 $color-link-active: scale-color($color-text, $lightness: +25%);
 $color-neutral-pop: scale-color($color-neutral, $lightness: +8%);
@@ -124,7 +125,7 @@ h1 {
   color: $color-title;
   font-size: 3.5em;
   line-height: 1.25em;
-  margin-block-start: 0em;
+  margin-block-start: 0.5em;
   margin-block-end: 0.25em;
   width: max-content;
 
@@ -159,6 +160,7 @@ h3 {
 }
 
 h4 {
+  color: $color-title;
   margin: 0;
   margin-bottom: 4px;
   font-size: 1.25em;

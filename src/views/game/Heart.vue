@@ -42,6 +42,8 @@ import Options from '@/components/Options.vue';
         <h2 id="mc">Master of Ceremonies</h2>
         The MC puppets the world around the PCs, acting out the Non-Player Characters (aka, NPCs) and their motives and reactions.  Thier job, by pulling at these strings, is to maintain the tempo and tension of the game.  Like the other people at the table they may arrive with topics in mind (or they might not, planning ahead isn't necessary) but they, too, are here to discover the story, not to prescribe it.
     </div>
+    <br>
+    <hr>
 
     <div class="spaceAbove">
         <h2 id="agendas">Agendas</h2>
@@ -82,7 +84,8 @@ import Options from '@/components/Options.vue';
             Show up to the table with as little or as much preparation as you want (we suggest the former).  Readiness is not as important as flexibility.  Expect the players to surprise you.  Expect to surprise yourself sometimes.  The goal is to discover a story through play, not to tell a written tale.
         </div>
     </div>
-
+    <br>
+    <hr>
 
     <div class="spaceAbove">
         <h2 id="safety">Safety</h2>
@@ -121,7 +124,8 @@ import Options from '@/components/Options.vue';
         <h4>Open Door Policy</h4>
         Participation in the game is not required.  Anyone may leave or disconnect for any reason, without fear of judgement from others.
 
-        <h4>Debriefs</h4>
+        <h3>After</h3>
+        <h4 class="noTopMargin">Debriefs</h4>
         Everyone at the table should have an opportunity to check in with each other and address feelings.  This can be done in private between participants, or with the group as a whole.  It isn't necessary to wait for the end of the session to debrief.  Taking breaks in-between scenes, especially to follow up after an emotionally charged moment, is a great time to administer aftercare.
         <br><br>
 
