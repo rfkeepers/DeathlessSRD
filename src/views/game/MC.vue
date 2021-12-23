@@ -158,7 +158,7 @@ import Options from '@/components/Options.vue';
         </div>
 
         <h4>⇀ Reveal an unwelcome truth</h4>
-
+        When
 
         <h4>⇀ Turn safety to danger</h4>
         <h4>⇀ Make their behavior cause more trouble than it solves</h4>
