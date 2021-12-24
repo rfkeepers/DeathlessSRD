@@ -172,7 +172,7 @@ export default {
 <style lang="scss" scoped>
 .headerBar {
   background: $color-background-sink;
-  padding: 0.67em 1.5em 1em 1.5em;
+  padding: 1em 1.5em 0.67em 1.5em;
   border-bottom: 2px solid $color-foreground-sunk;
   display: grid;
 
@@ -221,7 +221,6 @@ export default {
     grid-area: navBtn;
     align-self: end;
     font-size: 20pt;
-    margin-top: 4px;
 
     @media screen and (min-width: 900px) {
       display: none;

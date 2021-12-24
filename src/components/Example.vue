@@ -127,7 +127,6 @@ onUnmounted(() => {
     @media screen and (max-width: 900px) {
         width: 110vw;
         right: -110vw;
-        top: 54px;
     }
 
     &--shown {
@@ -140,8 +139,8 @@ onUnmounted(() => {
 
     .close {
         position: absolute;
-        right: 64px;
-        font-size: 1.6em;
+        right: 72px;
+        font-size: 1.2em;
         color: var(--example-color-icon, white);
     }
 
