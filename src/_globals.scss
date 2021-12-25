@@ -345,14 +345,6 @@ input {
     margin-left: 0%;
   }
 
-  &--inverse {
-    margin-left: 0%;
-
-    @media screen and (max-width: 900px) {
-      margin-left: 2%;
-    }
-  }
-
   &--for {
     @extend .blurb;
     margin-left: 0;

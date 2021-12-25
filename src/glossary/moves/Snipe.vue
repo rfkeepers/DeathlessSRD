@@ -13,7 +13,7 @@ const name = 'Snipe';
 <Move id="snipe" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When your action requires <b>precision, subtlety, or precise execution</b> lest it all go wrong, <Roll skill/>.
+        When you perform an act with <b>precision or subtlety</b>, while a tiny slip-up could make it it all go wrong, <Roll skill/>.
         <SHPM :options="[
             'You accomplish what you set out to do.',
             'The MC picks one of the following:',
@@ -28,7 +28,7 @@ const name = 'Snipe';
             </template>
         </SHPM>
         <br>
-        When you take similar action against another PC, <Roll skill/>.  
+        When you take similar action against another PC, <Roll skill/>.
         <SHPM use="spm" :options="[
             'You accomplish what you intended.',
             'The other player picks one of the following.',

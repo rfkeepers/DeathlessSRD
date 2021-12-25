@@ -22,12 +22,12 @@ const name = 'Overwhelm';
                 <Options bullet="⇀" :options="[
                     'Now neither of you have it.',
                     'You take something from them, but they take something from you as well.',
-                    'You cause collateral Harm in the process.',
+                    'You cause collateral Harm or damage in the process.',
                 ]" />
             </template>
         </SHPM>
         <br>
-        When you Overwhelm another PC, <Roll force/>.  
+        When you Overwhelm another PC, <Roll force/>.
         <SHPM use="spm" :options="[
             'They must spend 1 Resilience or let you get what you wanted.',
             'They choose one of the partial success options above.',

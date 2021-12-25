@@ -61,5 +61,6 @@ const quant = props.abyss ? '2d6 against your ABYSS'
 <style lang="scss" scoped>
 .roll {
     color: var(--stat-color, #6b6e70);
+    font-weight: 700;
 }
 </style>

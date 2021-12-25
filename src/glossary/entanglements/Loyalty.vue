@@ -23,7 +23,7 @@ defineProps({
     <br><br>
 
     Examples:
-    <Options bullet="⇀" indent :options="[
+    <Options bullet="⇀" :options="[
         'I Persuaded Flynn to help me save Marienne\'s child.  In return Flynn asked that I take an oath of loyalty to them until we have ousted the Baron de RoseFitz, and I agreed.',
         'The demon-boar of Sekkerdi is the great and terrible spirit of the forest manifest in flesh.  As a protector of the forest, I have pledged my life to the boar\'s guard.',
         'As Consul Bergen died he charged me to raise his son as my own.  I owe him that and so much more.',
@@ -84,8 +84,6 @@ defineProps({
     </div>
 
 </div>
-<br><br>
-&nbsp;
 </template>
 
 <!-- ============================== Style ============================== -->

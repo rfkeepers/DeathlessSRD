@@ -27,7 +27,7 @@ defineProps({
     <div :class="{ blurb: !embedded }">
         Deathless uses a D6 dice-pool system.  Rolling only happens when resolving a move, but not all moves require a roll.  If you see the text “<Roll something />”, that's your cue.
         <br><br>
-        
+
         In most cases the number of dice rolled is equal to the specified stat.  When you're told to <Roll force />, you first look up your character's Force stat, and then roll that number of dice.  So if your Force is 4, you'll roll 4d6 dice.
         <br>
         <div class="playExample miniBorder">
@@ -36,7 +36,7 @@ defineProps({
             <p>The MC nods, "sounds good.  I think what you're trying to do is Snipe?  Let's see, yeah, that'll need you to <Roll skill/></p>
             <p>Davenport has a Skill of 3. Griffon rolls 3d6 and gets a result of 2, 4, and 5: one good with two bad.  That’s enough for a Partial success!</p>
         </div>
-    </div>    
+    </div>
 
     <h3 v-if="embedded">
         Outcomes
@@ -46,23 +46,23 @@ defineProps({
         class="title"
     >
         Outcomes
-    </h2>   
+    </h2>
     <div  :class="{ blurb: !embedded }">
         Each roll has three possible outcomes: Success ( <em>S</em> ), Partial Success ( <em>P</em> ), or a Miss ( <em>M</em> ).  You might also see a move describe a Hit ( <em>H</em> ).  A Hit occurs when you get either a Success or a Partial Success.
         <br><br>
-        
+
         The outcome is based on the number of dice that rolled up 5 or higher.  For a Success, you need at least two dice.  For a Partial Success, you only need one.  Therefore a Hit is when one or more dice roll 5 or higher.  If all dice rolled 4 or below, that's a Miss.
         <br><br>
 
         A couple outcome examples with 3d6 rolled:
-        <Options bullet="⇀" indent asHtml :options="[
+        <Options bullet="⇀" asHtml :options="[
             '<em>[1, 2, 3]\</em> is a <em>M</em>iss, because no dice rolld up 5 or 6.',
             '<em>[1, 2, 6]</em> is a <em>H</em>it, and a <em>P</em>artial Success.',
             '<em>[1, 5, 6]</em> is a <em>H</em>it, and a <em>S</em>uccess.',
             '<em>[6, 5, 6]</em> is still just a <em>S</em>uccess, because more than two good roles does not add additional benefits.',
         ]" />
     </div>
-    
+
     <h3 v-if="embedded">
         Variations
     </h3>
@@ -80,7 +80,7 @@ defineProps({
         <br><br>
 
         Some examples of rolling against your Abyss:
-        <Options bullet="⇀" indent asHtml :options="[
+        <Options bullet="⇀" asHtml :options="[
             '<em>\'Against your Abyss\'</em> means rolling 2d6, adding the rolls together, and checking if the result is the same or greater than your Abyss score.',
             '<em>[3, 4] => 7</em>.  If your Abyss is 8 or greater, you rolled below.',
             '<em>[2, 3] => 5</em>.  If your Abyss is 5 or greater, you rolled above.',
@@ -97,12 +97,12 @@ defineProps({
         Modifiers
     </h2>
     <div  :class="{ blurb: !embedded }">
-        For each Condition attached to a stat, you reduce the the number of d6 dice in your pool by 1.  For example: if your Resolve is 3, and you have a Resolve-based Condition, you only roll 2d6.  
+        For each Condition attached to a stat, you reduce the the number of d6 dice in your pool by 1.  For example: if your Resolve is 3, and you have a Resolve-based Condition, you only roll 2d6.
         <br><br>
-        
+
         You may spend 1 Resilience on any of your own rolls to increase the dice pool by 1d6.  This can only happen once per roll.
         <br><br>
-        
+
         If another PC helps you out, use the following move:
         <br>
         <HelpOut />

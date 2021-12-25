@@ -19,7 +19,7 @@ Through it all the characters will get compelled, and rewarded, for bending to t
 </h2>
 Deathless is designed to encourage a specifc kind of play, driven by the following principles:
 <div class="spaceAbove">
-    <Options bullet="⇀" indent asHtml :options="[
+    <Options bullet="⇀" asHtml :options="[
         '<em>Drama is more important than verisimilitude.</em>  Character interaction always takes the spotlight.',
         '<em>To do it, you do it.</em>  The rules bring context to the fiction, not abstract away the details.',
         '<em>We stare ugliness in the eyes.</em>  What is terrible should be confronted, not hidden.',
@@ -29,7 +29,7 @@ Deathless is designed to encourage a specifc kind of play, driven by the followi
 <br>
 Likewise, the game does not try to accomodate every story.  Deathless thrives in a setting where:
 <div class="spaceAbove">
-    <Options bullet="⇀" indent asHtml :options="[
+    <Options bullet="⇀" asHtml :options="[
         'The world is <em>dangerous and cruel</em>.',
         '<em>Horrible people</em> are in control.',
         'Characters are <em>complicated</em>, real, and surprising.',
@@ -43,7 +43,7 @@ Likewise, the game does not try to accomodate every story.  Deathless thrives in
 </h2>
 Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling with your stats with fiction and conversation at the forefront of play.  The rest varies in small or great ways.
 <div class="spaceAbove">
-    <Options bullet="⇀" indent :options="[
+    <Options bullet="⇀" :options="[
         'Non-traditional playbooks.  Your starting moves come from terse Backgrounds.  In play, characters adopt Personas- transient personalities designed as tightly focused compendiums of moves.',
         'Entanglements to bind the characters to their relationships.',
         'Compelling and Resistance mechanics that drive characters towads peril.',
@@ -55,7 +55,7 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
 <h2>
     What Here Is Unfinished?
 </h2>
-<Options bullet="⇀" indent :options="[
+<Options bullet="⇀" :options="[
     'The core game is complete and playable, but many mechanics need refinement.',
     'The rolling changes (dice pool instead of 2d6) isn\'t quite there yet.  It has a decent base, but could use another layer.  And perhaps shifting values.',
     'Entanglements have a lot of refinement to go through before they find the right niche.',
@@ -73,8 +73,6 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
     4. the abyss (in stats, reworking)<br>
     5. stats (basically done)<br>
     10. death (basically done)<br>
-    12. MC guide<br>
-    13. Safety<br>
     14. Harm, injury, conditions<br>
     15. Basic and secondary moves<br>
     8. personas<br>
@@ -90,7 +88,8 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
     2. It's not the Abyss, it's 'WOES' (or anguish, or something similar).  And you do take it when you kill (and die?).  But you also take it "whenever you perform or are complicit in an act which crosses the line of a personal ethos" (like black bile).  Woes can be burned to enact terrible, powerful behavior.  At some point, instead of losing yourself, you have to contend with your woes.  How and when?  Well, that depends on the mechanic.  Maybe just when the bar tops off?  Maybe when you roll under?<br>
     3. After introducing woes, I need to refactor how engaging with personas works.<br>
     4. When you die, you don't lose your memories.  You have to face your woes/agony.  In facing them, you learn what persona you unlock/embody.<br>
-    5. Unlocking personas: When you die, you unlock the persona.  but you have to have a minimum of the abyss. every 2, stepping up.  So the first unlock requires at least two, the second 4, the third 6, etc.  (or, 0, 2, 4, 6, etc).
+    5. Unlocking personas: When you die, you unlock the persona.  but you have to have a minimum of the abyss. every 2, stepping up.  So the first unlock requires at least two, the second 4, the third 6, etc.  (or, 0, 2, 4, 6, etc).<br>
+    6. the illusionists condition removal should be gaslighting.
 </div>
 
 </template>

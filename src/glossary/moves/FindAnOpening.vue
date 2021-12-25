@@ -3,7 +3,6 @@
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
-import SHPM from "@/components/SHPM.vue";
 
 const name = 'Find An Opening';
 </script>
@@ -22,11 +21,11 @@ const name = 'Find An Opening';
             'I need to know who is in control.',
         ]" />
         <br>
-        When you try to Find An Opening against another PC, <Roll insight/> and ask the following question.  The other PC must answer truthfully.
-        <SHPM use="spm" :options="[
+        When you try to Find An Opening against another PC, <Roll insight/>.  On a... <em>S:</em> ask one.  <em>M:</em> they get to ask you one.  <em>P:</em> both.  Whomever answers must answer truthfully.
+        <Options bullet="⇀" :options="[
             'How could I get you to ___________________?',
             'Would ___________________ get past your defenses?',
-            'Are you able to ___________________?',
+            'Are you willing to ___________________?',
         ]" />
     </template>
     <template v-slot:example>

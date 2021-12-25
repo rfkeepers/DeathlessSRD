@@ -80,6 +80,7 @@ export default {
       {to: "/stats", text: "Stats & Rolling"},
       {to: "/entanglements", text: "Entanglements"},
       {to: "/mc", text: "The MC"},
+      {to: "/harm", text: "Harm"},
     ],
     glossaryLinks: [
       {to: "/glossary/landing", text: "Glossary"},
@@ -166,6 +167,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: auto;
+  padding-bottom: 48px;
 }
 </style>
 

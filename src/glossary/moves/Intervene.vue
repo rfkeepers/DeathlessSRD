@@ -21,7 +21,7 @@ const name = 'Intervene';
             'You put the aggressors or danger at a disadvantage.',
         ]" />
         <br>
-        When you Intervene on the actions of another PC, and that PC is resolving a move, <Roll resolve/> and use the following options.  Otherwise, roll the move as normal.  
+        When you Intervene on the actions of another PC: if that PC is doing a move, <Roll resolve/> and use the following options; otherwise, roll Intervene as normal.
         <SHPM use="spm" :options="[
             'You take the full results of the move in place of your ward.',
             'You and your ward are both affected by the move, but the effect is split between you, the other Player will tell you how.',
@@ -29,9 +29,9 @@ const name = 'Intervene';
         ]" />
     </template>
     <template v-slot:example>
-        
+
         <h3 class="lineTo indent">Design Thoughts</h3>
-        For the most part I'm happy with it.  My primary worry is, like Overwhelm and Snipe, that players will take it as a physical-only interaction.  eg, acting as bodily shields.  My hope is that tables can use it as a way to intervene on someones behalf in arguments, accusations, attention, and so on. 
+        For the most part I'm happy with it.  My primary worry is, like Overwhelm and Snipe, that players will take it as a physical-only interaction.  eg, acting as bodily shields.  My hope is that tables can use it as a way to intervene on someones behalf in arguments, accusations, attention, and so on.
         <h3 class="lineTo indent">In Play</h3>
         <div class="playExample miniBorder">
         <p>"Marienne was the one who told the consul about your shitty trafficking ring in the first place, Baron," Flynn blurts.</p>

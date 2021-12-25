@@ -5,6 +5,7 @@ import home from '@/views/site/Home.vue';
 import feedback from '@/views/site/Feedback.vue';
 
 import entanglements from '@/views/game/Entanglements.vue';
+import harm from '@/views/game/Harm.vue';
 import heart from '@/views/game/Heart.vue';
 import mc from '@/views/game/MC.vue';
 import rolling from '@/views/game/Rolling.vue';
@@ -68,6 +69,20 @@ routes = routes.concat([
         {
           name: 'description',
           content: 'The entanglement mechanics in Deathless.',
+        }
+      ],
+    },
+  },
+  {
+    path: '/harm',
+    name: 'Harm',
+    component: harm,
+    meta: {
+      title: titleMaker('Harm'),
+      tags: [
+        {
+          name: 'description',
+          content: 'Rules for handling and tracking Harm: pain, insult, and injury.',
         }
       ],
     },

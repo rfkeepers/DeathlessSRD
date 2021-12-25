@@ -21,7 +21,7 @@ defineProps({
     <br><br>
 
     Examples:
-    <Options bullet="⇀" indent :options="[
+    <Options bullet="⇀" :options="[
         'The Baron de RoseFitz kidnapped my nieces in a raid and sold them.  I won\'t rest until he gets dragged into the streets and hanged.',
         'The demon-boar of Sekkerdi forest ripped off my arm and ate it.  I\'ll hunt it down and have a banquet of meat myself.',
         'Consul Bergen\'s son, was first my apprentice and then my lover, until his father found out and had me illegitimately jailed.  His son died of sickness while I rotted in this cell.  We\'re not even until I take something precious from him in turn.',
@@ -56,8 +56,6 @@ defineProps({
     If you find yourself in a situation where fulfilling your grudge as it is written becomes untenable, or if your understanding of the situation changes to dramatically conflict with the nature of your commitment, but you still wish to see the Entanglement through to the end, you may propose to change the terms.  If the table agrees with your proposal, you may rewrite your grudge at no cost.  This may not alter the type of Entanglement.
 
 </div>
-<br><br>
-&nbsp;
 </template>
 
 <!-- ============================== Style ============================== -->

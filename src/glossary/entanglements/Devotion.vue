@@ -23,7 +23,7 @@ defineProps({
     <br><br>
 
     Examples:
-    <Options bullet="⇀" indent :options="[
+    <Options bullet="⇀" :options="[
         'I swore to Marienne that I would rescue her child from the Baron de RoseFitz.',
         'I am the defender of the people of Sekkerdi, and promised to defend them from the demon-boar in the forest.',
         'Consul Bergen fears for his son\'s safety during the convocation, I have given my word that I will keep him safe.',
@@ -52,14 +52,12 @@ defineProps({
     <h3 v-if="embedded">Failure</h3>
     <h2 v-else>Failure</h2>
     If you do any of the following with clear intent: abandon your devotion, avoid taking action while the situation resolves itself, or commit an act which directly opposes your promised goal, erase the Entanglement and mark the Abyss.  The MC will always give you a warning if your actions would default on this Entanglement.  Your choice to defy this warning is what counts as clear intent.
-    
+
     <h3 v-if="embedded">Abandonment</h3>
     <h2 v-else>Abandonment</h2>
     In a situation where fulfilling your Devotion as it is written becomes untenable, or if the situation changes to dramatically conflict with the nature of your commitment, but you still wish to see the Entanglement through to the end, you may propose to change the terms.  If the table agrees with your proposal, you may rewrite your devotion at no cost.  This may not alter the type of Entanglement.
 
 </div>
-<br><br>
-&nbsp;
 </template>
 
 <!-- ============================== Style ============================== -->

@@ -41,7 +41,7 @@ import Rolling from "@/views/game/Rolling.vue";
     All comes from the Abyss, and all returns to the Abyss.
     <br><br>
 
-    In addition to the earlier five stats, all characters have an Abyss track that sometimes acts as their sixth stat.  Unlike the other five it doesn't showcase an approach they take to problem solving.  A character cannot behave <i>abyssally</i>.  Rather, this track represents the characters' loss of self, their erosion to the connection in the world.  
+    In addition to the earlier five stats, all characters have an Abyss track that sometimes acts as their sixth stat.  Unlike the other five it doesn't showcase an approach they take to problem solving.  A character cannot behave <i>abyssally</i>.  Rather, this track represents the characters' loss of self, their erosion to the connection in the world.
     <br><br>
 
 
@@ -68,9 +68,6 @@ import Rolling from "@/views/game/Rolling.vue";
 <hr>
 
 <Rolling embedded />
-
-<br><br>
-&nbsp;
 </template>
 
 <!-- ============================== Style ============================== -->

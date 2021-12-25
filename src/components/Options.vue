@@ -22,9 +22,9 @@ const props = defineProps({
         type: String,
         description: "Width of the bullet spacing, for alignment of text.",
     },
-    indent: {
+    noIndent: {
         type: Boolean,
-        description: "Indents the options by an additional margin.",
+        description: "Prevents indenting the options by an additional margin.",
     },
     numbered: {
         type: Boolean,
@@ -56,7 +56,7 @@ const customStyle = {
     :key="opt"
     :class="{
         'options': true,
-        'options--indent': indent,
+        'options--noIndent': noIndent,
     }"
 >
     <li class="options__item">
@@ -82,11 +82,16 @@ $smlWidth: 28px;
 .options {
     margin-top: 8px;
     margin-bottom: 4px;
+    margin-left: 2%;
 
-    &--indent {
-        margin-left: 2%;
+    @media screen and (max-width: 900px) {
+        margin-left: 8px;
     }
-    
+
+    &--noIndent {
+        margin-left: 0;
+    }
+
     &__item {
         display: flex;
 

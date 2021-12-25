@@ -12,7 +12,7 @@ const name = 'Persuade';
 <Move id="persuade" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>press an NPC for something</b> they wouldn't easily agree to, <Roll glamour/>.  <em>S:</em> They will tell you the easiest way to convince them- if there is a way- otherwise they'll decline your request peacefully.  <em>P:</em> They need extra convincing- if they can be convinced; either the MC will pick an option from the list or they will reject your request in a noisy, aggressive, destructive, or alarming manner.
+        When you <b>press an NPC for something</b> they wouldn't easily agree to, <Roll glamour/>.  <em>S:</em> They will tell you the easiest way to convince them- if there is a way- or decline your request peacefully.  <em>P:</em> Either the MC will pick an option from the list or they'll reject your request in a noisy, destructive, or alarming manner.
         <Options bullet="⇀" :options="[
             'Give them substantial payment up front.',
             'Allow them to request something of you in turn.',
@@ -21,7 +21,7 @@ const name = 'Persuade';
             'Nothing. But you\'ve brought risk or harm to someone else as a result.',
         ]" />
         <br>
-        When you press a fellow PC to do things after they have given valid reasons to not get involved, they may shut you down once and for all or let you roll for it.  If they let you roll, <Roll n=3 dice/>.  <em>S:</em> They take 1 Resilience.  <em>P:</em> They choose 1.  <em>M:</em> They choose 2.  
+        When you press a fellow PC to do things after they have given valid reasons to not get involved, they may shut you down once and for all or let you roll for it.  If they let you roll, <Roll n=3 dice/>.  <em>S:</em> They take 1 Resilience.  <em>P:</em> They choose 1.  <em>M:</em> They choose 2.
         <Options bullet="⇀" :options="[
             'Require a Debt.  When they call in the Debt to gain a favor or payment, if you fail to uphold your end of the agreement add one mark of Abyss.',
             'They take 2 Resilience.',
