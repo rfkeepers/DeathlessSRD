@@ -360,6 +360,17 @@ input {
   }
 }
 
+.squeeze {
+  text-align: left;
+  margin-left: 4%;
+  margin-right: 6%;
+
+  @media screen and (max-width: 900px) {
+    margin-left: 0%;
+    margin-right: 2%;
+  }
+}
+
 .spaceAbove {
   margin-top: 16px;
 }
@@ -428,4 +439,45 @@ input {
   border-top: 1px solid $color-highlight;
   border-bottom: 1px solid $color-highlight;
   border-color: $color-title;
+}
+
+.tbl {
+  border-spacing: 0;
+}
+
+.tblHead {
+  text-align: left;
+}
+
+.tblRow {
+
+  & .tblEnt {
+    vertical-align: baseline;
+    padding-right: 12px;
+    padding-bottom: 16px;
+
+    @media screen and (max-width: 900px) {
+      padding-right: 8px;
+    }
+
+    &:first-child {
+      padding-right: 16px;
+
+      @media screen and (max-width: 900px) {
+        padding-right: 0px;
+      }
+    }
+
+    &:not(:first-child) {
+      padding-left: 36px;
+
+      @media screen and (max-width: 900px) {
+        padding-left: 12px;
+      }
+    }
+
+    &:last-child {
+      border-left: 1px solid $color-text-sink;
+    }
+  }
 }

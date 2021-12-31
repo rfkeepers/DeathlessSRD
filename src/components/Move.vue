@@ -9,19 +9,23 @@ const props = defineProps({
     },
     bordered: {
         type: Boolean,
-        body: "Renders the move within a border.",
+        description: "Renders the move within a border.",
     },
     ruled: {
         type: Boolean,
-        body: "Renders the move with top and bottom horizontal rules.",
+        description: "Renders the move with top and bottom horizontal rules.",
     },
     shaded: {
         type: Boolean,
-        body: "Renders the move within a shaded box.",
+        description: "Renders the move within a shaded box.",
     },
     leftLined: {
         type: Boolean,
-        body: "Renders the move body with a vertical border on the left side.",
+        description: "Renders the move body with a vertical border on the left side.",
+    },
+    flat: {
+        type: Boolean,
+        description: "Renders the ruled or borered style without curved borders.",
     },
 });
 </script>
@@ -33,6 +37,7 @@ const props = defineProps({
     'move--bordered': bordered,
     'move--ruled': ruled,
     'move--shaded': shaded,
+    'move--flat': flat,
 }">
     <div class="move__title">
         <div class="move__name"><slot name="name"/></div>
@@ -56,7 +61,7 @@ const props = defineProps({
 <!-- ============================== Style ============================== -->
 <style lang="scss" scoped>
 .move {
-    --indent--small: 16px; 
+    --indent--small: 16px;
     --indent: 2%;
 
     padding: 12px 6% 12px 4%;
@@ -78,6 +83,10 @@ const props = defineProps({
 
     &--shaded {
         background-color: var(--move-color-shaded, darkslategrey);
+    }
+
+    &--flat {
+        border-radius: 0 !important;
     }
 
     &__title {

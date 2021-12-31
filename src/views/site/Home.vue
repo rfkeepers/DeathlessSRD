@@ -75,6 +75,8 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
     10. death (basically done)<br>
     14. Harm, injury, conditions<br>
     15. Basic and secondary moves<br>
+    a. Redo the conversation to talk about how it flows: mc says, player says, etc<br>
+    b. Scenes in the conversation.
     8. personas<br>
     16. rework backgrounds<br>
     17. backgrounds<br>
@@ -89,7 +91,9 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
     3. After introducing woes, I need to refactor how engaging with personas works.<br>
     4. When you die, you don't lose your memories.  You have to face your woes/agony.  In facing them, you learn what persona you unlock/embody.<br>
     5. Unlocking personas: When you die, you unlock the persona.  but you have to have a minimum of the abyss. every 2, stepping up.  So the first unlock requires at least two, the second 4, the third 6, etc.  (or, 0, 2, 4, 6, etc).<br>
-    6. the illusionists condition removal should be gaslighting.
+    6. the illusionists condition removal should be gaslighting, and their initial move should be that only one character sees the illusion, or the illusion is weak?  Is that too powerful for "I just save it for one person"?<br>
+    7. turn safety into its own page.<br>
+
 </div>
 
 </template>
