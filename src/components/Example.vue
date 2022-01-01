@@ -142,6 +142,7 @@ onUnmounted(() => {
         right: 72px;
         font-size: 1.2em;
         color: var(--example-color-icon, white);
+        transform: scaleX(1.5);
     }
 
     .header {

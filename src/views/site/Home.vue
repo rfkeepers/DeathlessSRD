@@ -72,11 +72,11 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
     3. manifesto (partially done)<br>
     4. the abyss (in stats, reworking)<br>
     5. stats (basically done)<br>
-    10. death (basically done)<br>
-    14. Harm, injury, conditions<br>
+    10. death<br>
     15. Basic and secondary moves<br>
     a. Redo the conversation to talk about how it flows: mc says, player says, etc<br>
     b. Scenes in the conversation.
+    c. A note about how, despite oppression, what "everyone knows" (as root puts it) is that your characters will move the world.
     8. personas<br>
     16. rework backgrounds<br>
     17. backgrounds<br>

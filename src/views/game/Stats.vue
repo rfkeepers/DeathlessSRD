@@ -65,6 +65,7 @@ import Rolling from "@/views/game/Rolling.vue";
     Death will rip out a bit more of you each time, until one day you look inward and find only a cavernous and empty void.  On that day others might see something return to your body, but it’s too little of you to really be you.  When that happens you will be gone, lost and drowned in the void.  But you can prevent this fate.  You can replace what the Abyss consumes.  While the sea is deep and still and endless, the lives of people are turbulent, tangled, and finite.  Bind yourself into the knots of their wants and woes so that when the Abyss takes you under, those ties hold you together and fish you back out again.
     <br>
 </div>
+<br>
 <hr>
 
 <Rolling embedded />

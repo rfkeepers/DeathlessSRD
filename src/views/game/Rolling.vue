@@ -33,7 +33,7 @@ defineProps({
         <div class="playExample miniBorder">
             <p>A red-faced Baron de Rosefitz is dressing down Griffon’s character, Davenport, for exposing his black market trade ring.</p>
             <p>"Rosefitz sounds like he's about to blow his top," Davenport says, "I want to push him over the edge.  As soon as he pauses for a breath I say, 'Do you know how many of your goons were happy to trade a coin for this info?  No one here is under your control.' "</p>
-            <p>The MC nods, "sounds good.  I think what you're trying to do is Snipe?  Let's see, yeah, that'll need you to <Roll skill/></p>
+            <p>The MC nods, "I think you're trying to Snipe him?  Let's see, yeah, that'll need you to <Roll skill/></p>
             <p>Davenport has a Skill of 3. Griffon rolls 3d6 and gets a result of 2, 4, and 5: one good with two bad.  That’s enough for a Partial success!</p>
         </div>
     </div>
