@@ -13,7 +13,7 @@ const name = 'Snipe';
 <Move id="snipe" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you perform an act with <b>precision or subtlety</b>, while a tiny slip-up could make it it all go wrong, <Roll skill/>.
+        When you act with <b>precision, subtlety, or prior experience</b>, and any tiny slip could make it it all go wrong, <Roll skill/>.
         <SHPM :options="[
             'You accomplish what you set out to do.',
             'The MC picks one of the following:',

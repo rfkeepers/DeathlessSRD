@@ -76,11 +76,13 @@ export default {
     ],
     contentLinks: [
       {to: "/", text: "What Is Deathless?"},
-      {to: "/heart", text: "The Heart"},
+      {to: "/basics", text: "The Basics"},
+      {to: "/safety", text: "Safety"},
       {to: "/stats", text: "Stats & Rolling"},
+      {to: "/harm", text: "Harm & Compulsion"},
+      {to: "/death", text: "Death"},
       {to: "/entanglements", text: "Entanglements"},
-      {to: "/mc", text: "The MC"},
-      {to: "/harm", text: "Harm"},
+      {to: "/mc", text: "MC Guide"},
     ],
     glossaryLinks: [
       {to: "/glossary/landing", text: "Glossary"},
@@ -167,7 +169,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: auto;
-  padding-bottom: 48px;
+  padding-bottom: 80px;
 }
 </style>
 

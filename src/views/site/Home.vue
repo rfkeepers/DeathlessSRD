@@ -8,21 +8,25 @@ import Options from '@/components/Options.vue';
 <h1 class="title">
     What Is Deathless?
 </h1>
-Deathless is a work-in-progress pbta about flawed characters who never stay dead.  It explores compulsions towards bad behavior, relationships that tether, and the inevitable entropy of unconstrained behavior.
+<div class="quote">
+    "Much like most video games, you don't have to be convinced to kill in Deathloop", is the phrase that begins Jacob Geller's video essay <a href="https://youtu.be/dZrEayPIrVE">Time Loop Nihilism</a>.  "It introduces you to huge spectrum of ways you <i>could</i> murder, but it doesn't really need to convince you that you <i>should</i>."
+</div>
+<br>
+Deathless is a Powered by the Apocalypse game about flawed characters who never stay dead.  Characters who get compelled, and rewarded, for bending to their faults and vices.  As they slip deeper into their Abyss they adopt Personas that offer power while revealing stains and viciousness.
 <br><br>
-The players endure the loop between their Entanglements and the Abyss.  The Abyss marks the drift towards madness, the inescapable loss of self in the transition between life and death and life again.  In response, Entanglements reel them back from the brink, into the bindings of joys and pains which only the living may suffer.
+Deathless was conceived as a reflection on the thrills of modern RPG gaming.  The vocabulary of impulses triggered by red names and skill cooldowns.  The ux-sanctioned proof of good citizenship through item drops, critical hits, and victory fanfare.  All absent here.
 <br><br>
-Through it all the characters will get compelled, and rewarded, for bending to their faults and vices.  Slipping deeper into the Abyss offers power, but power reveals foibles and viciousness.  The only way to succeed, to stay human, is to rise above your failings.
+It leaves you, the players and the MC, alone with the remainder: the brutality of what you are required to do to succeed, to pass beyond each obstacle.  Not to show that you can.  Rather, like video games require, because in order to proceed, you must.
 
 <h2>
-    What Here Is Useful or Interesting?
+    What Is It About?
 </h2>
 Deathless is designed to encourage a specifc kind of play, driven by the following principles:
 <div class="spaceAbove">
     <Options bullet="⇀" asHtml :options="[
         '<em>Drama is more important than verisimilitude.</em>  Character interaction always takes the spotlight.',
         '<em>To do it, you do it.</em>  The rules bring context to the fiction, not abstract away the details.',
-        '<em>We stare ugliness in the eyes.</em>  What is terrible should be confronted, not hidden.',
+        '<em>Stare ugliness in the eyes.</em>  Terrible truth should be confronted, not hidden.',
         '<em>The players and MC share ownership.</em>  We all play to find out what happens.',
     ]" />
 </div>
@@ -39,12 +43,12 @@ Likewise, the game does not try to accomodate every story.  Deathless thrives in
 </div>
 
 <h2>
-    What Here Is Unexpected?
+    How Does It Play?
 </h2>
-Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling with your stats with fiction and conversation at the forefront of play.  The rest varies in small or great ways.
+Most of the structure follows standard PBTA tropes: playbooks and moves, with fiction and conversation at the forefront of play.  The differences are all within:
 <div class="spaceAbove">
     <Options bullet="⇀" :options="[
-        'Non-traditional playbooks.  Your starting moves come from terse Backgrounds.  In play, characters adopt Personas- transient personalities designed as tightly focused compendiums of moves.',
+        'Non-traditional playbooks.  Your starting moves come from terse Backgrounds.  In play, characters adopt Personas- transient personalities designed as tightly focused compendiums.',
         'Entanglements to bind the characters to their relationships.',
         'Compelling and Resistance mechanics that drive characters towads peril.',
         'No abstractions to handle combat.  Harm is a fluid expression for all violence, both physical and emotional.',
@@ -53,16 +57,15 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
 </div>
 
 <h2>
-    What Here Is Unfinished?
+    Is It Finished?
 </h2>
+No, not at all.  The game is very much a work in progress.  Some of the things I want to add or refine are:
 <Options bullet="⇀" :options="[
     'The core game is complete and playable, but many mechanics need refinement.',
-    'The rolling changes (dice pool instead of 2d6) isn\'t quite there yet.  It has a decent base, but could use another layer.  And perhaps shifting values.',
+    'The rolling changes (dice pool instead of 2d6) isn\'t quite there yet.  It has a decent base, but could use another layer.  And perhaps shifting stat values.',
     'Entanglements have a lot of refinement to go through before they find the right niche.',
-    'Needs rules for tracking relationship states with npcs.',
+    'Needs rules for tracking relationship states with npcs and between pcs.',
     'Rules are altogether absent for secondary systems like: currency, travel, downtime, and designing npcs and threats.',
-    'No setting details are present.  Deathless isn\'t intended to require a setting, but having a foundation that adds context for its tone and behavior can help readers grok the intended game.  Too much abstraction hooks nobody.',
-    'Oh, and it lacks playtesting. Like, at all.',
 ]" />
 <br><br>
 
@@ -75,8 +78,9 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
     10. death<br>
     15. Basic and secondary moves<br>
     a. Redo the conversation to talk about how it flows: mc says, player says, etc<br>
-    b. Scenes in the conversation.
-    c. A note about how, despite oppression, what "everyone knows" (as root puts it) is that your characters will move the world.
+    b. Scenes in the conversation.<br>
+    c. A note about how, despite oppression, what "everyone knows" (as root puts it) is that your characters will move the world.<br>
+    d. mc advice: scenes, spotlights<br>
     8. personas<br>
     16. rework backgrounds<br>
     17. backgrounds<br>
@@ -93,6 +97,7 @@ Much of the game is a normal PBTA: moves, mc principles, conditions, an rolling 
     5. Unlocking personas: When you die, you unlock the persona.  but you have to have a minimum of the abyss. every 2, stepping up.  So the first unlock requires at least two, the second 4, the third 6, etc.  (or, 0, 2, 4, 6, etc).<br>
     6. the illusionists condition removal should be gaslighting, and their initial move should be that only one character sees the illusion, or the illusion is weak?  Is that too powerful for "I just save it for one person"?<br>
     7. turn safety into its own page.<br>
+    8. Okay, so, the Abyss is not a thing, or a place.  It's a <i>state</i>.  It's the suspension of nonliving.  This allows it to exist as it is, and also account for revision of woes.  You're not "going to a place" like the abyss.  We can still describe it as the sea underneath.  What's important is that while in the abyss, all you have is the reflection of your woes.  You have yourself and your feelings to contend with, in isolation.  Make the abyss a thing.  Make it a purgatory.  But make that purgatory about focusing on the character, not on some absurd fantastical sea.<br>
 
 </div>
 

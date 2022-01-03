@@ -4,11 +4,13 @@ import { glossaryRoutes } from '@/glossary/glossary.js';
 import home from '@/views/site/Home.vue';
 import feedback from '@/views/site/Feedback.vue';
 
+import basics from '@/views/game/Basics.vue';
+import death from '@/views/game/Death.vue';
 import entanglements from '@/views/game/Entanglements.vue';
 import harm from '@/views/game/Harm.vue';
-import heart from '@/views/game/Heart.vue';
 import mc from '@/views/game/MC.vue';
 import rolling from '@/views/game/Rolling.vue';
+import safety from '@/views/game/Safety.vue';
 import stats from '@/views/game/Stats.vue';
 
 import glossary from '@/views/site/Glossary.vue';
@@ -60,6 +62,34 @@ let routes = [
 // the game
 routes = routes.concat([
   {
+    path: '/basics',
+    name: 'The Basics',
+    component: basics,
+    meta: {
+      title: titleMaker('The Basics'),
+      tags: [
+        {
+          name: 'description',
+          content: 'The basics of the game: its how to play, aesthetic, and agendas.',
+        }
+      ],
+    },
+  },
+  {
+    path: '/death',
+    name: 'Death',
+    component: death,
+    meta: {
+      title: titleMaker('Death'),
+      tags: [
+        {
+          name: 'description',
+          content: 'Rules for handling death and revival.',
+        }
+      ],
+    },
+  },
+  {
     path: '/entanglements',
     name: 'Entanglements',
     component: entanglements,
@@ -88,20 +118,6 @@ routes = routes.concat([
     },
   },
   {
-    path: '/heart',
-    name: 'The Heart',
-    component: heart,
-    meta: {
-      title: titleMaker('The Heart'),
-      tags: [
-        {
-          name: 'description',
-          content: 'The heart of the game: its tone and aesthetic, the agendas, and safety.',
-        }
-      ],
-    },
-  },
-  {
     path: '/mc',
     name: 'The MC',
     component: mc,
@@ -125,6 +141,20 @@ routes = routes.concat([
         {
           name: 'description',
           content: 'The dice rolling and resolution mechanics in Deathless.',
+        }
+      ],
+    },
+  },
+  {
+    path: '/safety',
+    name: 'Safety',
+    component: safety,
+    meta: {
+      title: titleMaker('Safety'),
+      tags: [
+        {
+          name: 'description',
+          content: 'Safety tools and handling difficult material.',
         }
       ],
     },
