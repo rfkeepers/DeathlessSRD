@@ -12,11 +12,13 @@ const name = 'Compel';
 <Move id="compel" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        Once per scene you may <b>compel another PC into action</b> by invoking one of their tags, moves, entanglements, or flags.  If that player agrees to your proposal, and the MC approves the result, you both gain 1 Resilience.  If they wish to resist, they can either pay 1 Resilience to ignore you, or make you roll for it.  If you roll, then <Roll n=3 dice/>.
+        When you <b>indulge one of your Compulsions</b>.  If you create new danger, cost, or Harm for yourself or another character in the process, take one Resilience.  You may only gain one Resilience per scene this way.
+        <br><br>
+        When you <b>invoke another PC's Compulsions</b>,  that character has a choice: play out their compulsion, and if they create new danger, cost, or Harm to themselves or another character, you both gain 1 Resilience (once per scene); or they can resist.  If resisting they can pay 1 Resilience to ignore you, or ask you to <Roll n=3 dice/>.
         <SHPM use="spm" :options="[
-            'They are compelled to the behavior.',
-            'You are both compelled to bad behavior.  The MC will tell you your compulsion.',
-            'Your character is compelled to your proposal (or something similar) instead.  You may not resist this compulsion.',
+            'They are unable to resist their Compulsions.',
+            'You are both compelled.',
+            'You are driven to that Compulsion instead of them.',
         ]" />
     </template>
     <template v-slot:example>

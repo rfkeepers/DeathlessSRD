@@ -1,24 +1,27 @@
 <!-- ============================== Script ============================== -->
 <script setup>
+import ReturnToLife from '@/glossary/moves/ReturnToLife.vue';
+defineProps({
+    embedded: {
+        type: Boolean,
+        description: "alters the display for when embedded into a separate page",
+    },
+});
 </script>
 
 <!-- ============================== Template ============================== -->
 <template>
-<h1 class="title">
+
+<h1
+    v-if="embedded"
+    class="title"
+>
     Death
 </h1>
-<div class="miniBorder playExample">
-    <p>Lo, and behold.</p>
-    <p>you aint no dargon.</p>
-</div>
-
-<h2 id="abyss">
-    The Abyss
+<h2 v-else>
+    Death
 </h2>
-
-<h2 id="coming_back">
-    Coming Back
-</h2>
+<ReturnToLife :leftLined="false" ruled shaded />
 
 </template>
 

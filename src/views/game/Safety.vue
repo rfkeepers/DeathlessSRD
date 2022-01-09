@@ -8,6 +8,8 @@
     Safety
 </h1>
 
+The mechanics in this game involve breaking people, gaslighting, self-harm, domination, and other acts of malice.  You will engage with cruelty and viciousness.
+
 At this point you've (hopefully) read the agendas and recognized the tone I'm trying to set.  Whether you have or not, it bears repeating: Deathless is about difficult topics.  The players should, if the MC follows their principles, find themselves pressed into situations they don't want to be in.  The MC should, if the players engage with the mechanics, be something blah blah stepping stones.
 
 In order to allow that to happen, you must trust the other people at the table, and feel safe to tell this story together with them.

@@ -11,24 +11,29 @@ const name = 'Return To Life';
 <Move id="return_to_life" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>die</b>, awaken deep within the Abyss, then surge back to your body, you always:
+        When you <b>die</b>, you awaken deep within the Abyss.  Always:
         <Options bullet="⇀" :options="[
-            'Gaze into the Abyss.',
-            'Clear your injury.',
+            'Gaze into the Abyss. (todo, maybe change to something investigating your woes.',
+            'Heal your Wounds.  Ask the MC which ones become Scars.',
+            'Erase all of your Pains.',
             'Set your Resilience to 1.',
-            'Erase all Pain tags from your character sheet.',
-            'Add one mark towards drowning in The Abyss.',
-            'Tell the table about a small memory of your past, now lost forever.',
-            'Ask the MC how long you were out.',
-            'Ask the MC if you still have everything in your possession.',
+            'Add one mark towards drowning in The Abyss (todo, what to call this?).',
+            'Tell the table about a small memory of your past, now lost forever (todo, loop back in to woes?).',
         ]" />
         <br>
-        And if you get an entirely new body, also:
+        And if you destroyed your old body, also:
         <Options bullet="⇀" :options="[
-            'Clear your character sheet of all Wound, Scar, and Condition tags.',
+            'Heal all your Wounds, Scars, and Conditions.',
             'Clear your character sheet of all inventory and equipment that you had in your possession (unless the MC says otherwise).',
             'If you have aged, revert to your age at the time of your first death.',
-            'Add two more marks towards drowning in The Abyss.',
+            'Add two more marks towards drowning in The Abyss (again todo).',
+        ]" />
+        <br>
+        Finally, when you regain consciousness in your body, ask the MC:
+        <Options bullet="⇀" :options="[
+            'Where you are.',
+            'How long you were out.',
+            'If you still have everything in your possession.',
         ]" />
     </template>
     <template v-slot:example>

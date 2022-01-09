@@ -5,7 +5,7 @@ import home from '@/views/site/Home.vue';
 import feedback from '@/views/site/Feedback.vue';
 
 import basics from '@/views/game/Basics.vue';
-import death from '@/views/game/Death.vue';
+import compulsionAndAbyss from '@/views/game/CompulsionAndAbyss.vue';
 import entanglements from '@/views/game/Entanglements.vue';
 import harm from '@/views/game/Harm.vue';
 import mc from '@/views/game/MC.vue';
@@ -76,15 +76,15 @@ routes = routes.concat([
     },
   },
   {
-    path: '/death',
-    name: 'Death',
-    component: death,
+    path: '/compulsionAbyss',
+    name: 'Compulsion & Abyss',
+    component: compulsionAndAbyss,
     meta: {
-      title: titleMaker('Death'),
+      title: titleMaker('Compulsion & Abyss'),
       tags: [
         {
           name: 'description',
-          content: 'Rules for handling death and revival.',
+          content: 'Rules for handling Compulsion and the Abyss.',
         }
       ],
     },

@@ -9,7 +9,7 @@ const name = 'Fireball';
 <template>
 <Move id="fireball" leftLined>
     <template v-slot:name>{{name}}</template>
-    <template v-slot:preconditions>Cost: 1 Abyss / 3 Resilience; ( Interruptable )</template>
+    <template v-slot:preconditions>Cost: 1 Abyss / 2 Resilience; ( Interruptable )</template>
     <template v-slot:body>
         When you <b>pour your own life into a torrential flame</b>, mark yourself as <em>Wounded</em> then say where you hurl the roaring ball of fire. The fire rages out of control and ignites everything where it lands.  If you are already Wounded and this act would kill you, finish the move before your death.
     </template>

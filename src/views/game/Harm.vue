@@ -1,5 +1,6 @@
 <!-- ============================== Script ============================== -->
 <script setup>
+import Death from '@/views/game/Death.vue';
 import SacrificesMustBeMade from '@/glossary/moves/SacrificesMustBeMade.vue';
 </script>
 
@@ -103,9 +104,9 @@ Protecting against Harm is, for the most part, <em>handled in the fiction</em>, 
 <br><br>
 Naturally, that leads into ambiguity.  If an NPC has a shield, can you Harm them or not?  The shield is there, it exists in the fiction, but it isn't the perfect defense either.  Easiest way to handle this is to assume the NPC will use their shield, or whatever it is they have to defend themselves with, and probably <i>successfully</i>, unless the players' characters deal with it in some way.  By taking it from them, or causing a distraction, or using an attack that a shield can't block.  It doesn't particularly matter how: be creative.
 <br><br>
-Now, what if a player character has a shield, what then?  The MC has the right to <em>Harm them</em>.  That's one of their moves, and it isn't dependent on the PC's lack of defenses.  So what good is a shield?  It's a bargaining chip.  Something you can offer when you need to make sacrifices.
+Now, what if a player character has a shield, what then?  The MC still has the right to <em>Harm them</em>.  That's one of their moves, and it isn't dependent on the PC's lack of defenses.  Kinda begs the question: what good is a shield?  It's a bargaining chip.  Something you can offer when you need to make sacrifices.
 <br><br>
-There is one part to defense that isn't handled fictionally, a currency that can be traded for protection regardless of the character's position: (link-needed)<b>Resilience</b>.  When a PC would receive a Condition, they can instead spend a Resilience to ignore the Harm.
+There is one part to defense that doesn't require fictional handling, a currency that can be traded for protection regardless of the character's position: (link-needed)<b>Resilience</b>.  When a PC would receive a Condition, they can instead spend a Resilience to ignore the Harm.  Fictionally, this is the character exhausting some sense of security or lingering good feelings to ward off the Condition.  Still a sacrifice, in its own way, just more formalized.
 
 <h2 id="sacrifices">
     Sacrifices
@@ -143,10 +144,7 @@ At this point the MC will say if you trigger a move (probably (link-needed)<b>Ov
 <br><br>
 If you thought you had triggered a certain move and the MC didn't call it, or they called a different move, it's a good idea to pause and make sure everyone has the same perspective on what the fiction looks like in the moment.  Chances are the MC pictured the action or the intent a little differently than you did.
 
-<h2 id="compulsion">
-    Compulsions
-</h2>
-
+<Death embedded />
 </template>
 
 <!-- ============================== Style ============================== -->

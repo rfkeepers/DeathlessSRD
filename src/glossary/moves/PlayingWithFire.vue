@@ -13,7 +13,7 @@ const name = 'Playing With Fire';
     <template v-slot:name>{{name}}</template>
     <template v-slot:preconditions>Cost: 1 Abyss / 1 Resilience</template>
     <template v-slot:body>
-        When you <b>concentrate your emotions into a spark</b>, unleash that spark onto something and it will burst into flame.  Fire is unpredictable, you (or something on your person) combusts as well: tell the MC what part of you is affected and <Roll force/>.  The two fires are proportional in size and intensity, and one cannot ignite without the other.  <em>S:</em> Pick 1.  <em>P:</em> Pick 2. 
+        When you <b>concentrate your emotions into a spark</b>, unleash that spark onto something and it will burst into flame.  To do this, you must ignite some part of yourself (or something on your person) as well: tell the MC what part of you is affected and <Roll force/>.  The two fires are proportional in size and intensity, and one cannot catch fire without the other.  <em>S:</em> Pick 1.  <em>P:</em> Pick 2.
         <Options bullet="⇀" :options="[
             'The fires quickly spread out of control.',
             'Everything caught in the fires\' heat burns horribly.',

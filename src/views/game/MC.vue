@@ -158,7 +158,7 @@ Most player moves in the game will describe what to do on a Successful or Partia
 On the topic of directness, Deathless functions best when characters fail forward.  That is, a Missed move doesn't need to prevent them from achieving their goals, especially since that often kills the scene's the momentum.  In most situations it is better to let the character succeed and then come at them sideways with a new problem.
 
 <h4 id="what_next">
-    ⇀ When everyone looks at you to see what happens next
+    ⇀ When anyone looks at you to see what happens next
 </h4>
 Anytime the players aren't moving the scene forward on their own, they're probably looking at you to do it for them.  Maybe this is because the conversation stalled.  Maybe something new is in the scene and they aren't sure how to approach it.  Maybe, most simply, they just made their own move and are curious to see what happens next.  Whatever the cause, this is your opportunity to push things in a certain direction, to set up new tension and danger, and keep the scene moving forward.
 
@@ -238,7 +238,7 @@ Importantly, this is not the same thing as "figuring it out later".  The fiction
 <h4 id="opportunity">
     ⇀ Offer an opportunity
 </h4>
-The most simple move is the last one: give the characters something they can do.  Remember to <i>give nothing away freely</i>.  But do give to the players, at least as much as you take.  Give them ways to engage.  Give them challenges to overcome and characters to meet.  Give them invitations to be excited about the conversation.  Give them the spotlight.
+The most simple move is the last one: give the characters something they can do.  Remember to <i>give nothing away freely</i>.  But do give to the players, at least as much as you take.  Give them ways to engage.  Give them challenges to overcome and characters to meet.  Give them invitations to be excited about the conversation.  Give them the spotlight.  Give them rewards, even.  Sometimes, when you're trying to <i>fill the story with transient relief</i>, relief can be the opportunity and engagement the cost.
 <br>
 <hr>
 

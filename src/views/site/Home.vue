@@ -9,35 +9,35 @@ import Options from '@/components/Options.vue';
     What Is Deathless?
 </h1>
 <div class="quote">
-    "Much like most video games, you don't have to be convinced to kill in Deathloop", is the phrase that begins Jacob Geller's video essay <a href="https://youtu.be/dZrEayPIrVE">Time Loop Nihilism</a>.  "It introduces you to huge spectrum of ways you <i>could</i> murder, but it doesn't really need to convince you that you <i>should</i>."
+    "Much like most video games, you don't have to be convinced to kill in Deathloop", Jacob Geller begins in his video essay <a href="https://youtu.be/dZrEayPIrVE">Time Loop Nihilism</a>.  "It introduces you to huge spectrum of ways you <i>could</i> murder, but it doesn't really need to convince you that you <i>should</i>."
 </div>
 <br>
-Deathless is a Powered by the Apocalypse game about flawed characters who never stay dead.  Characters who get compelled, and rewarded, for bending to their faults and vices.  As they slip deeper into their Abyss they adopt Personas that offer power while revealing stains and viciousness.
+Deathless is a Powered by the Apocalypse game about flawed characters who never stay dead.  Characters who are compelled, and rewarded, for bending to their faults and vices.  Who become the stains and viciousness of their own anguish.
 <br><br>
-Deathless was conceived as a reflection on the thrills of modern RPG gaming.  The vocabulary of impulses triggered by red names and skill cooldowns.  The ux-sanctioned proof of good citizenship through item drops, critical hits, and victory fanfare.  All absent here.
+Deathless was conceived as a reflection on the thrills of modern gaming.  The vocabulary of impulses triggered by red names and skill cooldowns.  The ux-sanctioned proof of good citizenship through item drops, critical hits, and victory fanfare.  All absent here.
 <br><br>
-It leaves you, the players and the MC, alone with the remainder: the brutality of what you are required to do to succeed, to pass beyond each obstacle.  Not to show that you can.  Rather, like video games require, because in order to proceed, you must.
+It leaves you, the players and the MC, alone with the remainder: the brutality of what you are required to do to succeed, to pass beyond each obstacle.  Not to prove that you can.  Rather, as games often require, because in order to proceed, you must.
 
 <h2>
-    What Is It About?
+    What Does It Want?
 </h2>
-Deathless is designed to encourage a specifc kind of play, driven by the following principles:
+Deathless is a game where:
 <div class="spaceAbove">
     <Options bullet="⇀" asHtml :options="[
-        '<em>Drama is more important than verisimilitude.</em>  Character interaction always takes the spotlight.',
+        '<em>Drama is more important than mechanics.</em>  Character interaction always takes the spotlight.',
         '<em>To do it, you do it.</em>  The rules bring context to the fiction, not abstract away the details.',
-        '<em>Stare ugliness in the eyes.</em>  Terrible truth should be confronted, not hidden.',
+        '<em>We stare ugliness in the eyes.</em>  Terrible truth gets confronted in the spotlight.',
         '<em>The players and MC share ownership.</em>  We all play to find out what happens.',
     ]" />
 </div>
 <br>
-Likewise, the game does not try to accomodate every story.  Deathless thrives in a setting where:
+It's not about heroics, power fantasy, or redemption.  The story thrives in a setting where:
 <div class="spaceAbove">
     <Options bullet="⇀" asHtml :options="[
         'The world is <em>dangerous and cruel</em>.',
         '<em>Horrible people</em> are in control.',
         'Characters are <em>complicated</em>, real, and surprising.',
-        'The players\' characters <em>lack</em> extraordinary power.',
+        'The players <em>lack</em> extraordinary power.',
         'The unnatural is a <em>reflection of humanity</em>.',
     ]" />
 </div>
@@ -81,12 +81,13 @@ No, not at all.  The game is very much a work in progress.  Some of the things I
     b. Scenes in the conversation.<br>
     c. A note about how, despite oppression, what "everyone knows" (as root puts it) is that your characters will move the world.<br>
     d. mc advice: scenes, spotlights<br>
+    e. creating npcs<br>
     8. personas<br>
     16. rework backgrounds<br>
     17. backgrounds<br>
     18. rework something else<br>
     16. character generation<br>
-    9. quickstarts: hunting bait, advisors, and something else<br>
+    9. quickstarts: hunting bait, advisors, and hounds of the baron<br>
 
     <br><br>
     ideas and experiements:<br>
