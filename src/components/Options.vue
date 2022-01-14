@@ -38,6 +38,10 @@ const props = defineProps({
         type: Boolean,
         description: "Renders a checkbox for each option, instead of a dot.",
     },
+    use: {
+        type: String,
+        description: 'A hack to prevent a million warnings in the glossary from SHPM passing use as a non-prop attribute to this component.',
+    },
 });
 
 const prefixed = props.prefixes && props.prefixes.length > 0;

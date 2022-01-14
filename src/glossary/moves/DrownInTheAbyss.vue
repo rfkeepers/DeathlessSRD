@@ -2,6 +2,7 @@
 <script setup>
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
+import Roll from "@/components/Roll.vue";
 
 const name = 'Drown In The Abyss';
 </script>
@@ -11,13 +12,11 @@ const name = 'Drown In The Abyss';
 <Move id="drown_in_the_abyss" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>add the final mark of Abyss</b> on your character sheet, the nothing beneath all things reaches out to consume you, choose one:
+        When the Abyss reaches out to consume you, tell the MC the last thing you've done or seen that haunts you, then <Roll abyss />.  If you roll below, choose one of the following:
         <Options bullet="⇀" :options="[
+            'Something in the Abyss coalesces and is birthed to the world.  The MC will reveal what it is, now or later.  Reduce the Abyss by one.',
             'Feed a part of yourself to the enless sea.  Ask or tell the MC what cherished knowledge you have forever lost.  Erase three marks of the Abyss.',
-            'Go on a mad, mindless rampage:  Ask or tell the MC about the aftermath.  Erase four marks of the Abyss.',
-            'Become your own worst enemy:  The MC picks up to two of your Entanglements and their intents are inverted.  You are compelled to sabotage Promises, aid Grudges, and backstab Loyalties.  Erase five marks of the Abyss.',
-            'You are swallowed by the bottomless sea:  Your body exists, somewhere in the world, but whatever inhabits it is no longer you.  You are lost and gone forever.  Discard your character sheet and begin another.',
-            'Something else... (MC\'s choice)',
+            '',
         ]" />
     </template>
     <template v-slot:example>

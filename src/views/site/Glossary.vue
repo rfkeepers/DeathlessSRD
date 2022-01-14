@@ -85,8 +85,11 @@ onMounted(() => {
     page.value.addEventListener('touchend', handleTouchEnd, false);
     slideout.value.addEventListener('touchstart', handleTouchStart, false);
     slideout.value.addEventListener('touchend', handleTouchEnd, false);
-    if (matchMedia("screen and (max-width: 900px)").matches && route.path.includes('landing')) {
-        isVisible.value = false;
+    if (route.path.includes('landing')) {
+        if (matchMedia("screen and (max-width: 900px)").matches)
+            isVisible.value = false;
+        else
+            searchInput.value.focus();
     }
     evt.listen('navOpen', hideIfShown);
 });
@@ -217,7 +220,7 @@ onUnmounted(() => {
             padding: 8px 24px;
             min-height: 40px;
             cursor: pointer;
-            
+
             &:last-child {
                 margin-bottom: 6em;
             }

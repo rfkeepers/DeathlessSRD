@@ -3,7 +3,6 @@
 import Move from "@/components/Move.vue";
 import Options from "@/components/Options.vue";
 import Roll from "@/components/Roll.vue";
-import RollAbyssRules from "@/components/RollAbyssRules.vue";
 
 const name = 'Gaze Into The Abyss';
 </script>
@@ -13,14 +12,19 @@ const name = 'Gaze Into The Abyss';
 <Move id="gaze_int_the_abyss" leftLined>
     <template v-slot:name>{{name}}</template>
     <template v-slot:body>
-        When you <b>go looking for answers</b> in the endless sea underneath all things, you gaze into the infinite depths and find truths, however difficult to grasp they may be.  Choose 1 from below, and <Roll abyss/>.
+        When you open yourself to the Abyss and <b>go looking for answers</b> within, you gaze into the depths and find truths, however difficult to grasp they may be.  First <Roll abyss />, then ask the MC a question.  They'll respond with one of the following:
         <Options bullet="⇀" :options="[
-            'A gripping sensation guides you.',
-            'A brief and obscure vision is revealed.',
-            'You gain a terrible understanding.',
+            'Revelation that strains comprehension.',
+            'Maddening sensation.',
+            'Terrible understanding.',
         ]" />
         <br>
-        <RollAbyssRules />
+        If you <em>roll below your current ABYSS</em>, the depths return your gaze. Choose 1:
+        <Options bullet="⇀" :options="[
+            'The Abyss takes from you; describe a memory, now lost forever.',
+            'You take something back with you, the MC will say what it is.',
+            'You give something to the Abyss, which will circulate again into the world.  What is it?',
+        ]" />
     </template>
     <template v-slot:example>
         <h3 class="lineTo indent">Design Thoughts</h3>

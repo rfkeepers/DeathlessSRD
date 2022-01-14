@@ -10,7 +10,7 @@ import Options from '@/components/Options.vue';
     The Basics
 </h1>
 Deathless is about flawed characters who are never allowed to die.  Without death they have no fear, but also no relief. At the table, we play to find out where those characters' lines are drawn: the boundaries they preserve, and the ones they're willing to step across.
-<br>
+<br><br>
 <hr>
 
 <h2 id="pbta">
@@ -51,16 +51,16 @@ Every now and then the game gets a say in the conversation, too.  These are the 
 Moves are codified fictional action.  They come into play according to a trigger; something like, "When you act with "precision, subtlety, or prior experience".  What this means is when you're having the conversation and Jen says, "Flynn slides his hand into the Baron's pocket, sneaking out the key to his house."  The MC should say, "oh, that sounds like you're trying to Snipe something!  That's a move, let's roll the dice to find out if you do it!"  That's where the game adds to the conversation: you look up the move Snipe, roll the dice, and do as the move prescribes to learn the results.
 <br><br>
 After that, the conversation turns back to the people at the table.
-<br>
+<br><br>
 <hr>
 
 <h2 id="agendas">
     Agendas
 </h2>
-Deathless is not designed for all possible stories and games.  It wants to investigate <em>humanity</em>, <em>weakness</em>, and character <em>faults</em>.  It wants to have the players question, "what have I done?", more than they ask, "how do I want to do it?".  The scope is fantastical- but from a ground-level perspective- setting the supernatural as a foil to ourselves to see how that makes us, people, more interesting.  If a character seeks to slay a god, the game doesn't care if they have the power to do it.  It cares about what drives a person to kill their god, and why they will not be received as saviors on their return.
+Deathless is not a good choice for every story out there.  It wants you to investigate <em>humanity</em>, <em>weakness</em>, and character <em>faults</em>.  It wants you to "what have I done?", as much as you ask, "how do I do it?".
 <br><br>
 
-To steer the tone of play toward these stories, everyone at the table has an agenda.  The Players, the MC, secretly even the rules themselves.  These agendas form a contract.  An agreement between all involved that they are here to play the same game.
+To steer the tone of play in those directions, everyone at the table has an agenda.  The Players, the MC, secretly even the rules themselves.  These agendas present a sort of contract: an agreement between everyone at the table that they going to play the same game.  If this .
 
 <div class="spaceAbove">
     <h3 id="player_agenda">

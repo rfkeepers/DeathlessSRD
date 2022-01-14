@@ -59,7 +59,7 @@ $color-neutral-sunk: scale-color($color-neutral, $lightness: -48%);
   --nav-color-flag: #{$color-foreground-sink};
   --nav-color-text: #{$color-text};
 
-  --stat-color: #{$color-foreground-pop};
+  --stat-color: #{$color-foreground};
 }
 
 // ------------------ elements
@@ -102,7 +102,7 @@ a {
 
 b {
   color: $color-foreground;
-  font-size: 1.1em;
+  // font-size: 1.1em;
   font-style: normal;
   font-weight: 700;
 }
@@ -131,6 +131,7 @@ h1 {
 
   @media screen and (max-width: 900px) {
     overflow-wrap: break-word;
+    margin-block-start: 0.25em;
   }
 }
 
