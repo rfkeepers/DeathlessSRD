@@ -18,5 +18,19 @@ export default defineConfig({
         additionalData: `@import "${srcPath}/_globals.scss";`,
       },
     },
+    postcss: {
+      plugins: [
+        {
+          postcssPlugin: 'internal:charset-removal',
+          AtRule: {
+            charset: (atRule) => {
+              if (atRule.name === 'charset') {
+                atRule.remove();
+              }
+            }
+          }
+        }
+      ]
+    }
   },
 })
