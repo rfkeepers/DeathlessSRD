@@ -32,7 +32,7 @@
       />
       <div class="headerBar__links__spacer">|</div>
       <NavDropdown
-        name="Glossary"
+        name="Support"
         :links="glossaryLinks"
       />
       <!-- <NavLink>Glossary</NavLink> -->
@@ -73,6 +73,7 @@ export default {
       {to: "/feedback", text: "Feedback"},
       {to: "/design/moves", text: "Designing Move UX"},
       {to: "/design/examples", text: "Designing Examples UX"},
+      {to: "https://www.innumerable-engines.net", external: true, text: "Innumerable Engines"},
     ],
     contentLinks: [
       {to: "/", text: "What Is Deathless?"},
