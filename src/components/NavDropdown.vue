@@ -1,38 +1,40 @@
 <!-- ============================== Template ============================== -->
 <template>
-<div
-    class="navDropdown"
-    @click="toggleDropdown"
->
-    {{ name }}
-</div>
-<div
-    v-if="showDropdown"
-    class="navPopover"
->
-    <ul class="navPopover__list">
-        <li
-            v-for="l in links"
-            :key="l.to"
-            @click="routeTo(l)"
-            class="navPopover__list__line"
-        >
-            <a
-                v-if="l.external"
-                :href="l.to"
+<nav>
+    <div
+        class="navDropdown"
+        @click="toggleDropdown"
+    >
+        {{ name }}
+    </div>
+    <div
+        v-if="showDropdown"
+        class="navPopover"
+    >
+        <menu class="navPopover__list">
+            <li
+                v-for="l in links"
+                :key="l.to"
+                @click="routeTo(l)"
+                class="navPopover__list__line"
             >
-                {{ l.text }}
-            </a>
-            <router-link
-                v-else
-                :to="l.to"
-                @click="emitRouted"
-            >
-                {{ l.text }}
-            </router-link>
-        </li>
-    </ul>
-</div>
+                <a
+                    v-if="l.external"
+                    :href="l.to"
+                >
+                    {{ l.text }}
+                </a>
+                <router-link
+                    v-else
+                    :to="l.to"
+                    @click="emitRouted"
+                >
+                    {{ l.text }}
+                </router-link>
+            </li>
+        </menu>
+    </div>
+</nav>
 </template>
 
 <!-- ============================== Script ============================== -->
@@ -103,20 +105,20 @@ export default navDropdown;
     @media screen and (min-width: 900px) {
         position: relative;
     }
-    
+
     &__list {
         z-index: 1100;
-    
+
         @media screen and (min-width: 900px) {
             position: absolute;
             width: max-content;
-            right: 1em;
-            top: 1.75em;
+            right: 0.35em;
+            top: 0.35em;
             background: var(--nav-color-background, black);
             border: 2px solid var(--nav-color-border, magenta);
             border-radius: 0.5em;
             padding: 0;
-        
+
             &:after {
                 content: "";
                 position: absolute;
@@ -148,13 +150,13 @@ export default navDropdown;
             }
 
             @media screen and (min-width: 900px) {
-        
+
                 &:first-child {
                     padding-top: 6px;
                     border-top-left-radius: 0.5em;
                     border-top-right-radius: 0.5em;
                 }
-            
+
                 &:last-child {
                     padding-bottom: 6px;
                     border-bottom-left-radius: 0.5em;

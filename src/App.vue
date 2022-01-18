@@ -47,7 +47,7 @@
   <!-- Body -->
   <div :class="{
     'pageBody': true,
-    'pageBody--glossary': isGlossaryPage,
+    'pageBody--sidebar': isSidebarPage,
   }">
     <router-view></router-view>
   </div>
@@ -91,7 +91,7 @@ export default {
   }; },
 
   computed: {
-    isGlossaryPage() { return this.$route.href?.includes('glossary'); }
+    isSidebarPage() { return this.$route.meta.sidebar; }
   },
 
   // --------------------------------------------------------------------
@@ -160,13 +160,13 @@ export default {
 <!-- ============================== Style ============================== -->
 <style lang="scss">
 .headerBar {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .pageBody {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: auto;

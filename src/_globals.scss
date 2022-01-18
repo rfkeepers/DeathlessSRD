@@ -1,10 +1,9 @@
 // colors
 $color-foreground: #9e4036;
 $color-highlight: #9e4036;
-// $color-highlight: #a28a6a;
-// $color-title: #637478;
-$color-title: #9D7D53;
+$color-title: #9e4036;
 
+$color-emphasis: #b79b5a;
 $color-background: #232323;
 $color-text: #dcd3c7;
 $color-neutral: #6b6e70;
@@ -14,6 +13,7 @@ $color-background-popped: scale-color($color-background, $lightness: +12%);
 $color-background-pop: scale-color($color-background, $lightness: +6%);
 $color-background-sink: scale-color($color-background, $lightness: -24%);
 $color-background-sunk: scale-color($color-background, $lightness: -36%);
+$color-emphasis-sink: scale-color($color-emphasis, $lightness: -12%);
 $color-foreground-pop: scale-color($color-foreground, $lightness: +8%);
 $color-foreground-sink: scale-color($color-foreground, $lightness: -24%);
 $color-foreground-sunk: scale-color($color-foreground, $lightness: -36%);
@@ -25,6 +25,9 @@ $color-text-pop: scale-color($color-text, $lightness: +8%);
 $color-text-popped: scale-color($color-text, $lightness: +24%);
 $color-text-sink: scale-color($color-text, $lightness: -36%);
 $color-text-sunk: scale-color($color-text, $lightness: -48%);
+$color-title-sunk: scale-color($color-title, $lightness: -24%);
+$color-title-sink: scale-color($color-title, $lightness: -12%);
+$color-title-pop: scale-color($color-title, $lightness: +20%);
 $color-title-popped: scale-color($color-title, $lightness: +48%);
 $color-link: scale-color($color-highlight, $lightness: +15%);
 $color-link-active: scale-color($color-text, $lightness: +25%);
@@ -100,29 +103,44 @@ a {
   }
 }
 
+// a fallback when you want _arbitrary emphasis_ on some text.
+// attention grabbing, but not of additional importance.
+// ex: The <b>house</b> stood empty.
 b {
-  color: $color-foreground;
-  // font-size: 1.1em;
+  color: $color-emphasis-sink;
+  font-style: normal;
+  font-weight: 700;
+  // text-transform: uppercase;
+}
+
+// when you need text that's both attention grabbing and _important_.
+// ex: <strong>Required:</strong> you have to love <strong>pbta</strong>.
+strong {
+  color: $color-emphasis;
   font-style: normal;
   font-weight: 700;
 }
 
+// use it when the text needs *real emphasis* to convey it's meaning.
+// ex: I <em>love</em> pbta.
 em {
-  color: $color-highlight-pop;
-  font-size: 1.1em;
-  font-style: normal;
+  color: $color-emphasis;
   font-weight: 500;
+  font-style: normal;
+  font-size: 1.1em;
+  text-transform: uppercase;
 }
 
 hr {
-  border-color: $color-foreground;
-  color: $color-foreground;
+  border-color: $color-emphasis;
+  color: $color-emphasis;
   height: 1px;
   width: 50%;
 }
 
+// page headers only
 h1 {
-  color: $color-title;
+  color: $color-title-sunk;
   font-size: 3.5em;
   line-height: 1.25em;
   margin-block-start: 0.5em;
@@ -135,8 +153,9 @@ h1 {
   }
 }
 
+// embedded headers
 h2 {
-  color: $color-title;
+  color: $color-title-sunk;
   margin-block-start: 1em;
   margin-block-end: 0.25em;
   margin-top: 48px;
@@ -148,8 +167,9 @@ h2 {
   }
 }
 
+// subsection and move/ability headers
 h3 {
-  color: $color-title;
+  color: $color-title-sink;
   width: 100%;
   margin-top: 48px;
   margin-block-end: 0.25em;
@@ -160,12 +180,19 @@ h3 {
   }
 }
 
+// list headers and other reference points
 h4 {
-  color: $color-title;
+  color: $color-title-sink;
   margin: 0;
   margin-bottom: 4px;
   font-size: 1.25em;
   margin-block-start: 1.75em;
+}
+
+menu {
+  margin: 0;
+  list-style-type: none;
+  padding-inline-start: 0;
 }
 
 ul {
@@ -195,6 +222,29 @@ input {
   }
 }
 
+// used to showcase play examples and other anecdotes.
+aside {
+  padding: 0 6% 0 4%;
+  font-style: oblique;
+  text-align: justify;
+  margin-top: 16px;
+  border-radius: 12px;
+  border-top: 1px solid $color-highlight;
+  border-bottom: 1px solid $color-highlight;
+  border-color: $color-title;
+}
+
+// used to quote.  technically needs to quote an actual thing,
+// and can use a src (when available) to link to the quoted
+// thing, but can also just quote fictional things.
+blockquote {
+  border-left: 1px solid $color-foreground-sink;
+  padding: 12px 36px 12px 36px;
+  margin: 24px 0 8px 0;
+  color: $color-text-pop;
+  background-color: $color-background-sunk;
+}
+
 // ------------------ classes
 .overlord {
   height: 100%;
@@ -214,7 +264,7 @@ input {
     padding-left: 16%;
     padding-right: 16%;
 
-    &--glossary {
+    &--sidebar {
       padding-left: 0;
       padding-right: 0;
     }
@@ -224,7 +274,7 @@ input {
     padding-left: 20%;
     padding-right: 20%;
 
-    &--glossary {
+    &--sidebar {
       padding-left: 0;
       padding-right: 0;
     }
@@ -275,7 +325,7 @@ input {
     display: block;
     width: 90%;
     height: 1px;
-    background: $color-foreground;
+    background: $color-emphasis;
     left: 10px;
     bottom: -8px;
     position: absolute;
@@ -288,7 +338,7 @@ input {
       width: 128px;
       width: calc(68vw - 100%);
       height: 1px;
-      background: $color-foreground;
+      background: $color-emphasis;
       right: calc((68vw - 95%) * -1);
       top: 50%;
       position: absolute;
@@ -307,7 +357,7 @@ input {
       width: 128px;
       width: calc(60vw - 100%);
       height: 1px;
-      background: $color-foreground;
+      background: $color-emphasis;
       right: calc((60vw - 95%) * -1);
       top: 50%;
       position: absolute;
@@ -477,7 +527,7 @@ input {
     }
 
     &:last-child {
-      border-left: 1px solid $color-text-sink;
+      border-left: 1px solid $color-emphasis;
     }
   }
 }

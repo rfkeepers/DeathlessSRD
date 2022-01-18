@@ -97,8 +97,9 @@ Not in any particular order.
     border: 1px solid $color-highlight;
     border-radius: 8px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    color: $color-highlight-popped;
+    color: $color-emphasis;
 }
 .loud  {
     color: $color-highlight-pop;

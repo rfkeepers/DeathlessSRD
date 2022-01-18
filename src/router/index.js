@@ -67,6 +67,7 @@ routes = routes.concat([
     component: basics,
     meta: {
       title: titleMaker('The Basics'),
+      sidebar: true,
       tags: [
         {
           name: 'description',
@@ -190,6 +191,7 @@ routes = routes.concat([
     component: glossary,
     meta: {
       title: titleMaker('Glossary'),
+      sidebar: true,
       tags: [
         {
           name: 'description',
