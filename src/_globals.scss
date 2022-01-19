@@ -62,6 +62,8 @@ $color-neutral-sunk: scale-color($color-neutral, $lightness: -48%);
   --nav-color-flag: #{$color-foreground-sink};
   --nav-color-text: #{$color-text};
 
+  --sidebarMenu-color-text: #{$color-link};
+
   --stat-color: #{$color-foreground};
 }
 

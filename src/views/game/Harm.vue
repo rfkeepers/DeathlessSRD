@@ -3,6 +3,17 @@
 import Death from '@/views/game/Death.vue';
 import HLink from '@/components/HLink.vue';
 import SacrificesMustBeMade from '@/glossary/moves/SacrificesMustBeMade.vue';
+
+import { scrollTo } from '@/utils/tools.js';
+import { useRoute } from 'vue-router';
+const route = useRoute();
+
+import { onMounted } from 'vue';
+onMounted(() => {
+    if (route.hash) {
+        scrollTo(route.hash.substring(1));
+    }
+});
 </script>
 
 <!-- ============================== Template ============================== -->
@@ -48,7 +59,7 @@ Mechanically, Conditions manifest as penalties to player rolls.  Each of the cha
 <br><br>
 A note on severity: the important difference between Pains and Conditions is not always the toxicity of the attack, but instead the persistence of the result.  Pains disappear in short order, Conditions do not.  We don't always get a say in what greives or affronts us.  Sometimes, the insignificant shit you hold on, the emotinal pricks that still hurt despite all the opportunity to heal, that'll surprise you.  Keep that in mind when Conditions come into play: the lingering effects can be disproportionate compared to their source.
 
-<HLink :h="2">
+<HLink :h="2" id="healing">
     Healing
 </HLink>
 Wounds can mend with care: time, restraint, patience.  All the <em>things the characters won't have</em> in surplus.  In a rush you'll do what any desperate fool would do: go to one of those things that call themselves doctors, or find a pharmacist who'll pack the sores full of herbs, maybe stitch pieces back together yourself.  Or you die.  Funny thing about dieing when you're in the character's position: all your injuries get healed up in the process.

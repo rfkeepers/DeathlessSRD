@@ -1,6 +1,7 @@
 <!-- ============================== Script ============================== -->
 <script setup>
 import Options from '@/components/Options.vue';
+import SidebarMenu from '@/components/SidebarMenu.vue';
 import SidebarPage from '@/components/SidebarPage.vue';
 
 </script>
@@ -9,11 +10,23 @@ import SidebarPage from '@/components/SidebarPage.vue';
 <template>
 <SidebarPage :initHidden="() => true">
 <template v-slot:sidebar>
-    <menu class="sidebar">
-        The Basics
-        <br>
-        Need a component
-    </menu>
+<div class="sidebar">
+    <SidebarMenu
+        :links="[
+            { label: 'The Basics', top: true, links: [
+                { label: 'Powered By The Apocalypse', hash: 'pbta' },
+                { label: 'Players', hash: 'players' },
+                { label: 'Master of Ceremonies', hash: 'mc' },
+                { label: 'Play', hash: 'play' },
+                { label: 'Moves', hash: 'moves' },
+                { label: 'Agendas', hash: 'agendas', links: [
+                    { label: 'Player Agendas', hash: 'player_agenda' },
+                    { label: 'MC Agendas', hash: 'mc_agenda' },
+                ] },
+            ] },
+        ]"
+    />
+</div>
 </template>
 <template v-slot:page>
     <h1 class="title">
@@ -104,7 +117,8 @@ import SidebarPage from '@/components/SidebarPage.vue';
         <h4>⇀ Fill the characters' lives with barbed hooks</h4>
         Use the characters to lay hooks in your player's skin, then tug at the strings.  Pull them in different directions.  Drag them toward conflict.  Hold the line tight behind them and ask if they are willing to keep moving forward.  You have no threat of mortality to leverage at your players.  All you have are the people who mean something to them.
 
-        <h4>⇀ Play to find out what happens</h4>
+        <h4>⇀ Play to f
+        class="sidebar"ind out what happens</h4>
         Show up to the table with as little or as much preparation as you want (we suggest the former).  Readiness is not as important as flexibility.  Expect the players to surprise you.  Expect to surprise yourself sometimes.  The goal is to <em>discover a story through play</em>, not to tell a written tale.
     </div>
 </template>

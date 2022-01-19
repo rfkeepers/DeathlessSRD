@@ -5,7 +5,7 @@ const makeMeta = ({ name, routeContent, type }) => ({
     title: `${name} - ${type}`,
     tags: [{
         name: 'description',
-        content: routeContent, 
+        content: routeContent,
     }],
 });
 
@@ -13,7 +13,7 @@ const makeMeta = ({ name, routeContent, type }) => ({
  * Takes in an array of glossary entries (an object with the properties:
  * name, type, tags, routeContent, component) and extends each entry to
  * include route pathing and route meta structures.
- * 
+ *
  * @param {Array} arr array of glossary entries.
  * @returns nothing; array is modified in place.
  */
@@ -29,7 +29,7 @@ const addRouting = arr => {
  * name, type, tags, routeContent, component) and produces a second array
  * containing only the properties that are relevant as constants: name,
  * path, type, and tags.
- * 
+ *
  * @param {Array} arr array of glossary entries.
  * @returns the modified array containing routing details.
  */

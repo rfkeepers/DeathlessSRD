@@ -10,6 +10,7 @@ import { onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 const route = useRoute();
 const router = useRouter();
+import { scrollTo } from '@/utils/tools.js';
 
 const ents = [
     { base: 'devotion', label: 'Devotions' },
@@ -17,12 +18,6 @@ const ents = [
     { base: 'loyalty', label: 'Loyalties' },
     { base: 'obsession', label: 'Obsessions' },
 ];
-
-const scrollTo = (hash, behavior = 'smooth') => {
-    let el = document.getElementById(hash);
-    if (!el) return;
-    el.scrollIntoView({ behavior });
-};
 
 onMounted(() => {
     if (route.hash) {

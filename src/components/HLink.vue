@@ -28,6 +28,7 @@ const linkIt = () => {
 <template>
 <h1
     v-if="h === 1"
+    :id="id"
     :class="{ linkable: true, title }"
     @click="linkIt"
 >
@@ -35,6 +36,7 @@ const linkIt = () => {
 </h1>
 <h2
     v-if="h === 2"
+    :id="id"
     :class="{ linkable: true, title }"
     @click="linkIt"
 >
@@ -42,6 +44,7 @@ const linkIt = () => {
 </h2>
 <h3
     v-if="h === 3"
+    :id="id"
     :class="{ linkable: true, title }"
     @click="linkIt"
 >
@@ -49,6 +52,7 @@ const linkIt = () => {
 </h3>
 <h4
     v-if="h === 4"
+    :id="id"
     :class="{ linkable: true, title }"
     @click="linkIt"
 >
@@ -56,6 +60,7 @@ const linkIt = () => {
 </h4>
 <h5
     v-if="h === 5"
+    :id="id"
     :class="{ linkable: true, title }"
     @click="linkIt"
 >
@@ -63,6 +68,7 @@ const linkIt = () => {
 </h5>
 <h6
     v-if="h === 6"
+    :id="id"
     :class="{ linkable: true, title }"
     @click="linkIt"
 >

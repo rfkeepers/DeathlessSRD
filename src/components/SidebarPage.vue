@@ -68,6 +68,8 @@ onMounted(() => {
     evt.listen('navOpen', hideIfShown);
     // callers may force the sidebar open and closed
     evt.listen('toggleSidebar', toggle);
+    evt.listen('closeSidebar', hide);
+    evt.listen('openSidebar', show);
 
     isVisible.value = !props.initHidden?.();
 
@@ -79,6 +81,8 @@ onUnmounted(() => {
     document.removeEventListener('click', hideIfShown);
     evt.remove('navOpen', hideIfShown);
     evt.remove('toggleSidebar', toggle);
+    evt.remove('closeSidebar', hide);
+    evt.remove('openSidebar', show);
 });
 </script>
 
@@ -99,6 +103,12 @@ onUnmounted(() => {
     class="page"
     ref="page"
 >
+    <div
+        class="menu"
+        @click="show"
+    >
+        ⭄ Menu
+    </div>
     <slot name="page" />
 </div>
 </template>
@@ -130,7 +140,7 @@ onUnmounted(() => {
     transition: left 0.25s ease-out;
     height: 100%;
     width: 360px;
-    top: 54px;
+    top: 50px;
 
     background-color: var(--glossary-color-list-background, black);
     border-right: 1px solid var(--glossary-color-list-border, white);
@@ -144,7 +154,6 @@ onUnmounted(() => {
 
     @media screen and (min-width: 900px) {
         left: 0;
-        top: 50px;
     }
 
     @media screen and (max-width: 900px) {
@@ -154,6 +163,20 @@ onUnmounted(() => {
         &--visible {
             left: 1px;
         }
+    }
+}
+
+.menu {
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &::first-letter {
+        font-size: 1.25em;
+    }
+
+    @media screen and (min-width: 900px) {
+        display: none;
     }
 }
 </style>
