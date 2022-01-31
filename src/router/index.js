@@ -23,7 +23,6 @@ import moveExamples from '@/views/site/MoveExamples.vue';
 import notFound from '@/views/site/NotFound.vue';
 
 const titleMaker = (...t) => t.concat('Deathless').join(' - ');
-const nameMaker = (...t) => t.join('.');
 
 // -------------------------------------------------------------------------------------
 // core

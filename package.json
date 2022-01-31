@@ -1,9 +1,9 @@
 {
   "name": "deathless",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/deathless/",
     "preview": "vite preview"
   },
   "dependencies": {
