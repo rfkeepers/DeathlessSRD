@@ -255,15 +255,15 @@ routes = routes.concat([
 
 // -------------------------------------------------------------------------------------
 // catchall
-routes = routes.concat([
-  {
-    path: '/:pathMatch(.*)*',
-    component: notFound,
-    meta: {
-      title: 'Not Found',
-    },
-  },
-]);
+// routes = routes.concat([
+//   {
+//     path: '/:pathMatch(.*)*',
+//     component: notFound,
+//     meta: {
+//       title: 'Not Found',
+//     },
+//   },
+// ]);
 
 const router = createRouter({
   history: createWebHistory(),
