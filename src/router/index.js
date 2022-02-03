@@ -266,7 +266,7 @@ routes = routes.concat([
 ]);
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/deathless/'),
   routes,
 });
 
